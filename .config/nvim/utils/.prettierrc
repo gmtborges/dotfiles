@@ -1,7 +1,6 @@
 {
-  "printWidth": 80,
+  "printWidth": 110,
   "singleQuote": false,
   "bracketSameLine": true,
-  "bracketSpacing": false,
   "proseWrap": "always"
 }

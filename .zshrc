@@ -17,6 +17,9 @@ export PATH=$PATH:$GOPATH/bin
 # Disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# Local binaries
+export PATH=$HOME/.local/bin:$PATH
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -95,6 +98,8 @@ plugins=(
   aws
   terraform
   docker
+  kubectl
+  azure
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -133,7 +138,7 @@ alias icat="kitty +kitten icat"
 # alias ssh="kitty +kitten ssh"
 
 function branchdel () {
- git branch --merged | egrep -v "master|dev|main" | xargs git branch -d 
+ git branch --merged | egrep -v "main" | xargs git branch -d 
 }
 
 function save-notes () {
@@ -156,3 +161,12 @@ function save-dotfiles () {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/Users/gustavo/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+alias pm=pnpm
+# pnpm end

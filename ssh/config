@@ -1,4 +1,10 @@
 # vim:ft=conf
+Host souagro-bastion-stg
+  User admin
+  Hostname 18.231.75.193
+  IdentityFile ~/.ssh/souagro-staging.pem
+  IdentitiesOnly yes
+
 Host gcloud-vm
   Hostname 35.196.116.76
   User gcloud
@@ -9,57 +15,27 @@ Host caninos
   Hostname 192.168.1.10
   User caninos
 
-Host node1-staging
+Host tip-airbyte
   User admin
-  Hostname 18.188.157.9
-  IdentityFile ~/.ssh/tip-staging.pub
+  Hostname 18.223.180.246
+  IdentityFile ~/.ssh/key-ohio.pub
   IdentitiesOnly yes
 
-Host node2-staging
+Host tip-node3-prd
   User admin
-  Hostname 52.15.199.91
-  IdentityFile ~/.ssh/tip-staging.pub
-  IdentitiesOnly yes
-
-Host node3-staging
-  User admin
-  Hostname 3.146.37.191
-  IdentityFile ~/.ssh/tip-staging.pub
-  IdentitiesOnly yes
-
-Host node1
-  User admin
-  Hostname 10.10.0.200
+  Hostname 54.233.1.201
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
-Host node2
-  User admin
-  Hostname 10.10.7.165
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host node3
-  User admin
-  Hostname 10.10.7.47
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host node4
+Host tip-node4-prd
   User admin
   Hostname 10.10.15.195
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
-Host node5
+Host tip-node6-prd
   User admin
-  Hostname 54.94.102.66
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host node6
-  User admin
-  Hostname 18.228.9.154
+  Hostname 52.67.59.151
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
