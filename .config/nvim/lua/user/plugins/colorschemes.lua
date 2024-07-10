@@ -58,24 +58,24 @@ return {
 		config = function()
 			require("tokyonight").setup({
 				transparent = true,
+				style = "storm",
 				styles = {
-					comments = "italic",
-					keywords = "bold",
-					functions = "NONE",
+					comments = { italic = true },
+					keywords = { bold = true },
 					sidebars = "transparent",
 					floats = "transparent",
 				},
-				on_highlights = function(hl, c)
-					hl["@module"] = {
-						fg = c.orange,
-					}
-					hl["@keyword.import"] = {
-						fg = c.purple,
-					}
-					hl["@keyword.directive"] = {
-						fg = c.purple,
-					}
-				end,
+				-- on_highlights = function(hl, c)
+				-- 	hl["@module"] = {
+				-- 		fg = c.orange,
+				-- 	}
+				-- 	hl["@keyword.import"] = {
+				-- 		fg = c.purple,
+				-- 	}
+				-- 	hl["@keyword.directive"] = {
+				-- 		fg = c.purple,
+				-- 	}
+				-- end,
 			})
 		end,
 	},
