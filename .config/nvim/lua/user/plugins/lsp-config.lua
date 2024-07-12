@@ -96,16 +96,16 @@ return {
 				settings = {
 					yaml = {
 						schemaStore = {
-							-- You must disable built-in schemaStore support if you want to use
-							-- this plugin and its advanced options like `ignore`.
-							enable = false,
-							-- Avoid TypeError: Cannot read properties of undefined (reading 'length')
-							url = "",
+							enable = true,
+							url = "https://www.schemastore.org/api/json/catalog.json",
 						},
-						schemas = require("schemastore").yaml.schemas(),
+						schemas = {
+							kubernetes = "*.yaml",
+							["https://json.schemastore.org/github-workflow"] = ".github/workflows/*",
+							["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "*docker-compose*.{yml,yaml}",
+						},
 					},
 				},
-				capabilities = capabilities,
 			})
 
 			lspconfig.astro.setup({
@@ -153,10 +153,6 @@ return {
 				on_attach = function(client, bufnr)
 					require("sqls").on_attach(client, bufnr) -- require sqls.nvim
 				end,
-			})
-
-			lspconfig.helm_ls.setup({
-				capabilities = capabilities,
 			})
 
 			vim.keymap.set("n", "<leader>td", vim.diagnostic.open_float)
