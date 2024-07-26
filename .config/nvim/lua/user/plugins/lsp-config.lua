@@ -100,13 +100,34 @@ return {
 							url = "https://www.schemastore.org/api/json/catalog.json",
 						},
 						schemas = {
-							kubernetes = "*.yaml",
+							kubernetes = "manifests/**/*.yaml",
 							["https://json.schemastore.org/github-workflow"] = ".github/workflows/*",
 							["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "*docker-compose*.{yml,yaml}",
 						},
 					},
 				},
 			})
+
+			-- lspconfig.yamlls.setup({
+			-- 	settings = {
+			-- 		yaml = {
+			-- 			schemaStore = {
+			-- 				enable = false,
+			-- 				url = "",
+			-- 			},
+			-- 			schemas = require("schemastore").yaml.schemas({
+			-- 				extra = {
+			-- 					{
+			-- 						description = "Kubernetes Manifests",
+			-- 						fileMatch = { "manifests/**/*.{yml,yaml}" },
+			-- 						name = "deployment.yaml",
+			-- 						url = "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.30.2-standalone-strict/all.json",
+			-- 					},
+			-- 				},
+			-- 			}),
+			-- 		},
+			-- 	},
+			-- })
 
 			lspconfig.astro.setup({
 				capabilities = capabilities,

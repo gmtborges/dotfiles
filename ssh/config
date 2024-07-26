@@ -17,19 +17,13 @@ Host caninos
 
 Host tip-node1-prd
   User admin
-  Hostname 10.10.0.200
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host tip-node2-prd
-  User admin
-  Hostname 10.10.7.165
+  Hostname 18.229.133.85
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
 Host tip-node3-prd
   User admin
-  Hostname 10.10.7.47
+  Hostname 54.233.1.201
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
@@ -41,7 +35,7 @@ Host tip-node4-prd
 
 Host tip-node6-prd
   User admin
-  Hostname 10.10.7.50
+  Hostname 52.67.59.151
   IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
