@@ -119,7 +119,7 @@ return {
 							extra = {
 								{
 									description = "Kubernetes Manifests",
-									fileMatch = { "manifests/**/*.{yml,yaml}" },
+									fileMatch = { "*.{yml,yaml}" },
 									name = "deployment.yaml",
 									url = "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.30.2-standalone-strict/all.json",
 								},
@@ -148,9 +148,6 @@ return {
 
 			lspconfig.marksman.setup({
 				capabilities = capabilities,
-				on_attach = function(client)
-					client.resolved_capabilities.documentFormatingProvider = false
-				end,
 			})
 
 			lspconfig.ansiblels.setup({
@@ -174,6 +171,10 @@ return {
 				on_attach = function(client, bufnr)
 					require("sqls").on_attach(client, bufnr) -- require sqls.nvim
 				end,
+			})
+
+			lspconfig.sourcekit.setup({
+				capabilities = capabilities,
 			})
 
 			vim.keymap.set("n", "<leader>td", vim.diagnostic.open_float)

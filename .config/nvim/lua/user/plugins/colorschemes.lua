@@ -65,17 +65,17 @@ return {
 					sidebars = "transparent",
 					floats = "transparent",
 				},
-				-- on_highlights = function(hl, c)
-				-- 	hl["@module"] = {
-				-- 		fg = c.orange,
-				-- 	}
-				-- 	hl["@keyword.import"] = {
-				-- 		fg = c.purple,
-				-- 	}
-				-- 	hl["@keyword.directive"] = {
-				-- 		fg = c.purple,
-				-- 	}
-				-- end,
+				on_highlights = function(hl, c)
+					hl["@module"] = {
+						fg = c.orange,
+					}
+					hl["@keyword.import"] = {
+						fg = c.purple,
+					}
+					hl["@keyword.directive"] = {
+						fg = c.purple,
+					}
+				end,
 			})
 		end,
 	},
@@ -90,13 +90,6 @@ return {
 					comments = "italic",
 					keywords = "bold",
 					functions = "NONE",
-				},
-				-- colors = {
-				-- 	fg = "#4A4C57",
-				-- },
-				highlights = {
-					["@string.special"] = { fg = "@fg" },
-					["@variable"] = { fg = "@fg" },
 				},
 			})
 		end,

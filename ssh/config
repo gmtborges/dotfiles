@@ -15,10 +15,10 @@ Host caninos
   Hostname 192.168.1.10
   User caninos
 
-Host tip-node1-prd
+Host tip-airbyte
   User admin
-  Hostname 18.229.133.85
-  IdentityFile ~/.ssh/tip-prod.pub
+  Hostname 18.223.180.246
+  IdentityFile ~/.ssh/key-ohio.pub
   IdentitiesOnly yes
 
 Host tip-node3-prd
