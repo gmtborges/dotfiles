@@ -68,6 +68,7 @@ return {
 
 			lspconfig.tsserver.setup({
 				capabilities = capabilities,
+				filetypes = { "javascript", "typescript", "templ" },
 			})
 
 			lspconfig.html.setup({

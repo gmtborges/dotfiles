@@ -32,6 +32,7 @@ return {
 	},
 	{
 		"github/copilot.vim",
+		enabled = false,
 		config = function()
 			vim.keymap.set(
 				"i",
@@ -46,6 +47,7 @@ return {
 	},
 	{
 		"Exafunction/codeium.nvim",
+		enabled = false,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"hrsh7th/nvim-cmp",
@@ -69,10 +71,9 @@ return {
 		opts = {}, -- this is equalent to setup({}) function
 	},
 	{
-		"numToStr/Comment.nvim",
-		opts = {
-			-- add any options here
-		},
-		lazy = false,
+		"folke/ts-comments.nvim",
+		opts = {},
+		event = "VeryLazy",
+		enabled = vim.fn.has("nvim-0.10.0") == 1,
 	},
 }

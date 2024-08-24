@@ -61,7 +61,7 @@ return {
 				style = "storm",
 				styles = {
 					comments = { italic = true },
-					keywords = { bold = true },
+					keywords = { bold = true, italic = true },
 					sidebars = "transparent",
 					floats = "transparent",
 				},
