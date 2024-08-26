@@ -43,7 +43,7 @@ return {
 				{ name = "buffer" },
 				{ name = "luasnip" },
 				{ name = "path" },
-				-- { name = "codeium" },
+				{ name = "codeium" },
 			},
 			mapping = cmp.mapping.preset.insert({
 				["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -88,7 +88,7 @@ return {
 						buffer = "[Buffer]",
 						luasnip = "[Snippet]",
 						path = "[Path]",
-						Codeium = "[AI]",
+						codeium = "[AI]",
 						nvim_lua = "[Lua]",
 					},
 				}),

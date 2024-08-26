@@ -28,6 +28,11 @@ return {
 					theme = "dropdown",
 					cwd_only = true,
 				},
+				lsp_document_symbols = {
+					theme = "dropdown",
+					symbol_width = 50,
+					symbol_type_width = 10,
+				},
 			},
 		})
 		vim.keymap.set("n", "<C-p>", function()
@@ -62,8 +67,8 @@ return {
 		end)
 
 		-- LSP
-		vim.keymap.set("n", "<leader>cj", function()
-			builtin.lsp_document_symbols()
+		vim.keymap.set("n", "<leader>j", function()
+			builtin.lsp_document_symbols({ symbols = { "method", "function" } })
 		end)
 
 		-- GIT

@@ -23,6 +23,9 @@ vim.opt.listchars = { tab = "→ ", trail = "∙", eol = "¬" }
 vim.opt.list = false
 vim.opt.signcolumn = "yes"
 vim.opt.exrc = true
+-- Avante.nvim recommended
+vim.opt.laststatus = 3
+vim.opt.splitkeep = "screen"
 
 --vim.opt.clipboard = "unnamed" -- Copy and paste with OS clipboard
 vim.opt.cursorline = true -- Highlight the current line

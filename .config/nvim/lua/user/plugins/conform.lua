@@ -17,7 +17,7 @@ return {
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
-				go = { { "goimports-reviser", "gofumpt" } },
+				go = { "goimports-reviser", "gofumpt", stop_after_first = false },
 				templ = { "templ" },
 				sql = { "sql_formatter" },
 				html = { "prettierd" },
@@ -34,8 +34,7 @@ return {
 			format_on_save = {
 				-- These options will be passed to conform.format()
 				timeout_ms = 500,
-				async = false,
-				lsp_fallback = true,
+				lsp_format = "fallback",
 			},
 		})
 
