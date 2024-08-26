@@ -6,6 +6,7 @@ return {
 		build = "make BUILD_FROM_SOURCE=true luajit",
 		opts = {
 			provider = "openai",
+			hints = { enabled = false },
 		},
 		dependencies = {
 			"nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
