@@ -35,6 +35,13 @@ return {
 						["@number"] = { fg = colors.magenta },
 						["@module"] = { fg = colors.yellow, bold = true },
 						TelescopeSelection = { bg = colors.base02 },
+						DiagnosticUnderlineError = { fg = "NONE", undercurl = true, sp = colors.diag_error },
+						DiagnosticUnderlineWarn = { fg = "NONE", undercurl = true, sp = colors.diag_warn },
+						DiagnosticUnderlineInfo = { fg = "NONE", undercurl = true, sp = colors.diag_info },
+						DiagnosticUnderlineHint = { fg = "NONE", undercurl = true, sp = colors.blue },
+						DiagnosticUnderlineOk = { fg = "NONE", undercurl = true, sp = colors.diag_ok },
+						SpellBad = { fg = "NONE", undercurl = true, strikethrough = false, sp = colors.diag_error },
+						SpellCap = { fg = "NONE", undercurl = true, sp = colors.blue },
 					}
 					return groups
 				end,
