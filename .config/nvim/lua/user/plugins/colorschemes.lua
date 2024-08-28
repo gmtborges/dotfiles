@@ -30,6 +30,7 @@ return {
 						["@keyword"] = { fg = colors.green, bold = true },
 						["@keyword.conditional"] = { bold = true },
 						["@keyword.return"] = { bold = true },
+						["@function.method.call"] = { fg = colors.base1, bold = true },
 						["@type"] = { fg = colors.base1, bold = false },
 						["@type.builtin"] = { fg = colors.yellow },
 						["@number"] = { fg = colors.magenta },
