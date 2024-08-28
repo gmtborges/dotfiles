@@ -1,12 +1,54 @@
 return {
 	{
+		"maxmx03/solarized.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("solarized").setup({
+				transparent = {
+					enabled = true, -- Master switch to enable transparency
+					pmenu = true, -- Popup menu (e.g., autocomplete suggestions)
+					normal = true, -- Main editor window background
+					normalfloat = true, -- Floating windows
+					neotree = true, -- Neo-tree file explorer
+					nvimtree = true, -- Nvim-tree file explorer
+					whichkey = true, -- Which-key popup
+					telescope = true, -- Telescope fuzzy finder
+					lazy = true, -- Lazy plugin manager UI
+				},
+				styles = {
+					keywords = { bold = true },
+					parameters = { italic = false },
+					comments = { italic = true },
+					functions = { bold = false },
+				},
+				on_highlights = function(colors, _)
+					local groups = {
+						["@operator"] = { fg = colors.base00 },
+						["@variable"] = { fg = colors.base1 },
+						["@property"] = { fg = colors.base1 },
+						["@keyword"] = { fg = colors.green, bold = true },
+						["@keyword.conditional"] = { bold = true },
+						["@keyword.return"] = { bold = true },
+						["@type"] = { fg = colors.base1, bold = false },
+						["@type.builtin"] = { fg = colors.yellow },
+						["@number"] = { fg = colors.magenta },
+						["@module"] = { fg = colors.yellow, bold = true },
+						TelescopeSelection = { bg = colors.base02 },
+					}
+					return groups
+				end,
+			})
+		end,
+	},
+	{
 		"projekt0n/github-nvim-theme",
 		lazy = false, -- make sure we load this during startup if it is your main colorscheme
 		priority = 1000, -- make sure to load this before all the other start plugins
 		config = function()
 			require("github-theme").setup({
 				groups = {
-					github_dark = {
+					all = {
 						["@type"] = { fg = "palette.fg.default" },
 						["@type.definition"] = { fg = "palette.fg.default" },
 						["@module"] = { fg = "palette.fg.on_emphasis" },
