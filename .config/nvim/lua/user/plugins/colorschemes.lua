@@ -22,7 +22,10 @@ return {
 					comments = { italic = true },
 					functions = { bold = false },
 				},
-				on_highlights = function(colors, _)
+				on_highlights = function(colors, color)
+					local darken = color.darken
+					local lighten = color.lighten
+
 					local groups = {
 						["@operator"] = { fg = colors.base00 },
 						["@variable"] = { fg = colors.base1 },
@@ -32,9 +35,10 @@ return {
 						["@keyword.return"] = { bold = true },
 						["@keyword.repeat"] = { bold = true },
 						["@keyword.function"] = { fg = colors.green, bold = true },
-						["@function.method.call"] = { fg = colors.base1, bold = true },
+						["@function.method.call"] = { fg = lighten(colors.base1, 20), bold = true },
 						["@type"] = { fg = colors.base1, bold = false },
-						["@type.builtin"] = { fg = colors.yellow },
+						["@type.builtin"] = { fg = colors.yellow, bold = false },
+						["@attribute"] = { bold = false },
 						["@number"] = { fg = colors.magenta },
 						TelescopeSelection = { bg = colors.base02 },
 						DiagnosticUnderlineError = { fg = "NONE", undercurl = true, sp = colors.diag_error },
