@@ -23,23 +23,24 @@ return {
 					functions = { bold = false },
 				},
 				on_highlights = function(colors, color)
-					local darken = color.darken
 					local lighten = color.lighten
 
 					local groups = {
 						["@operator"] = { fg = colors.base00 },
 						["@variable"] = { fg = colors.base1 },
+						["@variable.parameter"] = { fg = colors.base1 },
 						["@property"] = { fg = colors.base1 },
 						["@keyword"] = { fg = colors.green, bold = true },
 						["@keyword.conditional"] = { bold = true },
 						["@keyword.return"] = { bold = true },
 						["@keyword.repeat"] = { bold = true },
 						["@keyword.function"] = { fg = colors.green, bold = true },
-						["@function.method.call"] = { fg = lighten(colors.base1, 20), bold = true },
+						["@function.method.call"] = { fg = lighten(colors.base1, 20), bold = false },
 						["@type"] = { fg = colors.base1, bold = false },
 						["@type.builtin"] = { fg = colors.yellow, bold = false },
 						["@attribute"] = { bold = false },
 						["@number"] = { fg = colors.magenta },
+						["@string.escape"] = { fg = colors.orange },
 						TelescopeSelection = { bg = colors.base02 },
 						DiagnosticUnderlineError = { fg = "NONE", undercurl = true, sp = colors.diag_error },
 						DiagnosticUnderlineWarn = { fg = "NONE", undercurl = true, sp = colors.diag_warn },
@@ -48,6 +49,7 @@ return {
 						DiagnosticUnderlineOk = { fg = "NONE", undercurl = true, sp = colors.diag_ok },
 						SpellBad = { fg = "NONE", undercurl = true, strikethrough = false, sp = colors.diag_error },
 						SpellCap = { fg = "NONE", undercurl = true, sp = colors.blue },
+						BufferLineBufferSelected = { bold = true },
 					}
 					return groups
 				end,
