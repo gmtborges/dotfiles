@@ -1,0 +1,25 @@
+pane	notes	1	1	:*	1	gustavo@debian:~/repos/notes/zettelkasten	:/Users/gustavo/repos/notes/zettelkasten	1	zsh	:
+pane	projects	1	0	:-Z	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	1	0	:-Z	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/projects/devopsgo-observability	0	zsh	:
+pane	projects	2	1	:*	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
+pane	saas	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/saas/orcamento-auto	1	zsh	:
+pane	saas	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas/orcamento-auto	1	zsh	:
+pane	souagro	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/souagro/iac	1	zsh	:
+pane	souagro	1	1	:*	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/souagro/iac/production/manifests/postgres-exporter/do	0	zsh	:
+pane	souagro	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/souagro/safracontrol-internal-api	1	zsh	:
+pane	study	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	study	2	0	:-	1	gustavo@debian:~/repos/study	:/Users/gustavo/repos/study	1	zsh	:
+pane	tmp	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles/.config	1	zsh	:
+pane	tmp	2	0	:-	1	gustavo@debian:~/Downloads	:/Users/gustavo/tmp	1	zsh	:
+window	notes	1	:zsh	1	:*	c37e,140x46,0,0,1	:
+window	projects	1	:zsh	0	:-Z	4d56,140x46,0,0[140x23,0,0,2,140x22,0,24,3]	:
+window	projects	2	:zsh	1	:*	c381,140x46,0,0,4	:
+window	saas	1	:zsh	1	:*	c382,140x46,0,0,5	:
+window	saas	2	:zsh	0	:-	c383,140x46,0,0,6	:
+window	souagro	1	:zsh	1	:*	1713,140x46,0,0[140x23,0,0,14,140x22,0,24,15]	:
+window	souagro	2	:zsh	0	:-	61f5,140x46,0,0,16	:
+window	study	1	:zsh	1	:*	c384,140x46,0,0,7	:
+window	study	2	:zsh	0	:-	c385,140x46,0,0,8	:
+window	tmp	1	:zsh	1	:*	c386,140x46,0,0,9	:
+window	tmp	2	:zsh	0	:-	61ef,140x46,0,0,10	:
+state	saas	projects
