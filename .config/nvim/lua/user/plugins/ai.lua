@@ -29,31 +29,9 @@ return {
 				enabled = false,
 			},
 		},
-		keys = {
-			{
-				"<leader>aa",
-				function()
-					require("avante.api").ask()
-				end,
-				desc = "avante: ask",
-				mode = { "n", "v" },
-			},
-			{
-				"<leader>ar",
-				function()
-					require("avante.api").refresh()
-				end,
-				desc = "avante: refresh",
-			},
-			{
-				"<leader>ae",
-				function()
-					require("avante.api").edit()
-				end,
-				desc = "avante: edit",
-				mode = "v",
-			},
-		},
+		-- if you want to download pre-built binary, then pass source=false. Make sure to follow instruction above.
+		-- Also note that downloading prebuilt binary is a lot faster comparing to compiling from source.
+		build = ":AvanteBuild",
 		dependencies = {
 			"stevearc/dressing.nvim",
 			"nvim-lua/plenary.nvim",

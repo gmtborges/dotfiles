@@ -27,15 +27,15 @@ return {
 
 					local groups = {
 						["@operator"] = { fg = colors.base00 },
-						["@variable"] = { fg = colors.base1 },
-						["@variable.parameter"] = { fg = colors.base1 },
+						["@variable"] = { fg = colors.base1, italic = false },
+						["@variable.parameter"] = { fg = colors.base1, italic = false },
 						["@property"] = { fg = colors.base1 },
 						["@keyword"] = { fg = colors.green, bold = true },
 						["@keyword.conditional"] = { bold = true },
 						["@keyword.return"] = { bold = true },
 						["@keyword.repeat"] = { bold = true },
 						["@keyword.function"] = { fg = colors.green, bold = true },
-						["@function.method.call"] = { fg = lighten(colors.base1, 20), bold = false },
+						["@function.method.call"] = { fg = lighten(colors.base1, 10), bold = false },
 						["@type"] = { fg = colors.base1, bold = false },
 						["@type.builtin"] = { fg = colors.yellow, bold = false },
 						["@attribute"] = { bold = false },
