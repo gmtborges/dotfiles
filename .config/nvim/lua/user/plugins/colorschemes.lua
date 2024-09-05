@@ -23,9 +23,7 @@ return {
 					comments = { italic = true },
 					functions = { bold = false },
 				},
-				on_highlights = function(colors, color)
-					local lighten = color.lighten
-
+				on_highlights = function(colors, _)
 					local groups = {
 						["@operator"] = { fg = colors.base00 },
 						["@variable"] = { fg = colors.base1, italic = false },
@@ -36,7 +34,7 @@ return {
 						["@keyword.return"] = { bold = true },
 						["@keyword.repeat"] = { bold = true },
 						["@keyword.function"] = { fg = colors.green, bold = true },
-						-- ["@function.method.call"] = { fg = lighten(colors.base1, 10), bold = false },
+						["@function.method.call"] = { fg = colors.blue, bold = false },
 						["@type"] = { fg = colors.base1, bold = false },
 						["@type.builtin"] = { fg = colors.yellow, bold = false },
 						["@attribute"] = { bold = false },
