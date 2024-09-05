@@ -2,6 +2,7 @@ return {
 	{
 		"maxmx03/solarized.nvim",
 		lazy = false,
+		version = "*",
 		priority = 1000,
 		config = function()
 			require("solarized").setup({
@@ -35,7 +36,7 @@ return {
 						["@keyword.return"] = { bold = true },
 						["@keyword.repeat"] = { bold = true },
 						["@keyword.function"] = { fg = colors.green, bold = true },
-						["@function.method.call"] = { fg = lighten(colors.base1, 10), bold = false },
+						-- ["@function.method.call"] = { fg = lighten(colors.base1, 10), bold = false },
 						["@type"] = { fg = colors.base1, bold = false },
 						["@type.builtin"] = { fg = colors.yellow, bold = false },
 						["@attribute"] = { bold = false },
