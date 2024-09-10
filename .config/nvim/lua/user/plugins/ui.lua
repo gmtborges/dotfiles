@@ -152,21 +152,24 @@ return {
 	-- },
 	{
 		"lukas-reineke/indent-blankline.nvim",
-		enabled = false,
+		enabled = true,
 		main = "ibl",
 		config = function()
-			local github_dark_dimmed = {
-				"github_dark_dimmed",
+			-- local github_dark_dimmed = {
+			-- 	"github_dark_dimmed",
+			-- }
+			local solarized_dark = {
+				"solarized_dark",
 			}
-			local tokyonight_day = {
-				"tokyonight_day",
-			}
-			local solarized_light = {
-				"solarized_light",
-			}
-			local github_light = {
-				"github_light",
-			}
+			-- local tokyonight_day = {
+			-- 	"tokyonight_day",
+			-- }
+			-- local solarized_light = {
+			-- 	"solarized_light",
+			-- }
+			-- local github_light = {
+			-- 	"github_light",
+			-- }
 			local hooks = require("ibl.hooks")
 			-- create the highlight groups in the highlight setup hook, so they are reset
 			-- every time the colorscheme changes
@@ -175,14 +178,14 @@ return {
 				vim.api.nvim_set_hl(0, "github_light", { fg = "#E1E2E4" })
 				vim.api.nvim_set_hl(0, "tokyonight_day", { fg = "#D1D3E6" })
 				vim.api.nvim_set_hl(0, "solarized_light", { fg = "#EEE8D5" })
-				vim.api.nvim_set_hl(0, "solarized_light", { fg = "#EEE8D5" })
+				vim.api.nvim_set_hl(0, "solarized_dark", { fg = "#073642" })
 			end)
 			require("ibl").setup({
 				scope = {
 					enabled = false,
 				},
 				indent = {
-					-- highlight = github_light,
+					highlight = solarized_dark,
 				},
 				exclude = {
 					filetypes = { "dashboard", "sql", "dbout" },

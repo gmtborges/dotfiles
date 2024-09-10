@@ -34,6 +34,7 @@ vim.keymap.set("n", "<C-n>", ":bprev<CR>")
 vim.keymap.set("n", "<C-t>", ":bnext<CR>")
 vim.keymap.set("n", "<leader>w", ":bd<CR>")
 vim.keymap.set("n", "<leader>bk", ":bd!<CR>")
+vim.keymap.set("n", "<leader>bK", ":%bd!<CR>")
 
 -- Tabs
 vim.keymap.set("n", "<leader>nc", ":tabnew<CR>")

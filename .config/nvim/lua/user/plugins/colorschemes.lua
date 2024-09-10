@@ -49,6 +49,7 @@ return {
 						SpellBad = { fg = "NONE", undercurl = true, strikethrough = false, sp = colors.diag_error },
 						SpellCap = { fg = "NONE", undercurl = true, sp = colors.blue },
 						BufferLineBufferSelected = { bold = true },
+						yamlComment = { fg = colors.green, bold = true },
 					}
 					return groups
 				end,

@@ -22,7 +22,7 @@ return {
 	{
 		"yetone/avante.nvim",
 		event = "VeryLazy",
-		lazy = false,
+		lazy = true,
 		version = false,
 		opts = {
 			provider = "openai",
@@ -34,7 +34,14 @@ return {
 		-- Also note that downloading prebuilt binary is a lot faster comparing to compiling from source.
 		build = ":AvanteBuild",
 		dependencies = {
-			"stevearc/dressing.nvim",
+			{
+				"stevearc/dressing.nvim",
+				opts = {
+					input = {
+						enabled = true,
+					},
+				},
+			},
 			"nvim-lua/plenary.nvim",
 			"MunifTanjim/nui.nvim",
 			--- The below dependencies are optional,
@@ -60,9 +67,9 @@ return {
 				-- Make sure to setup it properly if you have lazy=true
 				"MeanderingProgrammer/render-markdown.nvim",
 				opts = {
-					file_types = { "markdown", "Avante" },
+					file_types = { "Avante" },
 				},
-				ft = { "markdown", "Avante" },
+				ft = { "Avante" },
 			},
 		},
 	},

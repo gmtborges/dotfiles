@@ -3,7 +3,7 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		dependencies = {
 			"nvim-treesitter/playground",
-			{ "andymass/vim-matchup" },
+			"andymass/vim-matchup",
 		},
 		build = ":TSUpdate",
 		config = function()
@@ -32,6 +32,8 @@ return {
 					"svelte",
 					"templ",
 					"go",
+					"gotmpl",
+					"helm",
 					"dockerfile",
 				},
 

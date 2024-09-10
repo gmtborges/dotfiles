@@ -15,7 +15,7 @@ return {
 					"gopls",
 					"templ",
 					"marksman",
-					"tsserver",
+					"ts_ls",
 					"jsonls",
 					"html",
 					"terraformls",
@@ -73,7 +73,7 @@ return {
 
 			lspconfig.html.setup({
 				capabilities = capabilities,
-				filetypes = { "html", "svg", "templ" },
+				filetypes = { "html", "svg", "templ", "gotmpl" },
 			})
 
 			lspconfig.jsonls.setup({
@@ -89,7 +89,7 @@ return {
 
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
-				filetypes = { "templ", "astro", "svelte" },
+				filetypes = { "templ", "astro", "svelte", "html", "gotmpl" },
 				init_options = { userLanguages = { templ = "html" } },
 			})
 
@@ -147,9 +147,10 @@ return {
 				end,
 			})
 
-			lspconfig.marksman.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.marksman.setup({
+			-- 	filetypes = { "markdown", "mdx" },
+			-- 	capabilities = capabilities,
+			-- })
 
 			lspconfig.ansiblels.setup({
 				capabilities = capabilities,
