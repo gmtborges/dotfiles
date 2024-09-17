@@ -117,17 +117,7 @@ return {
               enable = false,
               url = "",
             },
-            schemas = require("schemastore").yaml.schemas({
-              extra = {
-                {
-                  description = "Kubernetes Manifests",
-                  fileMatch = { "*.{yml,yaml}" },
-                  name = "deployment.yaml",
-                  url =
-                  "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.30.2-standalone-strict/all.json",
-                },
-              },
-            }),
+            schemas = require("schemastore").yaml.schemas(),
           },
         },
       })

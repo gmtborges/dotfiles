@@ -25,7 +25,6 @@ return {
         },
         on_highlights = function(colors, _)
           local groups = {
-            ["@operator"] = { fg = colors.base00 },
             -- Dark
             -- ["@variable"] = { fg = colors.base1, italic = false },
             -- ["@variable.parameter"] = { fg = colors.base1, italic = false },
@@ -53,6 +52,7 @@ return {
             -- yamlComment = { fg = colors.green, bold = true },
             --
             -- Light
+            -- ["@operator"] = { fg = colors.base00 },
             ["@variable"] = { fg = colors.base00, italic = false },
             ["@variable.parameter"] = { fg = colors.base00, italic = false },
             ["@tag.attribute"] = { fg = colors.base00 },
