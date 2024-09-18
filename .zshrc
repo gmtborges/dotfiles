@@ -134,13 +134,13 @@ alias icat="kitty +kitten icat"
 # alias ssh="kitty +kitten ssh"
 
 function branchdel () {
- git branch --merged | egrep -v "master|dev|main" | xargs git branch -d 
+ git branch --merged | egrep -v "main" | xargs git branch -d 
 }
 
 function save-notes () {
   cd ~/repos/notes/
   git add .
-  git cm -m "update notes"
+  git cm -m "atualiza anotacoes"
   git pull
   git push
   cd -
@@ -149,7 +149,7 @@ function save-notes () {
 function save-dotfiles () {
   cd ~/repos/config/dotfiles/
   git add .
-  git cm -m "update dotfiles"
+  git cm -m "atualiza dotfiles"
   git pull
   git push
   cd -
