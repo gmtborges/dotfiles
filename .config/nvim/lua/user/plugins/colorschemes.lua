@@ -23,6 +23,16 @@ return {
           comments = { italic = true },
           functions = { bold = false },
         },
+        on_colors = function(colors, color)
+          local darken = color.darken
+
+          return {
+            base01 = darken(colors.base01, 10),
+            base00 = darken(colors.base00, 10),
+            base0 = darken(colors.base0, 10),
+            base1 = darken(colors.base1, 10),
+          }
+        end,
         on_highlights = function(colors, _)
           local groups = {
             -- Dark
