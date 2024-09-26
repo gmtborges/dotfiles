@@ -27,10 +27,12 @@ return {
           local darken = color.darken
 
           return {
-            base01 = darken(colors.base01, 10),
-            base00 = darken(colors.base00, 10),
-            base0 = darken(colors.base0, 10),
-            base1 = darken(colors.base1, 10),
+            base01 = darken(colors.base01, 15),
+            base00 = darken(colors.base00, 15),
+            base0 = darken(colors.base0, 15),
+            base1 = darken(colors.base1, 15),
+            blue = darken(colors.blue, 10),
+            green = darken(colors.green, 10)
           }
         end,
         on_highlights = function(colors, _)

@@ -110,17 +110,17 @@ return {
       -- 	},
       -- })
 
-      lspconfig.yamlls.setup({
-        settings = {
-          yaml = {
-            schemaStore = {
-              enable = false,
-              url = "",
-            },
-            schemas = require("schemastore").yaml.schemas(),
-          },
-        },
-      })
+      -- lspconfig.yamlls.setup({
+      --   settings = {
+      --     yaml = {
+      --       schemaStore = {
+      --         enable = false,
+      --         url = "",
+      --       },
+      --       schemas = require("schemastore").yaml.schemas(),
+      --     },
+      --   },
+      -- })
 
       lspconfig.astro.setup({
         capabilities = capabilities,
@@ -222,4 +222,20 @@ return {
       vim.treesitter.language.register("json", "tpl")
     end,
   },
+  {
+    "someone-stole-my-name/yaml-companion.nvim",
+    dependencies = {
+      "neovim/nvim-lspconfig",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = function()
+      require("telescope").load_extension("yaml_schema")
+      local cfg = require("yaml-companion").setup()
+      require("lspconfig")["yamlls"].setup(cfg)
+
+
+      vim.keymap.set("n", "<leader>fs", ":Telescope yaml_schema<CR>")
+    end,
+  }
 }

@@ -70,6 +70,14 @@ return {
         return "[" .. table.concat(buf_client_names, ", ") .. "]"
       end
 
+      local function get_schema()
+        local schema = require("yaml-companion").get_buf_schema(0)
+        if schema.result[1].name == "none" then
+          return ""
+        end
+        return schema.result[1].name
+      end
+
       require("lualine").setup({
         options = {
           component_separators = "|",
@@ -90,6 +98,7 @@ return {
             { lsp_client, icon = " ", color = { fg = "#999", gui = "bold" } },
             "encoding",
             "filetype",
+            get_schema,
           },
           lualine_z = {
             { "location", separator = { right = "" }, left_padding = 2 },
