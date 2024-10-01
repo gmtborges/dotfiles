@@ -193,9 +193,9 @@ return {
         scope = {
           enabled = false,
         },
-        indent = {
-          highlight = solarized_light,
-        },
+        -- indent = {
+        --   highlight = solarized_light,
+        -- },
         exclude = {
           filetypes = { "dashboard", "sql", "dbout" },
         },

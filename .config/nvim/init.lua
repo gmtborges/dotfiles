@@ -2,5 +2,5 @@ require("user.options")
 require("user.keymaps")
 require("user.lazy")
 
-vim.opt.background = "light"
-vim.cmd("colorscheme solarized")
+vim.opt.background = "dark"
+vim.cmd("colorscheme tokyonight")
