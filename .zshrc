@@ -140,7 +140,7 @@ function branchdel () {
 function save-notes () {
   cd ~/repos/notes/
   git add .
-  git cm -m "atualiza anotacoes"
+  git cm -m "update notes"
   git pull
   git push
   cd -
@@ -149,7 +149,7 @@ function save-notes () {
 function save-dotfiles () {
   cd ~/repos/config/dotfiles/
   git add .
-  git cm -m "atualiza dotfiles"
+  git cm -m "update dotfiles"
   git pull
   git push
   cd -
