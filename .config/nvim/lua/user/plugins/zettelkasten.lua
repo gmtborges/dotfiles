@@ -6,7 +6,7 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local home = vim.fn.expand("~/repos/anotacoes/zettelkasten")
+    local home = vim.fn.expand("~/repos/notes/zettelkasten")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
