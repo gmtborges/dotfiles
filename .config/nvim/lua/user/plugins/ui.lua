@@ -137,7 +137,7 @@ return {
     config = function()
       local hc = require("nvim-highlight-colors")
       hc.setup({
-        render = "virtual",
+        render = "background",
         enable_tailwind = true,
         exclude_filetypes = { "swift" }
       })
