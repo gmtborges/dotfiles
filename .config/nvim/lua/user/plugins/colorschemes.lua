@@ -122,9 +122,7 @@ return {
             floats = false,
           },
           styles = {
-            comments = "italic",
             keywords = "bold",
-            constants = "NONE",
           },
         },
       })
@@ -152,22 +150,21 @@ return {
         transparent = true,
         style = "storm",
         styles = {
-          comments = { italic = true },
           keywords = { bold = true, italic = false },
           sidebars = "transparent",
           floats = "transparent",
         },
-        on_highlights = function(hl, c)
-          hl["@module"] = {
-            fg = c.orange,
-          }
-          hl["@keyword.import"] = {
-            fg = c.purple,
-          }
-          hl["@keyword.directive"] = {
-            fg = c.purple,
-          }
-        end,
+        -- on_highlights = function(hl, c)
+        --   hl["@module"] = {
+        --     fg = c.orange,
+        --   }
+        --   hl["@keyword.import"] = {
+        --     fg = c.purple,
+        --   }
+        --   hl["@keyword.directive"] = {
+        --     fg = c.purple,
+        --   }
+        -- end,
       })
     end,
   },
@@ -179,11 +176,23 @@ return {
       require("onedark").setup({
         transparent = true,
         code_style = {
-          comments = "italic",
           keywords = "bold",
-          functions = "NONE",
         },
       })
     end,
   },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "macchiato",
+        transparent_background = true,
+        styles = {
+          keywords = { "bold" }
+        }
+      })
+    end
+  }
 }

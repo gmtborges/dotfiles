@@ -78,7 +78,7 @@ return {
       })
 
       lspconfig.jsonls.setup({
-        filetypes = { "json", "jsonc", "tpl" },
+        filetypes = { "json", "jsonc" },
         settings = {
           json = {
             schemas = require("schemastore").json.schemas(),
@@ -212,14 +212,6 @@ return {
       vim.diagnostic.config({
         float = { border = _border },
       })
-
-      vim.filetype.add({
-        extension = {
-          tpl = "tpl",
-        },
-      })
-
-      vim.treesitter.language.register("json", "tpl")
     end,
   },
   {
