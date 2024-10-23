@@ -6,7 +6,7 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local home = vim.fn.expand("~/repos/notes/zettelkasten")
+    local home = vim.fn.expand("~/repos/brain/zettelkasten")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
@@ -42,9 +42,9 @@ return {
       -- "uuid" - Use uuid
       -- "uuid-title" - Prefix title by uuid
       -- "title-uuid" - Suffix title with uuid
-      new_note_filename = "uuid-title",
+      new_note_filename = "title",
       -- file uuid type ("rand" or input for os.date()")
-      uuid_type = "%Y%m%d%H%M",
+      uuid_type = "%Y%m%d",
       -- UUID separator
       uuid_sep = "-",
 
