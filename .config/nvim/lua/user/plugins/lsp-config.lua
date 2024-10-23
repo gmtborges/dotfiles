@@ -20,7 +20,8 @@ return {
           "jsonls",
           "yamlls",
           "terraformls",
-          "astro"
+          "astro",
+          "ansiblels"
         },
       })
       local lspconfig = require("lspconfig")
