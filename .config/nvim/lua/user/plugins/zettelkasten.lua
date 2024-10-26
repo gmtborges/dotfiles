@@ -6,7 +6,8 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local home = vim.fn.expand("~/repos/brain/zettelkasten")
+    local zettel = vim.fn.expand("~/repos/notes/zettelkasten")
+    local journal = vim.fn.expand("~/repos/notes/journal")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
@@ -14,7 +15,7 @@ return {
     -- - NEVER use "C:\Users\myname" style paths
     -- - Using `vim.fn.expand("~/zettelkasten")` should work now but mileage will vary with anything outside of finding and opening files
     require("telekasten").setup({
-      home = home,
+      home = zettel,
 
       -- if true, telekasten will be enabled when opening a note within the configured home
       take_over_my_home = true,
@@ -25,9 +26,9 @@ return {
 
       -- dir names for special notes (absolute path or subdir name)
       -- dailies = home .. "/" .. "daily",
-      dailies = home .. "/" .. "daily",
-      weeklies = home .. "/" .. "weekly",
-      templates = home .. "/" .. "templates",
+      dailies = nil,
+      weeklies = nil,
+      templates = zettel .. "/" .. "templates",
 
       -- image (sub)dir for pasting
       -- dir name (absolute path or subdir name)
@@ -58,15 +59,15 @@ return {
 
       -- template for new notes (new_note, follow_link)
       -- set to `nil` or do not specify if you do not want a template
-      template_new_note = home .. "/" .. "templates/new_note.md",
+      template_new_note = zettel .. "/" .. "templates/new_note.md",
 
       -- template for newly created daily notes (goto_today)
       -- set to `nil` or do not specify if you do not want a template
-      template_new_daily = home .. "/" .. "templates/daily.md",
+      template_new_daily = nil,
 
       -- template for newly created weekly notes (goto_thisweek)
       -- set to `nil` or do not specify if you do not want a template
-      template_new_weekly = home .. "/" .. "templates/weekly.md",
+      template_new_weekly = nil,
 
       -- image link style
       -- wiki:     ![[image name]]
@@ -140,11 +141,17 @@ return {
       rename_update_links = true,
 
       vaults = {
-        vault2 = {
+        journal = {
           -- alternate configuration for vault2 here. Missing values are defaulted to
           -- default values from telekasten.
           -- e.g.
-          -- home = "/home/user/vaults/personal",
+          home = journal,
+          dailies = journal,
+          weeklies = journal,
+          templates = journal .. "/" .. "templates",
+
+          template_new_daily = journal .. "/" .. "templates/daily.md",
+          template_new_weekly = journal .. "/" .. "templates/weekly.md",
         },
       },
 
@@ -172,12 +179,6 @@ return {
     vim.keymap.set("n", "<leader>zr", function()
       telekasten.rename_note()
     end)
-    vim.keymap.set("n", "<leader>zt", function()
-      telekasten.show_tags()
-    end)
-    vim.keymap.set("n", "<leader>zb", function()
-      telekasten.show_backlinks()
-    end)
     vim.keymap.set("n", "<leader>zi", function()
       telekasten.insert_link()
     end)
@@ -189,6 +190,9 @@ return {
     end)
     vim.keymap.set("n", "<leader>zc", function()
       telekasten.show_calendar()
+    end)
+    vim.keymap.set("n", "<leader>zv", function()
+      telekasten.switch_vault()
     end)
   end,
 }

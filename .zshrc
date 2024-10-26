@@ -138,10 +138,10 @@ function branchdel () {
  git branch --merged | egrep -v "main" | xargs git branch -d 
 }
 
-function save-brain () {
-  cd ~/repos/brain/
+function save-notes () {
+  cd ~/repos/notes/
   git add .
-  git cm -m "update brain"
+  git cm -m "update notes"
   git pull
   git push
   cd -

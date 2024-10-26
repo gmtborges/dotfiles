@@ -190,8 +190,14 @@ return {
         flavour = "macchiato",
         transparent_background = true,
         styles = {
-          keywords = { "bold" }
-        }
+          keywords = { "bold" },
+          conditionals = { "bold" }
+        },
+        custom_highlights = function(_)
+          return {
+            ["@module"] = { style = { "bold" } }
+          }
+        end
       })
     end
   }
