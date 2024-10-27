@@ -6,8 +6,8 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local zettel = vim.fn.expand("~/repos/notes/zettelkasten")
-    local journal = vim.fn.expand("~/repos/notes/journal")
+    local zettel = vim.fn.expand("~/Dropbox/notes/zettelkasten")
+    local journal = vim.fn.expand("~/Dropbox/notes/journal")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
