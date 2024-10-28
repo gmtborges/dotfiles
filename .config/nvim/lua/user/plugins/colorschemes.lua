@@ -7,15 +7,7 @@ return {
     config = function()
       require("solarized").setup({
         transparent = {
-          enabled = true,     -- Master switch to enable transparency
-          pmenu = true,       -- Popup menu (e.g., autocomplete suggestions)
-          normal = true,      -- Main editor window background
-          normalfloat = true, -- Floating windows
-          neotree = true,     -- Neo-tree file explorer
-          nvimtree = true,    -- Nvim-tree file explorer
-          whichkey = true,    -- Which-key popup
-          telescope = true,   -- Telescope fuzzy finder
-          lazy = true,        -- Lazy plugin manager UI
+          enabled = true,
         },
         styles = {
           keywords = { bold = true },
@@ -23,26 +15,16 @@ return {
           comments = { italic = true },
           functions = { bold = false },
         },
-        on_colors = function(colors, color)
-          local darken = color.darken
-
-          return {
-            base01 = darken(colors.base01, 15),
-            base00 = darken(colors.base00, 15),
-            base0 = darken(colors.base0, 15),
-            base1 = darken(colors.base1, 15),
-            blue = darken(colors.blue, 10),
-            green = darken(colors.green, 10)
-          }
-        end,
         on_highlights = function(colors, _)
           local groups = {
             -- Dark
             ["@variable"] = { fg = colors.base1, italic = false },
             ["@variable.parameter"] = { fg = colors.base1, italic = false },
             ["@property"] = { fg = colors.base1 },
+            ["@module"] = { fg = colors.base1, bold = false },
             ["@keyword"] = { fg = colors.green, bold = true },
             ["@keyword.conditional"] = { bold = true },
+            ["@keyword.import"] = { fg = colors.orange, bold = true },
             ["@keyword.return"] = { bold = true },
             ["@keyword.repeat"] = { bold = true },
             ["@keyword.function"] = { fg = colors.green, bold = true },
@@ -51,6 +33,7 @@ return {
             ["@type.builtin"] = { fg = colors.yellow, bold = false },
             ["@attribute"] = { bold = false },
             ["@number"] = { fg = colors.violet },
+            ["@string"] = { bold = false },
             ["@string.escape"] = { fg = colors.orange },
             TelescopeSelection = { bg = colors.base02 },
             DiagnosticUnderlineError = { fg = "NONE", undercurl = true, sp = colors.diag_error },
@@ -169,6 +152,11 @@ return {
         styles = {
           keywords = { "bold" },
           conditionals = { "bold" }
+        },
+        color_overrides = {
+          macchiato = {
+            text = "#c3c6e2"
+          }
         },
         custom_highlights = function(_)
           return {
