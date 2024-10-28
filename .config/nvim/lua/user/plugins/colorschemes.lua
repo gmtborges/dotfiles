@@ -158,9 +158,13 @@ return {
             text = "#c3c6e2"
           }
         },
-        custom_highlights = function(_)
+        custom_highlights = function(colors)
           return {
-            ["@module"] = { style = { "bold" } }
+            ["@module"] = { style = { "bold" } },
+            ["@markup.heading.1.markdown"] = { fg = colors.mauve, style = { "bold" } },
+            ["@markup.heading.2.markdown"] = { fg = colors.peach, style = { "bold" } },
+            ["@markup.heading.3.markdown"] = { fg = colors.yellow, style = { "bold" } },
+            ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } }
           }
         end
       })
