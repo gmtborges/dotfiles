@@ -28,6 +28,7 @@ return {
         { name = "vim-dadbod-completion" },
         { name = "buffer" },
         { name = "nvim_lsp" },
+        { name = "codeium" },
       },
     })
 
@@ -43,6 +44,9 @@ return {
         { name = "luasnip" },
         { name = "path" },
         { name = "codeium" },
+      },
+      experimental = {
+        ghost_text = false,
       },
       mapping = cmp.mapping.preset.insert({
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
@@ -78,18 +82,22 @@ return {
       formatting = {
         format = lspkind.cmp_format({
           mode = "symbol_text",
+          maxwidth = {
+            menu = 50,
+            abbr = 50,
+          },
           symbol_map = {
             Unit = "",
-            Codeium = "󰈸",
+            Codeium = "󰚩",
           },
-          menu = {
-            nvim_lsp = "[LSP]",
-            buffer = "[Buffer]",
-            luasnip = "[Snippet]",
-            path = "[Path]",
-            codeium = "[AI]",
-            nvim_lua = "[Lua]",
-          },
+          -- menu = {
+          --   nvim_lsp = "[LSP]",
+          --   buffer = "[Buffer]",
+          --   luasnip = "[Snippet]",
+          --   path = "[Path]",
+          --   codeium = "[AI]",
+          --   nvim_lua = "[Lua]",
+          -- },
         }),
       },
     })

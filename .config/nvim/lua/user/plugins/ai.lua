@@ -10,7 +10,7 @@ return {
     config = function()
       local home = vim.fn.expand("$HOME")
       require("chatgpt").setup({
-        api_key_cmd = "gpg --decrypt " .. home .. "/chatgpt-secret.txt.gpg",
+        api_key_cmd = "gpg --decrypt " .. home .. "/openai-api-key.txt.gpg",
         openai_params = {
           model = "gpt-4o",
         },
@@ -23,9 +23,12 @@ return {
     "yetone/avante.nvim",
     event = "VeryLazy",
     lazy = true,
-    version = false,
+    version = "*",
     opts = {
       provider = "openai",
+      openai = {
+        model = "gpt-4o"
+      },
       hints = {
         enabled = false,
       },
@@ -72,5 +75,37 @@ return {
         ft = { "Avante" },
       },
     },
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = 'Copilot',
+    event = 'InsertEnter',
+    config = function()
+      require('copilot').setup({
+        suggestion = {
+          auto_trigger = false,
+          keymap = {
+            accept = '<M-TAB>',
+            next = '<M-]>',
+            prev = '<M-[>',
+          },
+        },
+        filetypes = {
+          markdown = true,
+          yaml = true,
+        }
+      })
+    end,
+  },
+  {
+    "Exafunction/codeium.nvim",
+    enabled = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+    config = function()
+      require("codeium").setup({})
+    end,
   },
 }

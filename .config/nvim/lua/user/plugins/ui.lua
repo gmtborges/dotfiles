@@ -4,26 +4,18 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-      local function lsp_client(msg)
-        msg = msg or ""
-        local buf_clients = vim.lsp.get_clients()
-        if next(buf_clients) == nil then
-          if type(msg) == "boolean" or #msg == 0 then
-            return ""
-          end
-          return msg
+      local lsp_client = function()
+        local clients = vim.lsp.get_clients()
+        if next(clients) == nil then
+          return ''
         end
-
-        local buf_client_names = {}
-
-        -- add client
-        for _, client in pairs(buf_clients) do
-          if client.name ~= "null-ls" then
-            table.insert(buf_client_names, client.name)
+        local c = {}
+        for _, client in pairs(clients) do
+          if client.name ~= "GitHub Copilot" then
+            table.insert(c, client.name)
           end
         end
-
-        return "[" .. table.concat(buf_client_names, ", ") .. "]"
+        return "[" .. table.concat(c, ", ") .. "]"
       end
 
       local function get_schema()

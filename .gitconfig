@@ -10,6 +10,7 @@
   sw = switch
   rs = restore
   rt = reset
+  cl = clean
   pl = pull
   ps = push
 	br = branch

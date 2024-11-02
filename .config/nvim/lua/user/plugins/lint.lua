@@ -1,7 +1,7 @@
 return {
   {
     "mfussenegger/nvim-lint",
-    enabled = false,
+    enabled = true,
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       local lint = require("lint")
@@ -11,6 +11,7 @@ return {
         javascriptreact = { "eslint_d" },
         typescriptreact = { "eslint_d" },
         svelte = { "eslint_d" },
+        astro = { "eslint_d" },
         -- swift = { "swiftlint" }
       }
 
