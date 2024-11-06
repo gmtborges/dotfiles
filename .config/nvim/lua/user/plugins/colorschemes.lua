@@ -162,9 +162,13 @@ return {
           return {
             ["@module"] = { style = { "bold" } },
             ["@markup.heading.1.markdown"] = { fg = colors.mauve, style = { "bold" } },
+            ["@markup.heading.1.telekasten"] = { fg = colors.mauve, style = { "bold" } },
             ["@markup.heading.2.markdown"] = { fg = colors.peach, style = { "bold" } },
+            ["@markup.heading.2.telekasten"] = { fg = colors.peach, style = { "bold" } },
             ["@markup.heading.3.markdown"] = { fg = colors.yellow, style = { "bold" } },
-            ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } }
+            ["@markup.heading.3.telekasten"] = { fg = colors.yellow, style = { "bold" } },
+            ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } },
+            ["@markup.heading.4.telekasten"] = { fg = colors.green, style = { "bold" } },
           }
         end
       })
