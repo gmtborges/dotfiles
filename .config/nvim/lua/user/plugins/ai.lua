@@ -25,7 +25,10 @@ return {
     lazy = true,
     version = "*",
     opts = {
-      provider = "openai",
+      provider = "claude",
+      claude = {
+        model = "claude-3-5-sonnet-20241022",
+      },
       openai = {
         model = "gpt-4o"
       },
