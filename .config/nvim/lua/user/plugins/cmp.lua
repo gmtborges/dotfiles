@@ -9,12 +9,14 @@ return {
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
     "onsails/lspkind.nvim",
+    "zbirenbaum/copilot-cmp",
   },
   config = function()
     local cmp = require("cmp")
     local luasnip = require("luasnip")
     local lspkind = require("lspkind")
 
+    require("copilot_cmp").setup()
     require("luasnip.loaders.from_vscode").lazy_load()
 
     local has_words_before = function()
@@ -28,6 +30,8 @@ return {
         { name = "vim-dadbod-completion" },
         { name = "buffer" },
         { name = "nvim_lsp" },
+        { name = "Codeium" },
+        -- { name = "copilot" },
       },
     })
 
@@ -42,6 +46,8 @@ return {
         { name = "buffer" },
         { name = "luasnip" },
         { name = "path" },
+        { name = "Codeium" },
+        -- { name = "copilot" },
       },
       experimental = {
         ghost_text = false,
@@ -87,6 +93,7 @@ return {
           symbol_map = {
             Unit = "",
             Codeium = "󰚩",
+            Copilot = ""
           },
         }),
       },
