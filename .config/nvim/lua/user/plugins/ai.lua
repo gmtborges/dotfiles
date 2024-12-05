@@ -86,9 +86,9 @@ return {
     config = function()
       require('copilot').setup({
         suggestion = {
-          auto_trigger = false,
+          auto_trigger = true,
           keymap = {
-            accept = '<M-TAB>',
+            accept = '<C-TAB>',
             next = '<M-]>',
             prev = '<M-[>',
           },

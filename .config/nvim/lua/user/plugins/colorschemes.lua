@@ -149,9 +149,10 @@ return {
       require("catppuccin").setup({
         flavour = "macchiato",
         transparent_background = true,
+        no_italic = true,
         styles = {
           keywords = { "bold" },
-          conditionals = { "bold" }
+          conditionals = { "bold" },
         },
         color_overrides = {
           macchiato = {

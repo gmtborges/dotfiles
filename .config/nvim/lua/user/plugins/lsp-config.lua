@@ -71,7 +71,6 @@ return {
 
       lspconfig.ts_ls.setup({
         capabilities = capabilities,
-        filetypes = { "javascript", "typescript" },
       })
 
       lspconfig.html.setup({
@@ -92,7 +91,6 @@ return {
 
       lspconfig.tailwindcss.setup({
         capabilities = capabilities,
-        filetypes = { "templ", "astro", "svelte", "html", "gotmpl" },
         init_options = { userLanguages = { templ = "html" } },
       })
 
