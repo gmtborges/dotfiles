@@ -17,6 +17,9 @@ export PATH=$PATH:$GOPATH/bin
 # Disable homebrew auto update
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# Local binaries
+export PATH=$HOME/.local/bin:$PATH
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
