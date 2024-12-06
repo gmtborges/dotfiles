@@ -75,7 +75,6 @@ return {
 
       lspconfig.html.setup({
         capabilities = capabilities,
-        filetypes = { "html", "svg", "templ", "gotmpl" },
       })
 
       lspconfig.jsonls.setup({
