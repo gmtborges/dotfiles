@@ -6,8 +6,8 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local zettel = vim.fn.expand("~/Dropbox/notes/zettelkasten")
-    local journal = vim.fn.expand("~/Dropbox/notes/journal")
+    local zettel = vim.fn.expand("~/Dropbox/anotacoes/zettelkasten")
+    local diario = vim.fn.expand("~/Dropbox/anotacoes/diario")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
@@ -141,17 +141,17 @@ return {
       rename_update_links = true,
 
       vaults = {
-        journal = {
+        diario = {
           -- alternate configuration for vault2 here. Missing values are defaulted to
           -- default values from telekasten.
           -- e.g.
-          home = journal,
-          dailies = journal,
-          weeklies = journal,
-          templates = journal .. "/" .. "templates",
+          home = diario,
+          dailies = diario,
+          weeklies = diario,
+          templates = diario .. "/" .. "templates",
 
-          template_new_daily = journal .. "/" .. "templates/daily.md",
-          template_new_weekly = journal .. "/" .. "templates/weekly.md",
+          template_new_daily = diario .. "/" .. "templates/daily.md",
+          template_new_weekly = diario .. "/" .. "templates/weekly.md",
         },
       },
 
