@@ -1,0 +1,37 @@
+pane	notes	1	1	:*	1	gustavo@debian:~/repos/notes/zettelkasten	:/Users/gustavo/Library/CloudStorage/Dropbox	0	zsh	:
+pane	notes	1	1	:*	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/Library/CloudStorage/Dropbox	1	nvim	:nvim tasks.md
+pane	notes	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/Library/CloudStorage/Dropbox/notes	0	zsh	:
+pane	notes	2	0	:-	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/Library/CloudStorage/Dropbox/notes	1	zsh	:
+pane	projects	1	1	:*	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	2	0	:-	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
+pane	saas	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	0	zsh	:
+pane	saas	1	1	:*	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	1	zsh	:
+pane	saas	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	0	zsh	:
+pane	saas	2	0	:-	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	1	zsh	:
+pane	study	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	study	2	0	:-	1	gustavo@debian:~/repos/study	:/Users/gustavo/repos/study	1	zsh	:
+pane	tmp	1	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles/.config	0	zsh	:
+pane	tmp	1	0	:-	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles/.config	1	zsh	:
+pane	tmp	2	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/tmp	1	zsh	:
+pane	work1	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	0	zsh	:
+pane	work1	1	1	:*	2	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	work1	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	work1	3	0	:	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	work2	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work	1	zsh	:
+pane	work2	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work	1	zsh	:
+window	notes	1	:nvim	1	:*	5291,243x48,0,0{102x48,0,0,1,140x48,103,0,2}	:
+window	notes	2	:zsh	0	:-	5294,243x48,0,0{102x48,0,0,3,140x48,103,0,4}	:
+window	projects	1	:zsh	1	:*	cd22,243x48,0,0,5	:
+window	projects	2	:zsh	0	:-	cd23,243x48,0,0,6	:
+window	saas	1	:zsh	1	:*	a56a,243x48,0,0{101x48,0,0,7,141x48,102,0,21}	:
+window	saas	2	:zsh	0	:-	ca2b,243x48,0,0{101x48,0,0,8,141x48,102,0,9}	:
+window	study	1	:zsh	1	:*	66bf,243x48,0,0,10	:
+window	study	2	:zsh	0	:-	66c0,243x48,0,0,11	:
+window	tmp	1	:zsh	0	:-	4e2f,243x48,0,0{102x48,0,0,12,140x48,103,0,13}	:
+window	tmp	2	:zsh	1	:*	66c3,243x48,0,0,14	:
+window	work1	1	:zsh	1	:*	4a1a,243x48,0,0{101x48,0,0,15,141x48,102,0,16}	:
+window	work1	2	:zsh	0	:-	66c6,243x48,0,0,17	:
+window	work1	3	:zsh	0	:	66c7,243x48,0,0,18	:
+window	work2	1	:zsh	1	:*	66c8,243x48,0,0,19	:
+window	work2	2	:zsh	0	:-	e6bf,243x48,0,0,20	:
+state	notes	saas

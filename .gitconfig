@@ -2,50 +2,51 @@
 	name = Gustavo Martins T Borges
 	email = gustavo@gmtborges.com
 [alias]
-	st = status
-	lg = log  --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative
-	lga = log --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative --all
-	cm = commit -v
-	co = checkout
+  st = status
+  lg = log  --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative
+  lga = log --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative --all
+  cm = commit
+  co = checkout
   sw = switch
-  rs = restore
-  rt = reset
+  rt = restore
+  rs = reset
   cl = clean
   pl = pull
   ps = push
-	br = branch
+  br = branch
   dd = diff
   dw = diff --word-diff
   ds = diff --staged
-	rb = rebase
+  rb = rebase
   rbc = rebase --continue
   rba = rebase --abort
-	mr = merge
-	mrc = merge --continue
-	mra = merge --abort
+  mr = merge
+  mrc = merge --continue
+  mra = merge --abort
 [push]
-	default = simple
+  default = simple
 [color]
-	ui = true
+  ui = true
 [core]
-	editor = nvim
-	autocrlf = false
-	eof = lf
+  editor = nvim
+  autocrlf = false
+  eof = lf
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [commit]
-	template = ~/.gitmessage
-	gpgsign = true
+  template = ~/.gitmessage
+  gpgsign = true
+  verbose = true
 [pull]
-	rebase = true
+  rebase = true
 [merge]
-	tool = vimdiff
-	ff = only
-	conflictstyle = diff3
+  tool = vimdiff
+  ff = only
+  conflictstyle = diff3
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [fetch]
-	prune = true
+  prune = true
 
 [includeIf "gitdir:~/repos/saas/matt/"]
   path = .gitconfig-matt
