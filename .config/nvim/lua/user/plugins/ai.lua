@@ -81,6 +81,7 @@ return {
   },
   {
     "zbirenbaum/copilot.lua",
+    enabled = false,
     cmd = 'Copilot',
     event = 'InsertEnter',
     config = function()
@@ -111,6 +112,16 @@ return {
     },
     config = function()
       require("codeium").setup({
+        workspace_root = {
+          use_lsp = true,
+          find_root = false,
+          paths = {
+            "package.json",
+            "docker-compose.yml",
+            ".yaml",
+            ".git",
+          }
+        }
       })
     end,
   },

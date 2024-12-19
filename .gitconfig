@@ -11,6 +11,7 @@
   rt = restore
   rs = reset
   cl = clean
+  cn = clone
   pl = pull
   ps = push
   br = branch
