@@ -22,7 +22,7 @@
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    ` up
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
   fn   lctl lalt lmet           spc            rmet ralt left down rght
 )
 
@@ -51,24 +51,24 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _  bspc   _    _
   esc  @met_a   @alt_s   @ctl_d   @sft_f   g   h   @sft_j   @ctl_k   @alt_l   @met_; _  _
-  @lsft_ralt _    _    _    _    _   _    _    _    _   _   _   _
+  @lsft_ralt _    _    _    _    _   _    _    _    _   _    `   _
   @fn    _    _   @num           _            @sym  ret  _   _    _
 )
 
 (deflayer numbers
-  _    _    _    _    _    _    _    _    _    _    _      _    _
-  _    _    _    _    _    _    _    _    _    _    _      _    _    _
-  _    1    2    3    4    5    6    7   8     9    0      _    _    _
-  _    _    _    _    _    _  left  down up  right  home   _    _
-  _    _    _    _    _    _    _    _    _     _   end    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    1    2    3    4    5    6    7   8     9    0    _    _    _
+  _    _    _    _    _    _  left  down up  right  home    _    _
+  _    _    _  @copy  @paste  _  _   _  _  _   _    end    _
   _   _ _ _           _     (around @sym (layer-toggle func)) _  _  _  _
 )
 
 (deflayer symbols
   _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    !    @    #    $    %    ^    &   *   \(    \)    _    _    _
-  _    _  prnt   _    _    _    _    -   =    [     ]    \    _ 
+  ~    !    @    #    $    %    ^    &   *   \(    \)    _    _    _
+  `    _  prnt   _    _    _    _    -   =    [     ]    \    _ 
   _    _    _    _    _    _    _   \_   +    {     }    |    _
   _ _ _ (around @num (layer-toggle func))   _         _ _ _ _ _
 )
@@ -76,8 +76,8 @@
 (deflayer func
   _   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   _   _    _    _    _    _    _    _    _    _     _    _    _    _
-  _  f1    f2   f3  f4   f5    f6   f7   f8   f9    f10  f11    _    _
-  _   _    _    _    _    _    _    _    _    _     _    f12
+  _  f1    f2   f3  f4   f5    f6   f7   f8   f9    f10  _    _    _
+  _   _    _    _    _    _    _    _    _    _     f11    f12  _
   caps  _  _    _    _    _    _    _    _    _     _    _    _
   _ _ _ _           _                                 _ _ _ _ _
 )

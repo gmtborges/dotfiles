@@ -1,42 +1,8 @@
 # vim:ft=conf
-Host souagro-bastion-stg
-  User admin
-  Hostname 18.231.75.193
-  IdentityFile ~/.ssh/souagro-staging.pem
-  IdentitiesOnly yes
-
-Host gcloud-vm
-  Hostname 35.196.116.76
+Host orcamentoauto.com.br
+  Hostname 34.148.28.217
   User gcloud
   IdentityFile ~/.ssh/gcloud-key.pub
-  IdentitiesOnly yes
-
-Host caninos
-  Hostname 192.168.1.10
-  User caninos
-
-Host tip-airbyte
-  User admin
-  Hostname 18.223.180.246
-  IdentityFile ~/.ssh/key-ohio.pub
-  IdentitiesOnly yes
-
-Host tip-node3-prd
-  User admin
-  Hostname 54.233.1.201
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host tip-node4-prd
-  User admin
-  Hostname 10.10.15.195
-  IdentityFile ~/.ssh/tip-prod.pub
-  IdentitiesOnly yes
-
-Host tip-node6-prd
-  User admin
-  Hostname 52.67.59.151
-  IdentityFile ~/.ssh/tip-prod.pub
   IdentitiesOnly yes
 
 Host saasgit

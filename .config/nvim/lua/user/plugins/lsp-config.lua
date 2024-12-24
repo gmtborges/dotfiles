@@ -125,19 +125,6 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.svelte.setup({
-        capabilities = capabilities,
-        on_attach = function(client, bufnr)
-          vim.api.nvim_create_autocmd("BufWritePost", {
-            pattern = { "*.js", "*.ts" },
-            callback = function(ctx)
-              -- Here use ctx.match instead of ctx.file
-              client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
-            end,
-          })
-        end,
-      })
-
       -- lspconfig.marksman.setup({
       -- 	filetypes = { "markdown", "mdx" },
       -- 	capabilities = capabilities,
@@ -226,7 +213,7 @@ return {
       require("lspconfig")["yamlls"].setup(cfg)
 
 
-      vim.keymap.set("n", "<leader>fs", ":Telescope yaml_schema<CR>")
+      vim.keymap.set("n", "<leader>tt", ":Telescope yaml_schema<CR>")
     end,
   }
 }

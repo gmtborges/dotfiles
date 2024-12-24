@@ -6,8 +6,8 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
   },
   config = function()
-    local zettel = vim.fn.expand("~/Dropbox/notes/zettelkasten")
-    local journal = vim.fn.expand("~/Dropbox/notes/journal")
+    local zettel = vim.fn.expand("~/repos/anotacoes/zettelkasten")
+    local journal = vim.fn.expand("~/repos/anotacoes/journal")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
@@ -161,10 +161,10 @@ return {
       media_previewer = "catimg-previewer",
     })
 
-    vim.cmd([[hi tkHighlight ctermbg=yellow ctermfg=darkred cterm=bold guibg=yellow guifg=darkred gui=bold ]])
-    vim.cmd([[hi tkLink ctermfg=72 guifg=#61AFEF cterm=bold,underline gui=bold,underline ]])
-    vim.cmd([[hi tkBrackets ctermfg=gray guifg=#61AFEF ]])
-    vim.cmd([[hi tkTag ctermfg=72 guifg=#C678DD ]])
+    -- vim.cmd([[hi tkHighlight ctermbg=yellow ctermfg=darkred cterm=bold guibg=yellow guifg=darkred gui=bold ]])
+    -- vim.cmd([[hi tkLink ctermfg=72 guifg=#61AFEF cterm=bold,underline gui=bold,underline ]])
+    -- vim.cmd([[hi tkBrackets ctermfg=gray guifg=#61AFEF ]])
+    -- vim.cmd([[hi tkTag ctermfg=72 guifg=#C678DD ]])
 
     vim.g.mkdp_auto_close = 0
 

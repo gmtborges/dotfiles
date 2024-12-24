@@ -143,7 +143,7 @@ function branchdel () {
 }
 
 function save-notes () {
-  cd ~/repos/notes/
+  cd ~/repos/anotacoes/
   git add .
   git cm -m "update notes"
   git pull

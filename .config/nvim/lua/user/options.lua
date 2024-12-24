@@ -42,7 +42,7 @@ vim.opt.spell = false
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "markdown", "text", "telekasten" },
   callback = function()
-    vim.opt_local.spell = false
+    vim.opt_local.spell = true
   end,
 })
 

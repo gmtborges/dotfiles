@@ -18,6 +18,15 @@ return {
         return "[" .. table.concat(c, ", ") .. "]"
       end
 
+      local lint_progress = function()
+        local linters = require("lint").get_running()
+        if #linters == 0 then
+          return ""
+        end
+        return "[" .. table.concat(linters, ", ") .. "]"
+      end
+
+
       local function get_schema()
         local schema = require("yaml-companion").get_buf_schema(0)
         if schema.result[1].name == "none" then
@@ -43,7 +52,8 @@ return {
             },
           },
           lualine_x = {
-            { lsp_client, icon = " ", color = { fg = "#999", gui = "bold" } },
+            { lsp_client,    color = { fg = "#999", gui = "bold" } },
+            { lint_progress, color = { fg = "#999", gui = "bold" } },
             "encoding",
             "filetype",
             get_schema,
@@ -134,7 +144,7 @@ return {
         exclude_filetypes = { "swift" }
       })
     end,
-    vim.keymap.set("n", "<leader>tc", ":HighlightColors Toggle<CR>")
+    -- vim.keymap.set("n", "<leader>tc", ":HighlightColors Toggle<CR>")
   },
   {
     "glepnir/dashboard-nvim",

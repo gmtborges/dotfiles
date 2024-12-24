@@ -15,8 +15,10 @@ return {
           model = "gpt-4o",
         },
       })
-      vim.keymap.set({ "n", "v" }, "<leader>at", "<cmd>ChatGPTRun translate<CR>")
-      vim.keymap.set({ "n", "v" }, "<leader>ag", "<cmd>ChatGPTRun grammar_correction<CR>")
+      -- vim.keymap.set({ "n", "v" }, "<leader>at", "<cmd>ChatGPTRun translate<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>at", "<cmd>ChatGPTRun translate Brazilian Portuguese<CR>")
+      -- vim.keymap.set({ "n", "v" }, "<leader>ag", "<cmd>ChatGPTRun grammar_correction<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>ag", "<cmd>ChatGPTRun grammar_correction Brazilian Portuguese<CR>")
     end,
   },
   {
@@ -81,13 +83,13 @@ return {
   },
   {
     "zbirenbaum/copilot.lua",
-    enabled = false,
+    enabled = true,
     cmd = 'Copilot',
     event = 'InsertEnter',
     config = function()
       require('copilot').setup({
         suggestion = {
-          auto_trigger = true,
+          auto_trigger = false,
           keymap = {
             accept = '<C-TAB>',
             next = '<M-]>',
