@@ -134,9 +134,6 @@ eval "$(fzf --zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
-alias icat="kitty +kitten icat"
-alias pm=pnpm
-# alias ssh="kitty +kitten ssh"
 
 function branchdel () {
  git branch --merged | egrep -v "main" | xargs git branch -d 

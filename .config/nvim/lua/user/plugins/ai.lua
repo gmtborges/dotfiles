@@ -91,7 +91,7 @@ return {
         suggestion = {
           auto_trigger = false,
           keymap = {
-            accept = '<C-TAB>',
+            accept = '<M-TAB>',
             next = '<M-]>',
             prev = '<M-[>',
           },
@@ -100,29 +100,6 @@ return {
           markdown = true,
           yaml = true,
           typescriptreact = true
-        }
-      })
-    end,
-  },
-  {
-    "Exafunction/codeium.nvim",
-    event = "BufEnter",
-    enabled = true,
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "hrsh7th/nvim-cmp",
-    },
-    config = function()
-      require("codeium").setup({
-        workspace_root = {
-          use_lsp = true,
-          find_root = false,
-          paths = {
-            "package.json",
-            "docker-compose.yml",
-            ".yaml",
-            ".git",
-          }
         }
       })
     end,

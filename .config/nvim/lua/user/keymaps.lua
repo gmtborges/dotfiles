@@ -56,7 +56,4 @@ vim.keymap.set("n", "<M-S-up>", "<C-w>+")
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Toggles
-vim.keymap.set("n", "<leader>th", ":nohl<CR>")
-vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>")
 vim.keymap.set("n", "<leader>ts", ":set spell!<CR>")
-vim.keymap.set("n", "<leader>tn", ":set list!<CR>")

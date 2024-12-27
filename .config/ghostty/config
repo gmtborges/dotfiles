@@ -1,0 +1,16 @@
+font-family = Source Code Pro Medium
+font-family-bold = Source Code Pro Bold
+font-family-italic = Source Code Pro Medium Italic
+font-family-bold-italic = Source Code Pro Bold Italic
+
+font-size = 15
+adjust-cell-height = 8
+
+theme = OneHalfDark
+palette = 8=#677289
+background-opacity = 0.93
+background-blur-radius = 32
+
+cursor-style = block
+window-height = 1200
+window-width = 2000

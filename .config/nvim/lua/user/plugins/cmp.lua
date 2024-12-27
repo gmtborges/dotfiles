@@ -28,7 +28,6 @@ return {
         { name = "vim-dadbod-completion" },
         { name = "buffer" },
         { name = "nvim_lsp" },
-        { name = "codeium" },
       },
     })
 
@@ -43,7 +42,6 @@ return {
         { name = "buffer" },
         { name = "luasnip" },
         { name = "path" },
-        { name = "codeium" },
       },
       experimental = {
         ghost_text = false,
@@ -88,14 +86,12 @@ return {
           },
           symbol_map = {
             Unit = "",
-            codeium = "󰚩",
           },
           -- menu = {
           --   nvim_lsp = "[LSP]",
           --   buffer = "[Buffer]",
           --   luasnip = "[Snippet]",
           --   path = "[Path]",
-          --   codeium = "[AI]",
           --   nvim_lua = "[Lua]",
           -- },
         }),

@@ -12,14 +12,9 @@ return {
         typescriptreact = { "eslint" },
         astro = { "eslint" },
       }
-
-      vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost" }, {
-        callback = function()
-          -- try_lint without arguments runs the linters defined in `linters_by_ft`
-          -- for the current filetype
-          require("lint").try_lint()
-        end,
-      })
+      vim.keymap.set("n", "<leader>cl", function()
+        lint.try_lint()
+      end)
     end,
   },
 }
