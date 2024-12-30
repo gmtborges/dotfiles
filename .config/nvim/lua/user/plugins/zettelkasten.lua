@@ -1,4 +1,5 @@
 return {
+  enabled = false,
   "renerocksai/telekasten.nvim",
   dependencies = {
     "nvim-telescope/telescope.nvim",
@@ -7,7 +8,7 @@ return {
   },
   config = function()
     local zettel = vim.fn.expand("~/repos/anotacoes/zettelkasten")
-    local journal = vim.fn.expand("~/repos/anotacoes/journal")
+    local diario = vim.fn.expand("~/repos/anotacoes/diario")
     -- NOTE for Windows users:
     -- - don't use Windows
     -- - try WSL2 on Windows and pretend you're on Linux
@@ -81,7 +82,7 @@ return {
       plug_into_calendar = true,
       calendar_opts = {
         -- calendar week display mode: 1 .. 'WK01', 2 .. 'WK 1', 3 .. 'KW01', 4 .. 'KW 1', 5 .. '1'
-        weeknm = 1,
+        weeknm = 5,
         -- use monday as first day of week: 1 .. true, 0 .. false
         calendar_monday = 0,
         -- calendar mark: where to put mark for marked days: 'left', 'right', 'left-fit'
@@ -141,17 +142,17 @@ return {
       rename_update_links = true,
 
       vaults = {
-        journal = {
+        diario = {
           -- alternate configuration for vault2 here. Missing values are defaulted to
           -- default values from telekasten.
           -- e.g.
-          home = journal,
-          dailies = journal,
-          weeklies = journal,
-          templates = journal .. "/" .. "templates",
+          home = diario,
+          dailies = diario,
+          weeklies = diario,
+          templates = diario .. "/" .. "templates",
 
-          template_new_daily = journal .. "/" .. "templates/daily.md",
-          template_new_weekly = journal .. "/" .. "templates/weekly.md",
+          template_new_daily = diario .. "/" .. "templates/daily.md",
+          template_new_weekly = diario .. "/" .. "templates/weekly.md",
         },
       },
 
@@ -172,27 +173,6 @@ return {
 
     vim.keymap.set("n", "<leader>zk", function()
       telekasten.panel()
-    end)
-    vim.keymap.set("n", "<leader>zn", function()
-      telekasten.new_note()
-    end)
-    vim.keymap.set("n", "<leader>zr", function()
-      telekasten.rename_note()
-    end)
-    vim.keymap.set("n", "<leader>zi", function()
-      telekasten.insert_link()
-    end)
-    vim.keymap.set("n", "<leader>zf", function()
-      telekasten.follow_link()
-    end)
-    vim.keymap.set("n", "<leader>zw", function()
-      telekasten.goto_thisweek()
-    end)
-    vim.keymap.set("n", "<leader>zc", function()
-      telekasten.show_calendar()
-    end)
-    vim.keymap.set("n", "<leader>zv", function()
-      telekasten.switch_vault()
     end)
   end,
 }

@@ -28,6 +28,12 @@ return {
     config = function()
       require("onedark").setup({
         transparent = true,
+        colors = {
+          bg3 = "#474F5F"
+        },
+        code_style = {
+          comments = "none"
+        }
       })
     end,
   },

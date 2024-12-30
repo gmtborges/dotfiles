@@ -37,8 +37,8 @@ vim.keymap.set("n", "<leader>bk", ":bd!<CR>")
 vim.keymap.set("n", "<leader>bK", ":%bd!<CR>")
 
 -- Tabs
-vim.keymap.set("n", "<leader>nn", ":tabnew<CR>")
-vim.keymap.set("n", "]n", ":tabnext<CR>")
+vim.keymap.set("n", "<leader>nt", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>nn", ":tabnext<CR>")
 vim.keymap.set("n", "<leader>nk", ":tabclose<CR>")
 
 -- Spilts

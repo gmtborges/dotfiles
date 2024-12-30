@@ -21,7 +21,8 @@ return {
           "yamlls",
           "terraformls",
           "astro",
-          "ansiblels"
+          "ansiblels",
+          "marksman"
         },
       })
       local lspconfig = require("lspconfig")
@@ -125,10 +126,10 @@ return {
         capabilities = capabilities,
       })
 
-      -- lspconfig.marksman.setup({
-      -- 	filetypes = { "markdown", "mdx" },
-      -- 	capabilities = capabilities,
-      -- })
+      lspconfig.marksman.setup({
+        filetypes = { "markdown", "mdx" },
+        capabilities = capabilities,
+      })
 
       lspconfig.ansiblels.setup({
         capabilities = capabilities,
@@ -151,10 +152,6 @@ return {
         on_attach = function(client, bufnr)
           require("sqls").on_attach(client, bufnr) -- require sqls.nvim
         end,
-      })
-
-      lspconfig.sourcekit.setup({
-        capabilities = capabilities,
       })
 
       vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
@@ -213,7 +210,7 @@ return {
       require("lspconfig")["yamlls"].setup(cfg)
 
 
-      vim.keymap.set("n", "<leader>tt", ":Telescope yaml_schema<CR>")
+      vim.keymap.set("n", "<leader>ft", ":Telescope yaml_schema<CR>")
     end,
   }
 }
