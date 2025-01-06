@@ -40,7 +40,7 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.spelllang = { "pt_br", "en_us" }
 vim.opt.spell = false
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "markdown", "text", "telekasten" },
+  pattern = { "markdown", "text" },
   callback = function()
     vim.opt_local.spell = true
   end,

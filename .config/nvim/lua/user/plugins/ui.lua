@@ -71,18 +71,15 @@ return {
     version = "*",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
-      require("bufferline").setup({
-        -- highlights = {
-        -- 	background = {
-        -- 		fg = "#596276",
-        -- 	},
-        -- 	close_button = {
-        -- 		fg = "#596276",
-        -- 	},
-        -- 	buffer_visible = {
-        -- 		fg = "#596276",
-        -- 	},
-        -- },
+      local bufferline = require("bufferline")
+      bufferline.setup({
+        options = {
+
+          style_preset = {
+            bufferline.style_preset.no_italic,
+          },
+
+        }
       })
       vim.keymap.set("n", "<leader>bn", ":BufferLineMoveNext<CR>")
       vim.keymap.set("n", "<leader>bp", ":BufferLineMovePrev<CR>")

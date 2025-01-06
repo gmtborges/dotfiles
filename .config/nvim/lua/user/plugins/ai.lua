@@ -89,7 +89,7 @@ return {
     config = function()
       require('copilot').setup({
         suggestion = {
-          auto_trigger = false,
+          auto_trigger = true,
           keymap = {
             accept = '<M-TAB>',
             next = '<M-]>',
@@ -97,9 +97,8 @@ return {
           },
         },
         filetypes = {
-          markdown = true,
+          markdown = false,
           yaml = true,
-          typescriptreact = true
         }
       })
     end,

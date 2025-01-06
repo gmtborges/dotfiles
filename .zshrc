@@ -96,7 +96,6 @@ plugins=(
 	zsh-syntax-highlighting 
 	asdf
   aws
-  gcloud
   terraform
   docker
   kubectl
@@ -159,6 +158,3 @@ function save-dotfiles () {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# The next line updates PATH for the Google Cloud SDK.
-# if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh.inc'; fi

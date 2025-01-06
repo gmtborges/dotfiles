@@ -67,3 +67,17 @@ Frontend
 https
 Mayara
 Terraform
+PocketBase
+DynamoDB
+Route53
+CloudWatch
+OpenSearch
+Config
+stateful
+GuardDuty
+serverless
+CDK
+SSM
+OpsCenter
+subnets
+Cognito

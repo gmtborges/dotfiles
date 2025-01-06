@@ -8,6 +8,8 @@ return {
         transparent = true,
         style = "storm",
         styles = {
+          commments = { italic = false },
+          keywords = { italic = false },
           sidebars = "transparent",
           floats = "transparent",
         },
@@ -46,19 +48,17 @@ return {
         flavour = "macchiato",
         transparent_background = true,
         no_italic = true,
-        custom_highlights = function(colors)
-          return {
-            ["@module"] = { style = { "bold" } },
-            ["@markup.heading.1.markdown"] = { fg = colors.mauve, style = { "bold" } },
-            ["@markup.heading.1.telekasten"] = { fg = colors.mauve, style = { "bold" } },
-            ["@markup.heading.2.markdown"] = { fg = colors.peach, style = { "bold" } },
-            ["@markup.heading.2.telekasten"] = { fg = colors.peach, style = { "bold" } },
-            ["@markup.heading.3.markdown"] = { fg = colors.yellow, style = { "bold" } },
-            ["@markup.heading.3.telekasten"] = { fg = colors.yellow, style = { "bold" } },
-            ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } },
-            ["@markup.heading.4.telekasten"] = { fg = colors.green, style = { "bold" } },
-          }
-        end
+        integrations = {
+          native_lsp = {
+            enabled = true,
+            underlines = {
+              errors = { "undercurl" },
+              hints = { "undercurl" },
+              warnings = { "undercurl" },
+              information = { "undercurl" },
+            },
+          },
+        },
       })
     end
   }
