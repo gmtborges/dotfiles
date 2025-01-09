@@ -19,13 +19,13 @@ return {
         go = { "goimports-reviser", "gofumpt", stop_after_first = false },
         templ = { "templ" },
         sql = { "sql_formatter" },
-        html = { "prettier" },
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        typescriptreact = { "prettier" },
-        javascriptreact = { "prettier" },
-        css = { "prettier" },
-        json = { "prettier" },
+        html = { "prettierd" },
+        javascript = { "prettierd" },
+        typescript = { "prettierd" },
+        typescriptreact = { "prettierd" },
+        javascriptreact = { "prettierd" },
+        css = { "prettierd" },
+        json = { "prettierd" },
         markdown = { "prettierd" },
         yaml = { "prettierd" },
         telekasten = { "prettierd" },
@@ -34,7 +34,7 @@ return {
       },
       format_on_save = {
         -- These options will be passed to conform.format()
-        timeout_ms = 500,
+        timeout_ms = 1200,
         lsp_format = "fallback",
       },
     })
@@ -42,7 +42,7 @@ return {
     vim.keymap.set({ "n", "v" }, "<leader>l", function()
       conform.format({
         lsp_fallback = true,
-        async = false,
+        async = true,
         timeout_ms = 1000,
       })
     end, { desc = "Format file or range (in visual mode)" })

@@ -15,10 +15,10 @@ return {
           model = "gpt-4o",
         },
       })
-      -- vim.keymap.set({ "n", "v" }, "<leader>at", "<cmd>ChatGPTRun translate<CR>")
-      vim.keymap.set({ "n", "v" }, "<leader>at", "<cmd>ChatGPTRun translate Brazilian Portuguese<CR>")
-      -- vim.keymap.set({ "n", "v" }, "<leader>ag", "<cmd>ChatGPTRun grammar_correction<CR>")
-      vim.keymap.set({ "n", "v" }, "<leader>ag", "<cmd>ChatGPTRun grammar_correction Brazilian Portuguese<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>ate", "<cmd>ChatGPTRun translate<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>atp", "<cmd>ChatGPTRun translate Brazilian Portuguese<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>age", "<cmd>ChatGPTRun grammar_correction<CR>")
+      vim.keymap.set({ "n", "v" }, "<leader>agp", "<cmd>ChatGPTRun grammar_correction Brazilian Portuguese<CR>")
     end,
   },
   {

@@ -37,3 +37,16 @@ data: {}
     f(get_date, {}),
   })),
 })
+
+ls.add_snippets("markdown", {
+  s("tentrada", fmt([[
+---
+data: {}
+---
+
+
+]], {
+    i(1, ""),
+    f(get_date, {}),
+  })),
+})
