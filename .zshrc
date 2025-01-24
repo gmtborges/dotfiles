@@ -97,7 +97,7 @@ plugins=(
 	asdf
   aws
   terraform
-  docker
+  podman
   kubectl
 )
 
@@ -133,6 +133,7 @@ eval "$(fzf --zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
+alias docker=podman
 
 function branchdel () {
  git branch --merged | egrep -v "main" | xargs git branch -d 

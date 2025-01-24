@@ -32,10 +32,20 @@ vim.opt.cursorline = true  -- Highlight the current line
 vim.opt.colorcolumn = "80" -- Show column ruler
 vim.opt.wrap = false       -- Don't wrap lines
 
+-- Custom fold text function to show the first line
+local function custom_fold_text()
+  local first_line = vim.fn.getline(vim.v.foldstart)
+  local line_count = vim.v.foldend - vim.v.foldstart + 1
+  return first_line .. ' ... [' .. line_count .. ' lines]'
+end
+
+-- Make the function available in the Lua namespace
+_G.custom_fold_text = custom_fold_text
+
 vim.opt.foldlevel = 20
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
--- vim.api.nvim_create_autocmd({ "BufEnter" }, { pattern = { "*" }, command = "normal zx", })
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldtext = "v:lua.custom_fold_text()"
 
 vim.opt.spelllang = { "pt_br", "en_us" }
 vim.opt.spell = false

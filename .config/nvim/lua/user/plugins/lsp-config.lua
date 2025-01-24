@@ -22,7 +22,8 @@ return {
           "terraformls",
           "astro",
           "ansiblels",
-          "marksman"
+          "marksman",
+          "helm_ls"
         },
       })
       local lspconfig = require("lspconfig")
@@ -91,7 +92,6 @@ return {
 
       lspconfig.tailwindcss.setup({
         capabilities = capabilities,
-        init_options = { userLanguages = { templ = "html" } },
       })
 
       -- lspconfig.yamlls.setup({
@@ -152,6 +152,10 @@ return {
         on_attach = function(client, bufnr)
           require("sqls").on_attach(client, bufnr) -- require sqls.nvim
         end,
+      })
+
+      lspconfig.helm_ls.setup({
+        capabilities = capabilities,
       })
 
       vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)

@@ -88,3 +88,11 @@ lifecycle
 DAX
 Kinesis
 e.g.
+RTO
+RPO
+EventBridge
+SQS
+EBS
+CloudTrail
+X-Ray
+karpenter

@@ -8,8 +8,7 @@ return {
         transparent = true,
         style = "storm",
         styles = {
-          commments = { italic = false },
-          keywords = { italic = false },
+          keywords = { bold = true },
           sidebars = "transparent",
           floats = "transparent",
         },
@@ -34,7 +33,7 @@ return {
           bg3 = "#474F5F"
         },
         code_style = {
-          comments = "none"
+          keywords = "bold"
         }
       })
     end,
@@ -45,9 +44,12 @@ return {
     priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "macchiato",
+        flavour = "frappe",
         transparent_background = true,
         no_italic = true,
+        styles = {
+          keywords = { "bold" },
+        },
         integrations = {
           native_lsp = {
             enabled = true,
@@ -59,6 +61,16 @@ return {
             },
           },
         },
+        custom_highlights = function(colors)
+          return {
+            ["@markup.heading.1.markdown"] = { fg = colors.red, style = { "bold" } },
+            ["@markup.heading.2.markdown"] = { fg = colors.peach, style = { "bold" } },
+            ["@markup.heading.3.markdown"] = { fg = colors.yellow, style = { "bold" } },
+            ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } },
+            ["@markup.heading.5.markdown"] = { fg = colors.sapphire, style = { "bold" } },
+            ["@markup.heading.6.markdown"] = { fg = colors.lavander, style = { "bold" } },
+          }
+        end
       })
     end
   }
