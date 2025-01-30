@@ -57,3 +57,37 @@ vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Toggles
 vim.keymap.set("n", "<leader>ts", ":set spell!<CR>")
+
+-- Jumplist
+vim.keymap.set(
+  'n',
+  'j',
+  [[v:count ? (v:count >= 4 ? "m'" . v:count : '') . 'j' : 'gj']],
+  { noremap = true, expr = true }
+)
+
+vim.keymap.set(
+  'n',
+  'k',
+  [[v:count ? (v:count >= 4 ? "m'" . v:count : '') . 'k' : 'gk']],
+  { noremap = true, expr = true }
+)
+
+local function filter_jumplist()
+  local jumplist = vim.fn.getjumplist()
+  local current_dir = vim.fn.getcwd()
+
+  for i, jump in ipairs(jumplist[1]) do
+    local bufnr = jump.bufnr
+    local filepath = vim.api.nvim_buf_get_name(bufnr)
+    if not string.match(filepath, "^" .. vim.pesc(current_dir)) then
+      vim.cmd("clearjumps " .. i)
+    end
+  end
+end
+
+vim.api.nvim_create_user_command("FilterJumplist", filter_jumplist, {})
+vim.api.nvim_create_autocmd("CmdlineEnter", {
+  pattern = ":jumps",
+  callback = filter_jumplist
+})

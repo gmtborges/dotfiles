@@ -96,3 +96,5 @@ EBS
 CloudTrail
 X-Ray
 karpenter
+hono
+ETL

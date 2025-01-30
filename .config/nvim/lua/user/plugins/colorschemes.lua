@@ -8,7 +8,7 @@ return {
         transparent = true,
         style = "storm",
         styles = {
-          keywords = { bold = true },
+          keywords = { bold = true, italic = false },
           sidebars = "transparent",
           floats = "transparent",
         },
@@ -49,6 +49,7 @@ return {
         no_italic = true,
         styles = {
           keywords = { "bold" },
+          miscs = {}
         },
         integrations = {
           native_lsp = {

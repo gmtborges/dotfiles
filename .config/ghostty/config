@@ -1,15 +1,27 @@
 # vim:ft=config
+# font-family = Source Code Pro
+# font-style = Medium
+# font-style-italic = Medium Italic
+# font-size = 16
+# adjust-cell-height = 6
+
 # font-family = JetBrains Mono NL
 # font-style = Medium
 # font-style-italic = Medium Italic
 # font-size = 15
 # adjust-cell-height = 4
 
-font-family = Maple Mono NL
+# font-family = Maple Mono NL
+# font-style = Medium
+# font-style-italic = Medium Italic
+# font-size = 16
+# adjust-cell-height = 4
+
+font-family = Code Saver
 font-style = Medium
 font-style-italic = Medium Italic
 font-size = 17
-adjust-cell-height = 6
+adjust-cell-height = 4
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h

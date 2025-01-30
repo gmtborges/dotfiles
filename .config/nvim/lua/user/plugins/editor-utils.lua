@@ -24,7 +24,7 @@ return {
   },
   {
     "ray-x/lsp_signature.nvim",
-    enabled = true,
+    enabled = false,
     event = "VeryLazy",
     opts = {},
     config = function()

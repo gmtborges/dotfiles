@@ -9,7 +9,7 @@ local function get_date()
 end
 
 ls.add_snippets("markdown", {
-  s("tsemana", fmt([[
+  s("tweek", fmt([[
 # Tarefas
 
 1.
@@ -22,10 +22,10 @@ ls.add_snippets("markdown", {
 })
 
 ls.add_snippets("markdown", {
-  s("tanotacao", fmt([[
+  s("tnote", fmt([[
 ---
-titulo: {}
-data: {}
+title: {}
+date: {}
 ---
 
 # Veja Também
@@ -39,9 +39,9 @@ data: {}
 })
 
 ls.add_snippets("markdown", {
-  s("tentrada", fmt([[
+  s("tinbox", fmt([[
 ---
-data: {}
+date: {}
 ---
 
 
