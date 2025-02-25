@@ -1,6 +1,6 @@
-require("cmp").setup.buffer({
-  sources = {
-    { name = "buffer" },
-    { name = "path" },
-  },
-})
+-- require("cmp").setup.buffer({
+--   sources = {
+--     { name = "buffer" },
+--     { name = "path" },
+--   },
+-- })

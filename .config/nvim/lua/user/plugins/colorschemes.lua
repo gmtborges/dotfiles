@@ -8,7 +8,7 @@ return {
         transparent = true,
         style = "storm",
         styles = {
-          keywords = { bold = true, italic = false },
+          -- keywords = { bold = true, italic = false },
           sidebars = "transparent",
           floats = "transparent",
         },
@@ -29,11 +29,8 @@ return {
     config = function()
       require("onedark").setup({
         transparent = true,
-        colors = {
-          bg3 = "#474F5F"
-        },
         code_style = {
-          keywords = "bold"
+          -- keywords = "bold"
         }
       })
     end,
@@ -44,11 +41,11 @@ return {
     priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "frappe",
         transparent_background = true,
-        no_italic = true,
+        no_italic = false,
         styles = {
-          keywords = { "bold" },
+          -- keywords = { "bold" },
+          conditionals = {},
           miscs = {}
         },
         integrations = {

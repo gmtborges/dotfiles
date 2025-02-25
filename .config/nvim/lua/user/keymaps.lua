@@ -11,7 +11,6 @@ vim.keymap.set("n", "<leader>y", '"+y')
 vim.keymap.set("v", "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>Y", '"+Y')
 
-vim.keymap.set({ "n", "v" }, "<M-d>", '"_d')
 
 -- Move lines in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -26,8 +25,10 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
 -- Preserve paste
 vim.keymap.set("x", "<M-p>", '"_dP')
+vim.keymap.set({ "n", "v" }, "<M-d>", '"_d')
 
 -- Buffers
 vim.keymap.set("n", "<C-n>", ":bprev<CR>")

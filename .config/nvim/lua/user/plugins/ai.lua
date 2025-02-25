@@ -29,11 +29,14 @@ return {
     opts = {
       provider = "claude",
       claude = {
-        model = "claude-3-5-sonnet-20241022",
+        model = "claude-3-7-sonnet-20250219",
       },
       hints = {
         enabled = false,
       },
+      windows = {
+        width = 38
+      }
     },
     -- if you want to download pre-built binary, then pass source=false. Make sure to follow instruction above.
     -- Also note that downloading prebuilt binary is a lot faster comparing to compiling from source.
@@ -63,13 +66,13 @@ return {
   },
   {
     "zbirenbaum/copilot.lua",
-    enabled = true,
+    enabled = false,
     cmd = 'Copilot',
     event = 'InsertEnter',
     config = function()
       require('copilot').setup({
         suggestion = {
-          auto_trigger = false,
+          auto_trigger = true,
           keymap = {
             accept = '<M-TAB>',
             next = '<M-]>',
