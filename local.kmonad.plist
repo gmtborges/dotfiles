@@ -9,7 +9,7 @@
     <key>ProgramArguments</key>
     <array>
       <string>/Users/gustavo/.local/bin/kmonad</string>
-      <string>/Users/gustavo/.config/kmonad/mac.kbd</string>
+      <string>/Users/gustavo/.config/mac.kbd</string>
     </array>
     <key>RunAtLoad</key>
     <true />
@@ -17,5 +17,9 @@
     <string>/tmp/kmonad.stdout</string>
     <key>StandardErrorPath</key>
     <string>/tmp/kmonad.stderr</string>
+    <key>UserName</key>
+    <string>root</string>
+    <key>GroupName</key>
+    <string>wheel</string>
   </dict>
 </plist>

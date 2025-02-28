@@ -20,6 +20,8 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Local binaries
 export PATH=$HOME/.local/bin:$PATH
 
+# Asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -94,7 +96,6 @@ plugins=(
 	git 
 	zsh-autosuggestions 
 	zsh-syntax-highlighting 
-	asdf
   aws
   terraform
   podman

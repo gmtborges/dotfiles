@@ -3,19 +3,19 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>local.kmonad</string>
+    <string>local.kmonad.logi</string>
     <key>Program</key>
     <string>/Users/gustavo/.local/bin/kmonad</string>
     <key>ProgramArguments</key>
     <array>
       <string>/Users/gustavo/.local/bin/kmonad</string>
-      <string>/Users/gustavo/.config/kmonad/mac.kbd</string>
+      <string>/Users/gustavo/.config/kmonad/logi.kbd</string>
     </array>
     <key>RunAtLoad</key>
     <true />
     <key>StandardOutPath</key>
-    <string>/tmp/kmonad.stdout</string>
+    <string>/tmp/kmonad-logi.stdout</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/kmonad.stderr</string>
+    <string>/tmp/kmonad-logi.stderr</string>
   </dict>
 </plist>

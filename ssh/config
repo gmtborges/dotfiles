@@ -1,13 +1,17 @@
-# vim:ft=conf
+Host catalogo-app
+  Hostname 18.216.147.233
+  User ubuntu
+  IdentityFile ~/.ssh/gmtborges-ec2-key.pub
+  IdentitiesOnly yes
+  
 Host orcamentoauto.com.br
   Hostname 34.148.28.217
   User gcloud
   IdentityFile ~/.ssh/gcloud-key.pub
   IdentitiesOnly yes
 
-Host saasgit
+Host github.matt
   HostName github.com
-  User git
   IdentityFile ~/.ssh/matt_ed25519.pub
   IdentitiesOnly yes
 

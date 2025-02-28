@@ -4,7 +4,17 @@ return
     'saghen/blink.cmp',
     enabled = true,
     -- optional: provides snippets for the snippet source
-    dependencies = 'rafamadriz/friendly-snippets',
+    dependencies = {
+      {
+        'L3MON4D3/LuaSnip',
+        version = 'v2.*',
+        config = function()
+          require("luasnip.loaders.from_vscode").lazy_load()
+          require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets/" })
+        end,
+      },
+      'rafamadriz/friendly-snippets',
+    },
 
     -- use a release tag to download pre-built binaries
     version = '*',
@@ -62,6 +72,7 @@ return
         -- Adjusts spacing to ensure icons are aligned
         nerd_font_variant = 'mono'
       },
+      snippets = { preset = 'luasnip' },
       -- Default list of enabled providers defined so that you can extend it
       -- elsewhere in your config, without redefining it, due to `opts_extend`
       sources = {
@@ -75,7 +86,7 @@ return
       },
       signature = { enabled = true }
     },
-    opts_extend = { "sources.default" }
+    opts_extend = { "sources.default" },
   },
   {
     "hrsh7th/nvim-cmp",
