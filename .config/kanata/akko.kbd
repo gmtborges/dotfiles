@@ -1,6 +1,10 @@
 (defcfg
   process-unmapped-keys yes
   concurrent-tap-hold   yes
+  macos-dev-names-include (
+    "Akko 2.4G Wireless Keyboard"
+    "Karabiner DriverKit VirtualHIDKeyboard 1.7.0"
+  )
 )
 
 (defsrc
