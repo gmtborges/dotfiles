@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<esc>")
 vim.keymap.set("n", "Q", "<nop>")
 
--- Save with <C-s>
+-- Save with Ctrl-s
 vim.keymap.set({ "n" }, "<C-s>", ":update<CR>")
 
 -- Copy to clipboard

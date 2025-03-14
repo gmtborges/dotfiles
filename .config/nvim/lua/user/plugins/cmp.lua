@@ -51,11 +51,16 @@ return
             preselect = false
           }
         },
+        documentation = {
+          auto_show = true,
+          auto_show_delay_ms = 500,
+        },
         menu = {
           draw = {
             treesitter = { 'lsp' },
             columns = {
-              { "label", "label_description", gap = 1 }, { "kind_icon", gap = 1, "kind" }
+              { "kind_icon", "label",       "label_description", gap = 1 },
+              { "kind",      "source_name", gap = 1 },
             }
           }
         }
@@ -179,13 +184,13 @@ return
             symbol_map = {
               Unit = "",
             },
-            -- menu = {
-            --   nvim_lsp = "[LSP]",
-            --   buffer = "[Buffer]",
-            --   luasnip = "[Snippet]",
-            --   path = "[Path]",
-            --   nvim_lua = "[Lua]",
-            -- },
+            menu = {
+              nvim_lsp = "[LSP]",
+              buffer = "[Buffer]",
+              luasnip = "[Snippet]",
+              path = "[Path]",
+              nvim_lua = "[Lua]",
+            },
           }),
         },
       })

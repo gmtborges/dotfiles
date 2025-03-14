@@ -1,0 +1,47 @@
+(defcfg
+  input  (iokit-name "Akko 2.4G Wireless Keyboard")
+  output (kext)
+  fallthrough true
+  allow-cmd false
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 prnt  pause  del
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc        home
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \           pgup
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret              pgdn
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up               end
+  lctl lalt lmet           spc            ralt fn rctl left down rght
+)
+
+(defalias
+    met_a (tap-hold-next-release 200 a lmet)
+    alt_s (tap-hold-next-release 200 s lalt)
+    ctl_d (tap-hold-next-release 200 d lctl)
+    sft_f (tap-hold-next-release 200 f lsft)
+
+    sft_j (tap-hold-next-release 200 j rsft)
+    ctl_k (tap-hold-next-release 200 k rctl)
+    alt_l (tap-hold-next-release 200 l lalt)
+    met_; (tap-hold-next-release 200 ; rmet)
+
+    fn (around (layer-toggle function) fn)
+)
+
+(deflayer base
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12 prnt  pause  del
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _  _
+  _ @met_a @alt_s @ctl_d @sft_f g h @sft_j @ctl_k @alt_l @met_; _  _  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _  _
+  _    _    _              _              @fn    _    _    _  _   _
+)
+
+(deflayer function
+  _    brdn brup lp   mctl bldn blup prev pp   next mute vold volu  _  _  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _  _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _    _    _   _
+)

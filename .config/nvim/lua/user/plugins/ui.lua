@@ -87,7 +87,7 @@ return {
   },
   {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = true,
+    enabled = false,
     main = "ibl",
     config = function()
       -- local github_dark_dimmed = {

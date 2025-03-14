@@ -1,6 +1,7 @@
 return {
   {
     "rest-nvim/rest.nvim",
+    enabled = false,
   },
   {
     "folke/todo-comments.nvim",

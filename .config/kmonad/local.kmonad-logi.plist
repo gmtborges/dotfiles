@@ -14,8 +14,8 @@
     <key>RunAtLoad</key>
     <true />
     <key>StandardOutPath</key>
-    <string>/tmp/kmonad-logi.stdout</string>
+    <string>/Users/gustavo/.config/kmonad/kmonad-logi.stdout</string>
     <key>StandardErrorPath</key>
-    <string>/tmp/kmonad-logi.stderr</string>
+    <string>/Users/gustavo/.config/kmonad/kmonad-logi.stderr</string>
   </dict>
 </plist>

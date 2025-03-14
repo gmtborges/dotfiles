@@ -3,19 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>local.kmonad</string>
+    <string>local.kanata.mac</string>
     <key>Program</key>
-    <string>/Users/gustavo/.local/bin/kmonad</string>
+    <string>/opt/homebrew/bin/kanata</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/gustavo/.local/bin/kmonad</string>
-      <string>/Users/gustavo/.config/kmonad/mac.kbd</string>
+      <string>/opt/homebrew/bin/kanata</string>
+      <string>--cfg</string>
+      <string>/Users/gustavo/.config/kanata/mac.kbd</string>
     </array>
     <key>RunAtLoad</key>
     <true />
     <key>StandardOutPath</key>
-    <string>/Users/gustavo/.config/kmonad/kmonad.stdout</string>
+    <string>/Users/gustavo/.config/kanata/kanata-mac.stdout</string>
     <key>StandardErrorPath</key>
-    <string>/Users/gustavo/.config/kmonad/kmonad.stderr</string>
+    <string>/Users/gustavo/.config/kanata/kanata-mac.stderr</string>
   </dict>
 </plist>
