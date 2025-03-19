@@ -1,7 +1,9 @@
 # vim:ft=config
-font-family = JetBrains Mono NL
+font-family = Source Code Pro
 font-style = Medium
-font-size = 14
+font-style-italic = false
+font-style-bold-italic = false
+font-size = 15
 adjust-cell-height = 8
 adjust-cursor-height = 8
 
