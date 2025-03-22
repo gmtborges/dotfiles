@@ -30,7 +30,7 @@ return {
       require("onedark").setup({
         transparent = true,
         code_style = {
-          keywords = "NONE"
+          keywords = "bold"
         }
       })
     end,
@@ -82,7 +82,7 @@ return {
         options = {
           transparent = true,
           styles = {
-            keywords = 'NONE'
+            keywords = 'bold'
           }
         }
       })

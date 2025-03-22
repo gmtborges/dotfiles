@@ -2,7 +2,7 @@
   process-unmapped-keys yes
   concurrent-tap-hold   yes
   macos-dev-names-include (
-    "Karabiner DriverKit VirtualHIDKeyboard 1.7.0"
+    "MX Keys Mini"
   )
 )
 

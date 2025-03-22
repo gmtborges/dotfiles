@@ -1,11 +1,11 @@
 # vim:ft=config
 font-family = Source Code Pro
-font-style = Medium
+font-style = Regular
 font-style-italic = false
 font-style-bold-italic = false
 font-size = 15
-adjust-cell-height = 8
-adjust-cursor-height = 8
+adjust-cell-height = 10
+adjust-cursor-height = 10
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -32,5 +32,4 @@ shell-integration-features = no-cursor
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-keybind = super+s=text::w\r
 

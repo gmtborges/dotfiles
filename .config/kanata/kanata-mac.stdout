@@ -1,0 +1,272 @@
+08:16:51.4114 [0m[34m[INFO] [0mkanata v1.7.0 starting
+08:16:51.4144 [0m[34m[INFO] [0mprocess unmapped keys: true
+08:16:51.4145 [0m[34m[INFO] [0mNOTE: kanata was compiled to never allow cmd
+08:16:51.4148 [0m[34m[INFO] [0mconfig file is valid
+08:16:51.4148 [0m[34m[INFO] [0mSleeping for 2s. Please release all keys and don't press additional ones. Run kanata with --help to see how understand more and how to disable this sleep.
+08:16:53.4899 [0m[34m[INFO] [0mentering the processing loop
+08:16:53.4902 [0m[34m[INFO] [0mentering the event loop
+08:16:53.4903 [0m[34m[INFO] [0mInit: catching only releases and sending immediately
+connected
+driver_activated 1
+driver_connected 0
+driver_version_mismatched 0
+driver_connected 1
+08:16:55.6550 [0m[34m[INFO] [0mStarting kanata proper
+08:16:55.6551 [0m[34m[INFO] [0mYou may forcefully exit kanata by pressing lctl+spc+esc at any time. These keys refer to defsrc input, meaning BEFORE kanata remaps keys.
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connect_failed asio.system:17
+connected
+17:09:32.2392 [0m[34m[INFO] [0mkanata v1.7.0 starting
+17:09:32.2405 [0m[34m[INFO] [0mprocess unmapped keys: true
+17:09:32.2407 [0m[34m[INFO] [0mNOTE: kanata was compiled to never allow cmd
+17:09:32.2409 [0m[34m[INFO] [0mconfig file is valid
+17:09:32.2410 [0m[34m[INFO] [0mSleeping for 2s. Please release all keys and don't press additional ones. Run kanata with --help to see how understand more and how to disable this sleep.
+17:09:34.2586 [0m[34m[INFO] [0mentering the processing loop
+17:09:34.3218 [0m[34m[INFO] [0mentering the event loop
+17:09:34.3219 [0m[34m[INFO] [0mInit: catching only releases and sending immediately
+connected
+driver_activated 1
+driver_connected 0
+driver_version_mismatched 0
+driver_connected 1
+17:09:36.4809 [0m[34m[INFO] [0mStarting kanata proper
+17:09:36.4811 [0m[34m[INFO] [0mYou may forcefully exit kanata by pressing lctl+spc+esc at any time. These keys refer to defsrc input, meaning BEFORE kanata remaps keys.
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+09:35:54.5304 [0m[34m[INFO] [0mkanata v1.7.0 starting
+09:35:54.5358 [0m[34m[INFO] [0mprocess unmapped keys: true
+09:35:54.5361 [0m[34m[INFO] [0mNOTE: kanata was compiled to never allow cmd
+09:35:54.5369 [0m[34m[INFO] [0mconfig file is valid
+09:35:54.5370 [0m[34m[INFO] [0mSleeping for 2s. Please release all keys and don't press additional ones. Run kanata with --help to see how understand more and how to disable this sleep.
+09:35:56.5455 [0m[34m[INFO] [0mentering the processing loop
+09:35:56.5457 [0m[34m[INFO] [0mentering the event loop
+09:35:56.5459 [0m[34m[INFO] [0mInit: catching only releases and sending immediately
+connected
+driver_activated 1
+driver_connected 0
+driver_version_mismatched 0
+driver_connected 1
+09:35:58.6666 [0m[34m[INFO] [0mStarting kanata proper
+09:35:58.6668 [0m[34m[INFO] [0mYou may forcefully exit kanata by pressing lctl+spc+esc at any time. These keys refer to defsrc input, meaning BEFORE kanata remaps keys.
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
+connected
+driver_connected 0
+driver_connected 1
