@@ -31,14 +31,21 @@ return {
         terraform = { "terraform_fmt" },
         swift = { "swiftformat" },
       },
-      format_on_save = {
-        -- These options will be passed to conform.format()
-        timeout_ms = 1200,
-        lsp_format = "fallback",
-      },
+      format_on_save = function(bufnr)
+        -- Disable autoformat on certain filetypes
+        local ignore_filetypes = { "yaml" }
+        if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
+          return
+        end
+        return {
+          -- These options will be passed to conform.format()
+          timeout_ms = 1000,
+          lsp_format = "fallback",
+        }
+      end
     })
 
-    vim.keymap.set({ "n", "v" }, "<leader>l", function()
+    vim.keymap.set({ "n", "v" }, "<leader>cf", function()
       conform.format({
         lsp_fallback = true,
         async = true,

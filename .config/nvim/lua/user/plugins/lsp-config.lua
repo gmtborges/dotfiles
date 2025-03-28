@@ -183,9 +183,9 @@ return {
           vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, opts)
           vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
           vim.keymap.set({ "n", "v" }, "<leader>h", vim.lsp.buf.code_action, opts)
-          vim.keymap.set("n", "<leader>cf", function()
-            vim.lsp.buf.format({ async = true })
-          end, opts)
+          -- vim.keymap.set("n", "<leader>cf", function()
+          --   vim.lsp.buf.format({ async = true })
+          -- end, opts)
         end,
       })
 
