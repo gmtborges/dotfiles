@@ -15,8 +15,8 @@
     <key>RunAtLoad</key>
     <true />
     <key>StandardOutPath</key>
-    <string>/Users/gustavo/.config/kanata/kanata-mac.stdout</string>
+    <string>/tmp/kanata-mac.stdout</string>
     <key>StandardErrorPath</key>
-    <string>/Users/gustavo/.config/kanata/kanata-mac.stderr</string>
+    <string>/tmp/kanata-mac.stderr</string>
   </dict>
 </plist>
