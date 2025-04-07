@@ -2,7 +2,7 @@ return
 {
   {
     'saghen/blink.cmp',
-    enabled = true,
+    enabled = false,
     -- optional: provides snippets for the snippet source
     dependencies = {
       {
@@ -95,7 +95,7 @@ return
   },
   {
     "hrsh7th/nvim-cmp",
-    enabled = false,
+    enabled = true,
     dependencies = {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",

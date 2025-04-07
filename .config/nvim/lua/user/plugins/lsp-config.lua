@@ -2,8 +2,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      "saghen/blink.cmp",
-      -- "hrsh7th/cmp-nvim-lsp",
+      -- "saghen/blink.cmp",
+      "hrsh7th/cmp-nvim-lsp",
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "b0o/schemastore.nvim",
@@ -29,9 +29,9 @@ return {
         },
       })
       local lspconfig = require("lspconfig")
-      local capabilities = require('blink.cmp').get_lsp_capabilities()
-      -- local capabilities =
-      --     require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+      -- local capabilities = require('blink.cmp').get_lsp_capabilities()
+      local capabilities =
+          require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
       lspconfig.lua_ls.setup({
         settings = {
@@ -97,33 +97,17 @@ return {
         capabilities = capabilities,
       })
 
-      -- lspconfig.yamlls.setup({
-      -- 	settings = {
-      -- 		yaml = {
-      -- 			schemaStore = {
-      -- 				enable = true,
-      -- 				url = "https://www.schemastore.org/api/json/catalog.json",
-      -- 			},
-      -- 			schemas = {
-      -- 				kubernetes = "manifests/**/*.yaml",
-      -- 				["https://json.schemastore.org/github-workflow"] = ".github/workflows/*",
-      -- 				["https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json"] = "*docker-compose*.{yml,yaml}",
-      -- 			},
-      -- 		},
-      -- 	},
-      -- })
-
-      -- lspconfig.yamlls.setup({
-      --   settings = {
-      --     yaml = {
-      --       schemaStore = {
-      --         enable = false,
-      --         url = "",
-      --       },
-      --       schemas = require("schemastore").yaml.schemas(),
-      --     },
-      --   },
-      -- })
+      lspconfig.yamlls.setup({
+        settings = {
+          yaml = {
+            schemaStore = {
+              enable = false,
+              url = "",
+            },
+            schemas = require("schemastore").yaml.schemas(),
+          },
+        },
+      })
 
       lspconfig.astro.setup({
         capabilities = capabilities,
@@ -198,26 +182,22 @@ return {
       vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
         border = _border,
       })
-
-      vim.diagnostic.config({
-        float = { border = _border },
-      })
     end,
   },
-  {
-    "someone-stole-my-name/yaml-companion.nvim",
-    dependencies = {
-      "neovim/nvim-lspconfig",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-    },
-    config = function()
-      require("telescope").load_extension("yaml_schema")
-      local cfg = require("yaml-companion").setup()
-      require("lspconfig")["yamlls"].setup(cfg)
-
-
-      vim.keymap.set("n", "<leader>ft", ":Telescope yaml_schema<CR>")
-    end,
-  }
+  -- {
+  --   "someone-stole-my-name/yaml-companion.nvim",
+  --   dependencies = {
+  --     "neovim/nvim-lspconfig",
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-telescope/telescope.nvim",
+  --   },
+  --   config = function()
+  --     require("telescope").load_extension("yaml_schema")
+  --     local cfg = require("yaml-companion").setup()
+  --     require("lspconfig")["yamlls"].setup(cfg)
+  --
+  --
+  --     vim.keymap.set("n", "<leader>ft", ":Telescope yaml_schema<CR>")
+  --   end,
+  -- }
 }

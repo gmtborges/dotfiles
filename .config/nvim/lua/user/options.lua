@@ -57,13 +57,24 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 local signs = {
-  Error = " ",
-  Warn = " ",
-  Hint = " ",
-  Info = " ",
+  ERROR = "",
+  WARN = "",
+  HINT = "",
+  INFO = " ",
 }
 
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-end
+vim.diagnostic.config({
+  virtual_text = true,
+  underline = {
+    severity = { min = vim.diagnostic.severity.WARN },
+  },
+  float = { border = "rounded" },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = signs.ERROR,
+      [vim.diagnostic.severity.WARN] = signs.WARN,
+      [vim.diagnostic.severity.HINT] = signs.HINT,
+      [vim.diagnostic.severity.INFO] = signs.INFO,
+    }
+  }
+})

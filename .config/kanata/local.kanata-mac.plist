@@ -5,10 +5,10 @@
     <key>Label</key>
     <string>local.kanata.mac</string>
     <key>Program</key>
-    <string>/opt/homebrew/bin/kanata</string>
+    <string>/usr/local/bin/kanata</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/opt/homebrew/bin/kanata</string>
+      <string>/usr/local/bin/kanata</string>
       <string>--cfg</string>
       <string>/Users/gustavo/.config/kanata/mac.kbd</string>
     </array>
