@@ -38,7 +38,7 @@ b = "toothed-serifless"
 c = "serifless"
 d = "toothed-serifless"
 e = "rounded"
-f = "serifless"
+f = "flat-hook-serifless"
 g = "double-storey-open"
 h = "straight-serifless"
 i = "serifed"
@@ -78,7 +78,7 @@ brace = "curly"
 guillemet = "straight"
 number-sign = "slanted"
 ampersand = "upper-open"
-at = "compact"
+at = "threefold"
 dollar = "open"
 cent = "bar-interrupted"
 percent = "rings-segmented-slash"
@@ -110,7 +110,7 @@ menu = 700
 css = 700
 
 [buildPlans.IosevkaCustom.widths.Normal]
-shape = 600
+shape = 572
 menu = 5
 css = "normal"
 
