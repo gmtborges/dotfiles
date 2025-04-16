@@ -2,7 +2,7 @@ return
 {
   {
     'saghen/blink.cmp',
-    enabled = false,
+    enabled = true,
     -- optional: provides snippets for the snippet source
     dependencies = {
       {
@@ -17,7 +17,7 @@ return
     },
 
     -- use a release tag to download pre-built binaries
-    version = '*',
+    version = '1.*',
     -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
     -- build = 'cargo build --release',
     -- If you use nix, you can build from source using latest nightly rust with:
@@ -95,7 +95,7 @@ return
   },
   {
     "hrsh7th/nvim-cmp",
-    enabled = true,
+    enabled = false,
     dependencies = {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",

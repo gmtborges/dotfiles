@@ -14,7 +14,7 @@ five = "oblique-flat-serifless"
 six = "straight-bar"
 seven = "bend-serifless"
 eight = "crossing-asymmetric"
-nine = "straight-bar"
+nine = "open-contour"
 zero = "oval-tall-slashed"
 capital-a = "straight-serifless"
 capital-b = "standard-serifless"
@@ -37,20 +37,20 @@ a = "double-storey-serifless"
 b = "toothed-serifless"
 c = "serifless"
 d = "toothed-serifless"
-e = "rounded"
+e = "flat-crossbar"
 f = "flat-hook-serifless"
 g = "double-storey-open"
 h = "straight-serifless"
 i = "serifed"
 j = "serifed"
 k = "curly-serifless"
-l = "tailed-serifed"
+l = "serifed-flat-tailed"
 n = "straight-serifless"
 p = "eared-serifless"
 q = "straight-serifless"
 r = "serifless"
 s = "serifless"
-t = "bent-hook-asymmetric-short-neck2"
+t = "flat-hook-short-neck2"
 u = "toothed-serifless"
 v = "straight-serifless"
 w = "straight-flat-top-serifless"
@@ -110,7 +110,7 @@ menu = 700
 css = 700
 
 [buildPlans.IosevkaCustom.widths.Normal]
-shape = 572
+shape = 560
 menu = 5
 css = "normal"
 
@@ -125,3 +125,10 @@ angle = 9.4
 shape = "italic"
 menu = "italic"
 css = "italic"
+
+[buildPlans.IosevkaCustom.metricOverride]
+cap = 725
+ascender = 725
+xHeight = 510
+sb = 'default_sb * 0.88'
+smallArchDepth = 230

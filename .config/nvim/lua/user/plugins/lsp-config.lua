@@ -2,8 +2,8 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
-      -- "saghen/blink.cmp",
-      "hrsh7th/cmp-nvim-lsp",
+      "saghen/blink.cmp",
+      -- "hrsh7th/cmp-nvim-lsp",
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "b0o/schemastore.nvim",
@@ -29,9 +29,9 @@ return {
         },
       })
       local lspconfig = require("lspconfig")
-      -- local capabilities = require('blink.cmp').get_lsp_capabilities()
-      local capabilities =
-          require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
+      -- local capabilities =
+      --     require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
       lspconfig.lua_ls.setup({
         settings = {
