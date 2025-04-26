@@ -23,6 +23,7 @@ vim.opt.listchars = { tab = "→ ", trail = "∙", eol = "¬" }
 vim.opt.list = false
 vim.opt.signcolumn = "yes"
 vim.opt.exrc = true
+vim.opt.winborder = "rounded"
 -- Avante.nvim recommended
 vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
@@ -54,27 +55,4 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     vim.opt_local.spell = true
   end,
-})
-
-local signs = {
-  ERROR = "",
-  WARN = "",
-  HINT = "",
-  INFO = " ",
-}
-
-vim.diagnostic.config({
-  virtual_text = true,
-  underline = {
-    severity = { min = vim.diagnostic.severity.WARN },
-  },
-  float = { border = "rounded" },
-  signs = {
-    text = {
-      [vim.diagnostic.severity.ERROR] = signs.ERROR,
-      [vim.diagnostic.severity.WARN] = signs.WARN,
-      [vim.diagnostic.severity.HINT] = signs.HINT,
-      [vim.diagnostic.severity.INFO] = signs.INFO,
-    }
-  }
 })
