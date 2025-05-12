@@ -212,4 +212,9 @@ return {
       })
     end,
   },
+  {
+    "karb94/neoscroll.nvim",
+    enabled = false,
+    opts = {},
+  }
 }

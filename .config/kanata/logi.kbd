@@ -2,7 +2,7 @@
   process-unmapped-keys yes
   concurrent-tap-hold   yes
   macos-dev-names-include (
-    "MX Keys Mini"
+    "USB Receiver"
   )
 )
 
@@ -20,8 +20,14 @@
     ctl_k (tap-hold-release 200 200 k rctl)
     alt_l (tap-hold-release 200 200 l lalt)
     met_; (tap-hold-release 200 200 ; rmet)
+
+    nav (tap-hold 250 250 caps (layer-toggle arrows))
 )
 
 (deflayer base
-  _ @met_a @alt_s @ctl_d @sft_f g h @sft_j @ctl_k @alt_l @met_; _  _
+  @nav @met_a @alt_s @ctl_d @sft_f g h @sft_j @ctl_k @alt_l @met_; _  _
+)
+
+(deflayer arrows
+  _    _    _    _    _    _  left  down  up  right _    _    _
 )

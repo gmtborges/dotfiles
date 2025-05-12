@@ -27,13 +27,13 @@ return {
         css = { "prettier", "prettierd", stop_after_first = true },
         json = { "prettier", "prettierd", stop_after_first = true },
         markdown = { "prettier", "prettierd", stop_after_first = true },
-        yaml = { "prettier", "prettierd", stop_after_first = true },
+        yaml = { "yamlfmt" },
         terraform = { "terraform_fmt" },
         swift = { "swiftformat" },
       },
       format_on_save = function(bufnr)
         -- Disable autoformat on certain filetypes
-        local ignore_filetypes = { "yaml" }
+        local ignore_filetypes = { "" }
         if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
           return
         end

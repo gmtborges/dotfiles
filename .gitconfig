@@ -8,8 +8,8 @@
   cm = commit
   co = checkout
   sw = switch
-  rs = restore
-  rt = reset
+  rt = restore
+  rs = reset
   cl = clean
   cn = clone
   pl = pull
