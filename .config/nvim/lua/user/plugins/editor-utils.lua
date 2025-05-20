@@ -20,17 +20,6 @@ return {
     },
   },
   {
-    "folke/zen-mode.nvim",
-    config = function()
-      require("zen-mode").setup({
-        options = {
-          gitsigns = { enabled = true }, -- disables git signs
-        },
-      })
-      vim.keymap.set("n", "<leader>tz", ":ZenMode<CR>")
-    end,
-  },
-  {
     "ray-x/lsp_signature.nvim",
     enabled = false,
     event = "VeryLazy",

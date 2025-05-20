@@ -38,9 +38,10 @@ vim.keymap.set("n", "<leader>bk", ":bd!<CR>")
 vim.keymap.set("n", "<leader>bK", ":%bd!<CR>")
 
 -- Tabs
-vim.keymap.set("n", "<leader>nt", ":tabnew<CR>")
-vim.keymap.set("n", "<leader>nn", ":tabnext<CR>")
-vim.keymap.set("n", "<leader>nk", ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
+vim.keymap.set("n", "]t", ":tabnext<CR>")
+vim.keymap.set("n", "]t", ":tabnext<CR>")
+vim.keymap.set("n", "<leader>tk", ":tabclose<CR>")
 
 -- Spilts
 vim.keymap.set("n", "<M-h>", "<C-w><C-h>")
@@ -57,7 +58,7 @@ vim.keymap.set("n", "<M-S-up>", "<C-w>+")
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Toggles
-vim.keymap.set("n", "<leader>ts", ":set spell!<CR>")
+vim.keymap.set("n", "<leader>ss", ":set spell!<CR>")
 
 -- Jumplist
 vim.keymap.set(

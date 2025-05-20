@@ -5,7 +5,7 @@ return {
   {
     "tpope/vim-fugitive",
     config = function()
-      vim.keymap.set("n", "<leader>tg", ":G ")
+      vim.keymap.set("n", "<leader>sg", ":G ")
     end,
   },
   {

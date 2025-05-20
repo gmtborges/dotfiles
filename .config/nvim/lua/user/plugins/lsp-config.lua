@@ -3,9 +3,8 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
       "saghen/blink.cmp",
-      -- "hrsh7th/cmp-nvim-lsp",
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
+      "mason-org/mason.nvim",
+      "mason-org/mason-lspconfig.nvim",
       "b0o/schemastore.nvim",
       "nanotee/sqls.nvim",
     },
@@ -33,7 +32,8 @@ return {
       -- local capabilities =
       --     require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-      lspconfig.lua_ls.setup({
+      vim.lsp.config('lua_ls', {
+        capabilities = capabilities,
         settings = {
           Lua = {
             runtime = {
@@ -82,7 +82,7 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.jsonls.setup({
+      vim.lsp.config('jsonls', {
         filetypes = { "json", "jsonc" },
         settings = {
           json = {
@@ -97,7 +97,7 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.yamlls.setup({
+      vim.lsp.config('yamlls', {
         settings = {
           yaml = {
             schemaStore = {
@@ -113,7 +113,7 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.marksman.setup({
+      vim.lsp.config('marksman', {
         filetypes = { "markdown", "mdx" },
         capabilities = capabilities,
       })
@@ -122,11 +122,11 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.terraformls.setup({
+      vim.lsp.config('terraformls', {
         capabilities = capabilities,
       })
 
-      lspconfig.gopls.setup({
+      vim.lsp.config('gopls', {
         capabilities = capabilities,
       })
 
@@ -141,7 +141,7 @@ return {
         end,
       })
 
-      lspconfig.helm_ls.setup({
+      vim.lsp.config('helm_ls', {
         capabilities = capabilities,
       })
 
@@ -157,12 +157,11 @@ return {
           -- See `:help vim.lsp.*` for documentation on any of the below functions
           local opts = { buffer = ev.buf }
           vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-          -- vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+          vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
           vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-          -- vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-          -- vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-          vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-          vim.keymap.set("i", "<C-k>", vim.lsp.buf.signature_help, opts)
+          vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+          vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+          vim.keymap.set({ "n", "i" }, "<C-k>", vim.lsp.buf.signature_help, opts)
           vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename, opts)
           vim.keymap.set({ "n", "v" }, "<leader>h", vim.lsp.buf.code_action, opts)
           -- vim.keymap.set("n", "<leader>cf", function()

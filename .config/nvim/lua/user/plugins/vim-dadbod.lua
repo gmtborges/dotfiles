@@ -13,7 +13,7 @@ return {
     vim.g.db_ui_disable_mappings_sql = 1
   end,
   config = function()
-    vim.keymap.set("n", "<leader>tb", ":DBUIToggle<CR>")
+    vim.keymap.set("n", "<leader>sd", ":DBUIToggle<CR>")
 
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "sql",
