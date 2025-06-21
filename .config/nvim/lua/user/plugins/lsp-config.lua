@@ -16,6 +16,7 @@ return {
           "gopls",
           "templ",
           "html",
+          "emmet_ls",
           "tailwindcss",
           "ts_ls",
           "jsonls",
@@ -27,11 +28,7 @@ return {
           "helm_ls"
         },
       })
-      local lspconfig = require("lspconfig")
       local capabilities = require('blink.cmp').get_lsp_capabilities()
-      -- local capabilities =
-      --     require("cmp_nvim_lsp").default_capabilities(vim.lsp.protocol.make_client_capabilities())
-
       vim.lsp.config('lua_ls', {
         capabilities = capabilities,
         settings = {
@@ -57,7 +54,7 @@ return {
         },
       })
 
-      lspconfig.cssls.setup({
+      vim.lsp.config('cssls', {
         settings = {
           scss = {
             lint = {
@@ -74,13 +71,18 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.ts_ls.setup({
+      vim.lsp.config("ts_ls", {
         capabilities = capabilities,
       })
 
-      lspconfig.html.setup({
+      vim.lsp.config("html", {
         capabilities = capabilities,
       })
+
+      vim.lsp.config("emmet_ls", {
+        capabilities = capabilities,
+      })
+
 
       vim.lsp.config('jsonls', {
         filetypes = { "json", "jsonc" },
@@ -93,7 +95,7 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.tailwindcss.setup({
+      vim.lsp.config('tailwindcss', {
         capabilities = capabilities,
       })
 
@@ -109,7 +111,7 @@ return {
         },
       })
 
-      lspconfig.astro.setup({
+      vim.lsp.config('astro', {
         capabilities = capabilities,
       })
 
@@ -118,7 +120,7 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.ansiblels.setup({
+      vim.lsp.config('ansiblels', {
         capabilities = capabilities,
       })
 
@@ -130,15 +132,13 @@ return {
         capabilities = capabilities,
       })
 
-      lspconfig.templ.setup({
+      vim.lsp.config('templ', {
         capabilities = capabilities,
       })
       vim.filetype.add({ extension = { templ = "templ" } })
 
-      lspconfig.sqls.setup({
-        on_attach = function(client, bufnr)
-          require("sqls").on_attach(client, bufnr) -- require sqls.nvim
-        end,
+      vim.lsp.config('sqls', {
+        capabilities = capabilities,
       })
 
       vim.lsp.config('helm_ls', {

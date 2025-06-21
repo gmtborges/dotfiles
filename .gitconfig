@@ -48,6 +48,12 @@
   defaultBranch = main
 [fetch]
   prune = true
-
 [includeIf "gitdir:~/repos/saas/matt/"]
-  path = .gitconfig-matt
+[user]
+	name = Matthew Handel
+	email = mhandel31@gmail.com
+[includeIf "gitdir:~/repos/work/advolve/"]
+[user]
+  name = Gustavo Borges
+  email = "gustavo.borges@advove.ai"
+  signingkey = 0004CEA55AF045823B2AB650FD76D8850DC09820

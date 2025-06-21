@@ -1,5 +1,27 @@
 return {
   {
+    "olimorris/codecompanion.nvim",
+    opts = {},
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("codecompanion").setup({
+        strategies = {
+          chat = {
+            adapter = "anthropic",
+          },
+          inline = {
+            adapter = "anthropic",
+          },
+        },
+      })
+      vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>",
+        { noremap = true, silent = true })
+    end
+  },
+  {
     "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
     dependencies = {
@@ -23,14 +45,17 @@ return {
   },
   {
     "yetone/avante.nvim",
+    enabled = false,
     event = "VeryLazy",
     lazy = true,
     version = "*",
     opts = {
       provider = "claude",
-      claude = {
-        model = "claude-3-7-sonnet-20250219",
-        disable_tools = true
+      providers = {
+        claude = {
+          model = "claude-4-sonnet-20250514",
+          disable_tools = true
+        },
       },
       hints = {
         enabled = false,
@@ -55,14 +80,6 @@ return {
       "MunifTanjim/nui.nvim",
       --- The below dependencies are optional,
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      {
-        -- Make sure to setup it properly if you have lazy=true
-        "MeanderingProgrammer/render-markdown.nvim",
-        opts = {
-          file_types = { "Avante" },
-        },
-        ft = { "Avante" },
-      },
     },
   },
   {
@@ -102,6 +119,14 @@ return {
         auto_aprove = true,
         use_bundled_binary = true,
         extensions = {
+          mcphub = {
+            callback = "mcphub.extensions.codecompanion",
+            opts = {
+              make_vars = true,
+              make_slash_commands = true,
+              show_result_in_chat = true
+            }
+          },
           avante = {
             make_slash_commands = true,
           }
