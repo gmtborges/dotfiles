@@ -2,10 +2,10 @@
 font-family = Iosevka Custom
 font-style = Medium
 font-style-bold = Bold
-font-size = 16
+font-size = 15
 adjust-cell-height = 9
 adjust-cursor-height = 9
-adjust-cell-width = -1
+adjust-cell-width = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
