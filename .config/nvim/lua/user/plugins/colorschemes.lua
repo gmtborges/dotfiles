@@ -41,7 +41,7 @@ return {
     priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "frappe",
+        flavour = "macchiato",
         transparent_background = true,
         no_italic = false,
         styles = {
@@ -89,4 +89,30 @@ return {
       })
     end,
   },
+  {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('nordic').setup({
+        transparent = {
+          bg = true,
+          float = true
+        }
+      })
+    end
+  },
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      require('solarized').setup({
+        transparent = {
+          enabled = true
+        }
+      })
+    end,
+  }
 }
