@@ -46,7 +46,7 @@ return {
         no_italic = false,
         styles = {
           keywords = { "bold" },
-          conditionals = {},
+          conditionals = { "bold" },
           miscs = {}
         },
         integrations = {

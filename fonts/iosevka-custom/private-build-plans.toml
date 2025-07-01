@@ -6,7 +6,7 @@ noCvSs = true
 exportGlyphNames = false
 
 [buildPlans.IosevkaCustom.variants.design]
-one = "base"
+one = "no-base-long-top-serif"
 two = "curly-neck-serifless"
 three = "two-arcs"
 four = "semi-open-serifless"
@@ -34,24 +34,24 @@ capital-v = "straight-serifless"
 capital-w = "straight-serifless"
 capital-y = "straight-serifless"
 capital-z = "curly-serifless"
-a = "double-storey-serifed"
+a = "single-storey-tailed"
 b = "toothed-motion-serifed"
 c = "serifless"
-d = "tailed-serifless"
-e = "flat-crossbar"
-f = "serifless-crossbar-at-x-height"
+d = "toothed-serifless"
+e = "rounded"
+f = "flat-hook-serifless"
 g = "double-storey-open"
 h = "straight-top-left-serifed"
 i = "serifed"
 j = "serifed"
 k = "curly-serifless"
-l = "serifed-semi-tailed"
+l = "serifed-flat-tailed"
 n = "straight-serifless"
 p = "eared-motion-serifed"
 q = "straight-motion-serifed"
 r = "serifless"
 s = "serifless"
-t = "bent-hook-asymmetric-short-neck"
+t = "flat-hook-short-neck2"
 u = "tailed-serifless"
 v = "straight-serifless"
 w = "straight-serifless"
@@ -110,8 +110,13 @@ shape = 500
 menu = 500
 css = 500
 
+[buildPlans.IosevkaCustom.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
+
 [buildPlans.IosevkaCustom.widths.Normal]
-shape = 570
+shape = 560
 menu = 5
 css = "normal"
 
@@ -120,12 +125,6 @@ angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
-
-[buildPlans.IosevkaCustom.slopes.Italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
 
 [buildPlans.IosevkaCustom.metricOverride]
 cap = 700
