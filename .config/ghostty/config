@@ -1,11 +1,11 @@
 # vim:ft=config
 font-family = Iosevka Custom
-font-style = Medium
-font-style-bold = Bold
-font-size = 17
+font-style = Regular
+font-style-bold = SemiBold
+font-size = 15
 adjust-cell-height = 8
 adjust-cursor-height = 8
-adjust-cell-width = -1
+adjust-cell-width = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -38,4 +38,3 @@ shell-integration-features = no-cursor
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-

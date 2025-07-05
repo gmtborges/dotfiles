@@ -72,47 +72,5 @@ return {
         end
       })
     end
-  },
-  {
-    'projekt0n/github-nvim-theme',
-    name = 'github-theme',
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      require('github-theme').setup({
-        options = {
-          transparent = true,
-          styles = {
-            keywords = 'bold'
-          }
-        }
-      })
-    end,
-  },
-  {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('nordic').setup({
-        transparent = {
-          bg = true,
-          float = true
-        }
-      })
-    end
-  },
-  {
-    'maxmx03/solarized.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    config = function()
-      require('solarized').setup({
-        transparent = {
-          enabled = true
-        }
-      })
-    end,
   }
 }

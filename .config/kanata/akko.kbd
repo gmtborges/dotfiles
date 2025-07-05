@@ -3,7 +3,6 @@
   concurrent-tap-hold   yes
   macos-dev-names-include (
     "Akko 2.4G Wireless Keyboard"
-    "Akko Multi-modes Keyboard-B"
   )
 )
 
