@@ -1,5 +1,5 @@
 [user]
-	name = Gustavo Martins T Borges
+	name = Gustavo Borges
 	email = gustavo@gbsoft.net
 [alias]
   st = status
@@ -49,11 +49,6 @@
 [fetch]
   prune = true
 [includeIf "gitdir:~/repos/saas/matt/"]
-[user]
-	name = Matthew Handel
-	email = mhandel31@gmail.com
+  path = "~/.gitconfig-matt"
 [includeIf "gitdir:~/repos/work/advolve/"]
-[user]
-  name = Gustavo Borges
-  email = "gustavo.borges@advove.ai"
-  signingkey = 0004CEA55AF045823B2AB650FD76D8850DC09820
+  path = "~/.gitconfig-advolve"
