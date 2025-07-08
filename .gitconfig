@@ -38,6 +38,8 @@
   template = ~/.gitmessage
   gpgsign = true
   verbose = true
+[tag]
+  gpgsign = true
 [pull]
   rebase = true
 [merge]

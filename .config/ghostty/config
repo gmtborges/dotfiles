@@ -1,8 +1,8 @@
 # vim:ft=config
 font-family = Iosevka Custom
-font-style = Regular
-font-style-bold = SemiBold
-font-size = 15
+font-style = Medium
+font-style-bold = Bold
+font-size = 16
 adjust-cell-height = 8
 adjust-cursor-height = 8
 adjust-cell-width = 0
@@ -29,7 +29,7 @@ cursor-text = #1d202f
 background-opacity = 0.92
 background-blur-radius = 32
 
-window-width = 152
+window-width = 145
 window-height = 50
 
 cursor-style = block
