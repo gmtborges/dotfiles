@@ -103,10 +103,13 @@ return {
         settings = {
           yaml = {
             schemaStore = {
-              enable = false,
-              url = "",
+              enable = true,
             },
-            schemas = require("schemastore").yaml.schemas(),
+            schemas = {
+              kubernetes = "manifests/*.yaml"
+            },
+            validate = true,
+            completion = true
           },
         },
       })
