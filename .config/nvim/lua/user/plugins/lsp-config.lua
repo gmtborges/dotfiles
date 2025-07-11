@@ -102,13 +102,15 @@ return {
       vim.lsp.config('yamlls', {
         settings = {
           yaml = {
-            schemaStore = {
-              enable = true,
-            },
             schemas = {
-              kubernetes = "manifests/*.yaml"
+              kubernetes = { "manifests/*.yaml", "**/manifests/**/*.yaml" },
+              ["https://json.schemastore.org/github-workflow.json"] = ".github/workflows/*.{yml,yaml}",
+            },
+            format = {
+              enable = true
             },
             validate = true,
+            hover = true,
             completion = true
           },
         },
@@ -197,20 +199,24 @@ return {
       })
     end,
   },
-  -- {
-  --   "someone-stole-my-name/yaml-companion.nvim",
-  --   dependencies = {
-  --     "neovim/nvim-lspconfig",
-  --     "nvim-lua/plenary.nvim",
-  --     "nvim-telescope/telescope.nvim",
-  --   },
-  --   config = function()
-  --     require("telescope").load_extension("yaml_schema")
-  --     local cfg = require("yaml-companion").setup()
-  --     require("lspconfig")["yamlls"].setup(cfg)
-  --
-  --
-  --     vim.keymap.set("n", "<leader>ft", ":Telescope yaml_schema<CR>")
-  --   end,
-  -- }
+  {
+    "jay-babu/mason-null-ls.nvim",
+    dependencies = {
+      "williamboman/mason.nvim",
+      "nvimtools/none-ls.nvim",
+    },
+    config = function()
+      require("mason-null-ls").setup({
+        ensure_installed = {
+          "stylua",
+          "prettierd",
+          "yamlfmt",
+          "gofumpt",
+          "goimports-reviser",
+          "sql_formatter"
+        },
+        automatic_installation = true
+      })
+    end,
+  }
 }

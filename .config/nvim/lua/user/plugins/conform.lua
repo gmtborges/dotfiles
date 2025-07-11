@@ -27,7 +27,7 @@ return {
         css = { "prettier", "prettierd", stop_after_first = true },
         json = { "prettier", "prettierd", stop_after_first = true },
         markdown = { "prettier", "prettierd", stop_after_first = true },
-        yaml = { "yamlfmt" },
+        -- yaml = { "yamlfmt" },
         terraform = { "terraform_fmt" },
         swift = { "swiftformat" },
       },
