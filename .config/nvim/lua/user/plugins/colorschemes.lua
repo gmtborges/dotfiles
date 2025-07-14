@@ -9,8 +9,6 @@ return {
         style = "storm",
         styles = {
           keywords = { bold = true, italic = false },
-          sidebars = "transparent",
-          floats = "transparent",
         },
         on_colors = function(colors)
           colors.comment = "#7f87af"

@@ -9,31 +9,28 @@ return {
         if next(clients) == nil then
           return ''
         end
+
         local c = {}
+        local function contains(tbl, val)
+          for _, v in pairs(tbl) do
+            if v == val then
+              return true
+            end
+          end
+          return false
+        end
+
         for _, client in pairs(clients) do
-          if client.name ~= "GitHub Copilot" then
+          if client.name == "terraformls" then
+            if not contains(c, "terraformls") then
+              table.insert(c, client.name)
+            end
+          else
             table.insert(c, client.name)
           end
         end
         return "[" .. table.concat(c, ", ") .. "]"
       end
-
-      -- local lint_progress = function()
-      --   local linters = require("lint").get_running()
-      --   if #linters == 0 then
-      --     return ""
-      --   end
-      --   return "[" .. table.concat(linters, ", ") .. "]"
-      -- end
-      --
-      --
-      -- local function get_schema()
-      --   local schema = require("yaml-companion").get_buf_schema(0)
-      --   if schema.result[1].name == "none" then
-      --     return ""
-      --   end
-      --   return schema.result[1].name
-      -- end
 
       require("lualine").setup({
         options = {

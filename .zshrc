@@ -138,7 +138,7 @@ alias v=nvim
 alias docker=podman
 
 function branchdel () {
- git branch --merged | egrep -v "main" | xargs git branch -d 
+ git branch --merged origin/main --quiet | grep -v "main" || true | xargs git branch -d
 }
 
 function save-notes () {
