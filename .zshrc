@@ -98,8 +98,9 @@ plugins=(
 	zsh-autosuggestions 
 	zsh-syntax-highlighting 
   aws
+  asdf
   terraform
-  podman
+  docker
   kubectl
 )
 
@@ -135,7 +136,6 @@ eval "$(fzf --zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
-alias docker=podman
 
 function branchdel () {
  git branch --merged origin/main --quiet | grep -v "main" || true | xargs git branch -d

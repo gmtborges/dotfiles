@@ -132,6 +132,7 @@ return {
       vim.lsp.config('terraformls', {
         capabilities = capabilities,
       })
+      vim.filetype.add({ extension = { tf = "terraform" } })
 
       vim.lsp.config('gopls', {
         capabilities = capabilities,
