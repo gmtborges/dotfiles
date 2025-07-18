@@ -2,11 +2,11 @@
 font-family = Source Code Pro
 font-style = Medium
 font-style-italic = Medium
-font-style-bold = SemiBold
-font-style-bold-italic = SemiBold
-font-size = 14
-adjust-cell-height = 8
-adjust-cursor-height = 8
+font-style-bold = Bold
+font-style-bold-italic = Bold
+font-size = 15
+adjust-cell-height = 9
+adjust-cursor-height = 9
 adjust-cell-width = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
