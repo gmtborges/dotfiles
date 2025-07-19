@@ -2,9 +2,9 @@
 font-family = Source Code Pro
 font-style = Medium
 font-style-italic = Medium
-font-style-bold = Bold
-font-style-bold-italic = Bold
-font-size = 15
+font-style-bold = SemiBold
+font-style-bold-italic = SemiBold
+font-size = 14
 adjust-cell-height = 9
 adjust-cursor-height = 9
 adjust-cell-width = 0
@@ -28,7 +28,7 @@ palette = 8=#677289
 # cursor-color = #c0caf5
 # cursor-text = #1d202f
 
-background-opacity = 1.00
+background-opacity = 0.90
 # background-blur-radius = 32
 
 window-width = 156
