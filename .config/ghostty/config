@@ -1,13 +1,12 @@
 # vim:ft=config
 font-family = Source Code Pro
-font-style = Medium
-font-style-italic = Medium
-font-style-bold = SemiBold
-font-style-bold-italic = SemiBold
 font-size = 14
-adjust-cell-height = 9
-adjust-cursor-height = 9
-adjust-cell-width = 0
+font-style-bold = SemiBold
+font-style-italic = false
+font-style-bold-italic = false
+font-thicken = true
+adjust-cell-height = 8
+adjust-cursor-height = 8
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -28,10 +27,10 @@ palette = 8=#677289
 # cursor-color = #c0caf5
 # cursor-text = #1d202f
 
-background-opacity = 0.90
-# background-blur-radius = 32
+background-opacity = 0.85
+background-blur-radius = 32
 
-window-width = 156
+window-width = 162
 window-height = 50
 
 cursor-style = block

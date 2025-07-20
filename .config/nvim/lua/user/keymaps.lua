@@ -59,6 +59,7 @@ vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Toggles
 vim.keymap.set("n", "<leader>ss", ":set spell!<CR>")
+vim.keymap.set("n", "<leader>sw", ":set wrap!<CR>")
 
 -- Jumplist
 vim.keymap.set(
