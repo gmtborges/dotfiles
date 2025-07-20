@@ -214,7 +214,8 @@ return {
           "yamlfmt",
           "gofumpt",
           "goimports-reviser",
-          "sql_formatter"
+          "sql_formatter",
+          "tflint"
         },
         automatic_installation = true
       })

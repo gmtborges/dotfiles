@@ -127,9 +127,6 @@ return {
               show_result_in_chat = true
             }
           },
-          avante = {
-            make_slash_commands = true,
-          }
         }
       })
     end,
