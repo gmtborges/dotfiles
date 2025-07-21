@@ -21,8 +21,8 @@ return {
         end
 
         for _, client in pairs(clients) do
-          if client.name == "terraformls" then
-            if not contains(c, "terraformls") then
+          if client.name == "terraformls" or client.name == "tflint" then
+            if not contains(c, client.name) then
               table.insert(c, client.name)
             end
           else
