@@ -5,12 +5,12 @@ return {
     priority = 1000,
     config = function()
       require("tokyonight").setup({
-        transparent = true,
+        transparent = false,
         style = "storm",
         styles = {
           keywords = { bold = true, italic = false },
-          sidebars = "transparent",
-          floats = "transparent"
+          -- sidebars = "transparent",
+          -- floats = "transparent"
         },
         on_colors = function(c)
           c.comment = "#7f87af"
@@ -33,7 +33,7 @@ return {
     priority = 1000,
     config = function()
       require("onedark").setup({
-        transparent = true,
+        transparent = false,
         lualine = {
           transparent = true
         },

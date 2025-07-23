@@ -6,8 +6,8 @@ font-style-italic = false
 font-style-bold-italic = false
 font-thicken = true
 font-thicken-strength = 10
-adjust-cell-height = 8
-adjust-cursor-height = 8
+adjust-cell-height = 9
+adjust-cursor-height = 9
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -28,8 +28,8 @@ palette = 8=#677289
 # cursor-color = #c0caf5
 # cursor-text = #1d202f
 
-background-opacity = 0.80
-background-blur-radius = 32
+# background-opacity = 0.80
+# background-blur-radius = 32
 
 window-width = 162
 window-height = 50
