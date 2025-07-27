@@ -22,7 +22,6 @@ export PATH=$HOME/.local/bin:$PATH
 
 # Asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-. ~/.asdf/plugins/java/set-java-home.zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
