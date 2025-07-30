@@ -5,12 +5,12 @@ return {
     priority = 1000,
     config = function()
       require("tokyonight").setup({
-        -- transparent = true,
+        transparent = true,
         style = "storm",
         styles = {
           keywords = { bold = true, italic = false },
-          -- sidebars = "transparent",
-          -- floats = "transparent"
+          sidebars = "transparent",
+          floats = "transparent"
         },
         on_colors = function(c)
           c.comment = "#7f87af"
@@ -33,7 +33,7 @@ return {
     priority = 1000,
     config = function()
       require("onedark").setup({
-        -- transparent = true,
+        transparent = true,
         lualine = {
           transparent = true
         },
@@ -50,10 +50,10 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "macchiato",
-        -- transparent_background = true,
-        no_italic = false,
+        transparent_background = true,
         styles = {
-          miscs = {}
+          keywords = { "bold" },
+          conditionals = { "bold" }
         },
         integrations = {
           native_lsp = {

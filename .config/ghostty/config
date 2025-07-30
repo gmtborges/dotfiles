@@ -1,7 +1,8 @@
 # vim:ft=config
 font-family = Iosevka Custom
-font-size = 16.0
-font-style = Retina
+font-size = 15.4
+font-style-bold = SemiBold
+font-style-bold-italic = SemiBold
 adjust-cell-height = 5
 adjust-cursor-height = 5
 
@@ -14,20 +15,22 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = tokyonight-storm
+theme = catppuccin-macchiato
 # Dark themes
 palette = 8=#677289
 
 # Light themes
 # palette = 8=#99a1b2
 
-# cursor-color = #c0caf5
-# cursor-text = #1d202f
 
-# background-opacity = 0.80
-# background-blur-radius = 32
+# For Catppuccin
+cursor-color = #c0caf5
+cursor-text = #1d202f
 
-window-width = 172
+background-opacity = 0.88
+background-blur-radius = 32
+
+window-width = 162
 window-height = 50
 
 cursor-style = block
