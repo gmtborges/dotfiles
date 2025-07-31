@@ -136,7 +136,6 @@ return {
         exclude_filetypes = { "swift" }
       })
     end,
-    -- vim.keymap.set("n", "<leader>sh", ":HighlightColors Toggle<CR>")
   },
   {
     "glepnir/dashboard-nvim",
