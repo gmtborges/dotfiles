@@ -1,7 +1,7 @@
 return {
   {
     "echasnovski/mini.nvim",
-    enabled = false,
+    enabled = true,
     version = "*",
     config = function()
       local files = require("mini.files")
@@ -11,7 +11,7 @@ return {
         },
       })
 
-      vim.keymap.set("n", "<leader>e", function()
+      vim.keymap.set("n", "<leader>fe", function()
         if not files.close() then
           files.open(vim.api.nvim_buf_get_name(0))
           files.reveal_cwd()
@@ -21,6 +21,7 @@ return {
   },
   {
     "A7Lavinraj/fyler.nvim",
+    enabled = true,
     dependencies = { "echasnovski/mini.icons" },
     branch = "stable",
     opts = {},

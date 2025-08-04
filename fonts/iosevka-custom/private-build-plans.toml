@@ -6,7 +6,6 @@ noCvSs = true
 exportGlyphNames = false
 
 [buildPlans.IosevkaCustom.variants.design]
-one = "no-base-long-top-serif"
 three = "two-arcs"
 five = "oblique-arched-serifless"
 seven = "bend-serifless"
@@ -17,16 +16,10 @@ capital-b = "standard-serifless"
 capital-d = "more-rounded-serifless"
 capital-g = "toothless-rounded-serifless-hooked"
 capital-j = "serifless"
-capital-k = "curly-serifless"
-capital-m = "slanted-sides-hanging-serifless"
-capital-r = "curly-serifless"
-a = "single-storey-earless-corner-tailed"
-f = "flat-hook-serifless"
-# g = "single-storey-flat-hook-serifless"
-k = "curly-serifless"
-l = "serifed-semi-tailed"
+# f = "flat-hook-serifless"
+# j = "flat-hook-serifed"
+r = "corner-hooked-serifed"
 t = "bent-hook-short-neck2"
-# u = "tailed-serifless"
 w = "straight-flat-top-serifless"
 y = "straight-turn-serifless"
 asterisk = "penta-low"
@@ -37,7 +30,6 @@ at = "compact"
 dollar = "open"
 
 [buildPlans.IosevkaCustom.variants.italic]
-one = "no-base-long-top-serif"
 three = "two-arcs"
 five = "oblique-arched-serifless"
 seven = "bend-serifless"
@@ -47,19 +39,11 @@ zero = "slashed-split"
 capital-b = "standard-serifless"
 capital-d = "more-rounded-serifless"
 capital-g = "toothless-rounded-serifless-hooked"
-capital-j = "serifless"
-capital-k = "curly-serifless"
-capital-m = "slanted-sides-hanging-serifless"
 capital-r = "curly-serifless"
-a = "single-storey-earless-corner-tailed"
-f = "flat-hook-serifless"
-# g = "single-storey-flat-hook-serifless"
-k = "curly-serifless"
-l = "serifed-semi-tailed"
+# j = "flat-hook-serifed"
+r = "corner-hooked-serifed"
 t = "bent-hook-short-neck2"
-# u = "tailed-serifless"
 w = "straight-flat-top-serifless"
-y = "straight-turn-serifless"
 asterisk = "penta-low"
 paren = "large-contour"
 brace = "curly-flat-boundary"
@@ -93,7 +77,7 @@ menu = 600
 css = 600
 
 [buildPlans.IosevkaCustom.widths.Normal]
-shape = 560
+shape = 600
 menu = 5
 css = "normal"
 
@@ -110,8 +94,8 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.IosevkaCustom.metricOverride]
-cap = 635
-ascender = 675
-xHeight = 470
+cap = 655
+# ascender = 700
+# xHeight = 495
 sb = 'default_sb * 0.88'
 smallArchDepth = 230
