@@ -4,8 +4,8 @@ font-size = 13.6
 font-style = Medium
 font-style-italic = false
 font-style-bold-italic = false
-adjust-cell-height = 7
-adjust-cursor-height = 7
+adjust-cell-height = 5
+adjust-cursor-height = 5
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
