@@ -31,7 +31,7 @@ cursor-text = #1d202f
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 152
+window-width = 162
 window-height = 60
 
 cursor-style = block
