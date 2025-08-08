@@ -5,7 +5,7 @@ return {
     priority = 1000,
     config = function()
       require("tokyonight").setup({
-        -- transparent = true,
+        transparent = true,
         style = "storm",
         styles = {
           keywords = { bold = true, italic = false },
@@ -33,7 +33,7 @@ return {
     priority = 1000,
     config = function()
       require("onedark").setup({
-        -- transparent = true,
+        transparent = true,
         lualine = {
           transparent = true
         },
@@ -50,7 +50,7 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "macchiato",
-        -- transparent_background = true,
+        transparent_background = true,
         styles = {
           keywords = { "bold" },
           conditionals = { "bold" }

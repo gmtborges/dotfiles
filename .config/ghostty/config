@@ -1,11 +1,13 @@
 # vim:ft=config
-font-family = Iosevka Custom
+font-family = Source Code Pro
 font-size = 13.6
-font-style = Medium
+font-style-bold = SemiBold
 font-style-italic = false
 font-style-bold-italic = false
-adjust-cell-height = 5
-adjust-cursor-height = 5
+font-thicken = true
+font-thicken-strength = 120
+adjust-cell-height = 7
+adjust-cursor-height = 7
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -16,22 +18,21 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = catppuccin-macchiato
+theme = tokyonight-storm
 # Dark themes
 palette = 8=#677289
 
 # Light themes
 # palette = 8=#99a1b2
 
-
 # For Catppuccin
 cursor-color = #c0caf5
 cursor-text = #1d202f
 
-# background-opacity = 0.88
-# background-blur-radius = 32
+background-opacity = 0.88
+background-blur-radius = 32
 
-window-width = 162
+window-width = 152
 window-height = 60
 
 cursor-style = block
