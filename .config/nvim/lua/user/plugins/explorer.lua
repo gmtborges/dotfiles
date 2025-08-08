@@ -23,14 +23,17 @@ return {
     "A7Lavinraj/fyler.nvim",
     enabled = true,
     dependencies = { "echasnovski/mini.icons" },
-    branch = "stable",
+    -- branch = "stable",
     opts = {},
     config = function()
       require("fyler").setup({
         views = {
           explorer = {
-            width = 0.3,
-            kind = "split:rightmost",
+            -- width = 0.3,
+            -- kind = "split:rightmost"
+            win = {
+              kind = "split_right_most",
+            }
           }
         }
 
