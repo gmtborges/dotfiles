@@ -101,13 +101,13 @@ return {
   },
   {
     "zbirenbaum/copilot.lua",
-    enabled = false,
+    enabled = true,
     cmd = 'Copilot',
     event = 'InsertEnter',
     config = function()
       require('copilot').setup({
         suggestion = {
-          auto_trigger = true,
+          auto_trigger = false,
           keymap = {
             accept = '<M-TAB>',
             next = '<M-]>',

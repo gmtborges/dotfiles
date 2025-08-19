@@ -7,10 +7,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set({ "n" }, "<C-s>", ":update<CR>")
 
 -- Copy to clipboard
-vim.keymap.set("n", "<leader>y", '"+y')
-vim.keymap.set("v", "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>Y", '"+Y')
-
+vim.keymap.set({ "n", "v" }, "Y", '"+y')
 
 -- Move lines in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -51,9 +48,13 @@ vim.keymap.set("n", "<M-k>", "<C-w><C-k>")
 
 -- Spilts resize
 vim.keymap.set("n", "<M-S-left>", "<C-w>>")
+vim.keymap.set("n", "<M-S-h>", "<C-w>>")
 vim.keymap.set("n", "<M-S-right>", "<C-w><")
+vim.keymap.set("n", "<M-S-l>", "<C-w><")
 vim.keymap.set("n", "<M-S-down>", "<C-w>-")
+vim.keymap.set("n", "<M-S-j>", "<C-w>-")
 vim.keymap.set("n", "<M-S-up>", "<C-w>+")
+vim.keymap.set("n", "<M-S-k>", "<C-w>+")
 
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 

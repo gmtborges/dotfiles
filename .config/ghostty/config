@@ -1,7 +1,6 @@
 # vim:ft=config
-font-family = Source Code Pro
-font-size = 13.6
-font-style-bold = SemiBold
+font-family = Sometype Mono
+font-size = 14.0
 font-style-italic = false
 font-style-bold-italic = false
 font-thicken = true
@@ -29,8 +28,8 @@ palette = 8=#677289
 cursor-color = #c0caf5
 cursor-text = #1d202f
 
-background-opacity = 0.88
-background-blur-radius = 32
+# background-opacity = 0.88
+# background-blur-radius = 32
 
 window-width = 152
 window-height = 60
