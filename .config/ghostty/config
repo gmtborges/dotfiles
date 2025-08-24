@@ -1,5 +1,5 @@
 # vim:ft=config
-font-family = Sometype Mono
+font-family = Source Code Pro
 font-size = 14.0
 font-style-italic = false
 font-style-bold-italic = false
@@ -17,7 +17,7 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = tokyonight-storm
+theme = catppuccin-macchiato
 # Dark themes
 palette = 8=#677289
 

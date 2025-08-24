@@ -25,7 +25,8 @@ return {
           "astro",
           "ansiblels",
           "marksman",
-          "helm_ls"
+          "helm_ls",
+          "pyright"
         },
       })
       local capabilities = require('blink.cmp').get_lsp_capabilities()
@@ -52,6 +53,10 @@ return {
             },
           },
         },
+      })
+
+      vim.lsp.config("pyright", {
+        capabilities = capabilities
       })
 
       vim.lsp.config('cssls', {
@@ -215,8 +220,10 @@ return {
           "yamlfmt",
           "gofumpt",
           "goimports-reviser",
+          "delve",
           "sql_formatter",
-          "tflint"
+          "tflint",
+          "debugpy"
         },
         automatic_installation = true
       })

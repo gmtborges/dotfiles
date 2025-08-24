@@ -29,9 +29,9 @@ vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
 
 -- vim.opt.clipboard = "unnamedplus" -- Copy and paste with OS clipboard
--- vim.opt.cursorline = true -- Highlight the current line
+vim.opt.cursorline = true -- Highlight the current line
 -- vim.opt.colorcolumn = "80" -- Show column ruler
-vim.opt.wrap = false -- Don't wrap lines
+vim.opt.wrap = false      -- Don't wrap lines
 
 -- Custom fold text function to show the first line
 local function custom_fold_text()
