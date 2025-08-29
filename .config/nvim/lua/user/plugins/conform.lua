@@ -30,6 +30,7 @@ return {
         -- yaml = { "yamlfmt" },
         terraform = { "terraform_fmt" },
         swift = { "swiftformat" },
+        python = { "ruff" }
       },
       format_on_save = function(bufnr)
         -- Disable autoformat on certain filetypes

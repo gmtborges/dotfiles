@@ -223,7 +223,8 @@ return {
           "delve",
           "sql_formatter",
           "tflint",
-          "debugpy"
+          "debugpy",
+          "ruff"
         },
         automatic_installation = true
       })
