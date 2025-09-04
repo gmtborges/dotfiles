@@ -13,41 +13,48 @@ return {
     telescope.setup({
       defaults = {
         file_ignore_patterns = { ".git/", "node_modules" },
+        -- layout_config = {
+        --   horizontal = {
+        --     width = { padding = 0 }
+        --   },
+        --   vertical = {
+        --     width = { padding = 0 }
+        --   }
+        -- }
       },
       extensions = {
         fzf = true,
       },
       pickers = {
-        find_files = {
-          theme = "dropdown",
-        },
-        buffers = {
-          theme = "dropdown",
-        },
+        -- find_files = {
+        --   theme = "dropdown",
+        -- },
+        -- buffers = {
+        --   theme = "dropdown",
+        -- },
         oldfiles = {
-          theme = "dropdown",
           cwd_only = true,
         },
-        lsp_document_symbols = {
-          theme = "dropdown",
-          symbol_width = 50,
-          symbol_type_width = 10,
-        },
-        lsp_definitions = {
-          theme = "dropdown",
-          symbol_width = 50,
-          symbol_type_width = 10,
-        },
-        lsp_references = {
-          theme = "dropdown",
-          symbol_width = 50,
-          symbol_type_width = 10,
-        },
-        lsp_implementations = {
-          theme = "dropdown",
-          symbol_width = 50,
-          symbol_type_width = 10,
-        }
+        -- lsp_document_symbols = {
+        --   theme = "dropdown",
+        --   symbol_width = 50,
+        --   symbol_type_width = 10,
+        -- },
+        -- lsp_definitions = {
+        --   theme = "dropdown",
+        --   symbol_width = 50,
+        --   symbol_type_width = 10,
+        -- },
+        -- lsp_references = {
+        --   theme = "dropdown",
+        --   symbol_width = 50,
+        --   symbol_type_width = 10,
+        -- },
+        -- lsp_implementations = {
+        --   theme = "dropdown",
+        --   symbol_width = 50,
+        --   symbol_type_width = 10,
+        -- }
       },
     })
     vim.keymap.set("n", "<C-p>", function()
@@ -81,13 +88,10 @@ return {
     vim.keymap.set("n", "<leader>j", function()
       builtin.lsp_document_symbols({ symbols = { "method", "function" } })
     end)
-    vim.keymap.set("n", "gd", function()
+    vim.keymap.set("n", "<leader>fd", function()
       builtin.lsp_definitions()
     end)
-    vim.keymap.set("n", "gi", function()
-      builtin.lsp_implementations()
-    end)
-    vim.keymap.set("n", "gr", function()
+    vim.keymap.set("n", "<leader>fm", function()
       builtin.lsp_references()
     end)
 

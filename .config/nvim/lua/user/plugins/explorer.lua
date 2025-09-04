@@ -22,9 +22,11 @@ return {
   {
     "A7Lavinraj/fyler.nvim",
     enabled = true,
-    dependencies = { "echasnovski/mini.icons" },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     -- branch = "stable",
-    opts = {},
+    opts = {
+      icon_provider = "nvim_web_devicons"
+    },
     config = function()
       require("fyler").setup({
         views = {
@@ -38,7 +40,7 @@ return {
         }
 
       })
-      vim.keymap.set("n", "<leader>e", ":Fyler<CR>")
+      vim.keymap.set("n", "<leader>e", ":Fyler kind=split_right_most<CR>")
     end
   }
 }
