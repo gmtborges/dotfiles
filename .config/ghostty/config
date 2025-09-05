@@ -1,12 +1,12 @@
 # vim:ft=config
-font-family = Source Code Pro
+font-family = JetBrains Mono NL
 font-size = 13.0
 font-style-italic = false
 font-style-bold-italic = false
 font-thicken = true
 font-thicken-strength = 50
-adjust-cell-height = 7
-adjust-cursor-height = 7
+adjust-cell-height = 6
+adjust-cursor-height = 6
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
