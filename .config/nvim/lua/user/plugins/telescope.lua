@@ -86,7 +86,7 @@ return {
 
     -- LSP
     vim.keymap.set("n", "<leader>j", function()
-      builtin.lsp_document_symbols({ symbols = { "method", "function" } })
+      builtin.lsp_document_symbols()
     end)
     vim.keymap.set("n", "<leader>fd", function()
       builtin.lsp_definitions()

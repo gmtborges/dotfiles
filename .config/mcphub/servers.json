@@ -10,8 +10,13 @@
       "command": "npx"
     },
     "terraform": {
+      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
       "command": "docker",
-      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"]
+      "disabled": true
+    },
+    "kubernetes": {
+      "command": "npx",
+      "args": ["-y", "kubernetes-mcp-server@latest"]
     }
   }
 }
