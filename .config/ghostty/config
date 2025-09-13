@@ -1,8 +1,6 @@
 # vim:ft=config
-font-family = JetBrains Mono NL
+font-family = Maple Mono Normal NL
 font-size = 13.0
-font-style-italic = false
-font-style-bold-italic = false
 # font-thicken = true
 # font-thicken-strength = 50
 adjust-cell-height = 6
