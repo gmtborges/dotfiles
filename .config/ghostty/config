@@ -1,6 +1,6 @@
 # vim:ft=config
 font-family = Maple Mono NL
-font-size = 14.0
+font-size = 13.0
 # font-thicken = true
 # font-thicken-strength = 0
 adjust-cell-height = 6
@@ -15,7 +15,7 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = catppuccin-macchiato
+theme = Catppuccin Macchiato
 # Dark themes
 palette = 8=#677289
 
