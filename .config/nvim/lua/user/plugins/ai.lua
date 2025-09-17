@@ -1,7 +1,6 @@
 return {
   {
     "olimorris/codecompanion.nvim",
-    opts = {},
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
@@ -10,11 +9,25 @@ return {
       require("codecompanion").setup({
         strategies = {
           chat = {
-            adapter = "anthropic",
+            adapter = "qwen3-coder",
           },
           inline = {
-            adapter = "anthropic",
+            adapter = "qwen3-coder",
           },
+        },
+        adapters = {
+          http = {
+            ['qwen3-coder'] = function()
+              return require('codecompanion.adapters').extend('ollama', {
+                name = 'qwen3-coder',
+                schema = {
+                  model = {
+                    default = 'qwen3-coder',
+                  },
+                },
+              })
+            end,
+          }
         },
         extensions = {
           mcphub = {
