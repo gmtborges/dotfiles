@@ -74,6 +74,7 @@ return {
             ["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } },
             ["@markup.heading.5.markdown"] = { fg = colors.sapphire, style = { "bold" } },
             ["@markup.heading.6.markdown"] = { fg = colors.lavander, style = { "bold" } },
+            ["@tag.attribute"] = { style = {} },
           }
         end
       })

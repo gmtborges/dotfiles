@@ -1,8 +1,8 @@
 # vim:ft=config
-font-family = Maple Mono NL
+font-family = Source Code Pro
 font-size = 13.0
-# font-thicken = true
-# font-thicken-strength = 0
+font-thicken = true
+font-thicken-strength = 0
 adjust-cell-height = 5
 adjust-cursor-height = 5
 
