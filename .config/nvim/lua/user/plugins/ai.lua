@@ -22,7 +22,7 @@ return {
                 name = 'qwen3-coder',
                 schema = {
                   model = {
-                    default = 'qwen3-coder',
+                    default = 'qwen3-coder:latest',
                   },
                 },
               })
