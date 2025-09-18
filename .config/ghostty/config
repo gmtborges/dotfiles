@@ -1,8 +1,8 @@
 # vim:ft=config
 font-family = Source Code Pro
 font-size = 13.6
-font-thicken = true
-font-thicken-strength = 0
+# font-thicken = true
+# font-thicken-strength = 0
 adjust-cell-height = 5
 adjust-cursor-height = 5
 
@@ -15,7 +15,7 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Catppuccin Macchiato
+theme = Tokyonight Storm
 # Dark themes
 palette = 8=#677289
 
