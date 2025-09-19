@@ -9,10 +9,10 @@ return {
       require("codecompanion").setup({
         strategies = {
           chat = {
-            adapter = "qwen3-coder",
+            adapter = "anthropic",
           },
           inline = {
-            adapter = "qwen3-coder",
+            adapter = "anthropic",
           },
         },
         adapters = {
