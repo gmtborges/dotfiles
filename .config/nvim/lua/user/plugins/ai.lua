@@ -17,26 +17,26 @@ return {
 				},
 				adapters = {
 					http = {
-						["qwen3-coder"] = function()
-							return require("codecompanion.adapters").extend("ollama", {
-								name = "qwen3-coder",
-								schema = {
-									model = {
-										default = "qwen3-coder:latest",
-									},
-								},
-							})
-						end,
-						["codellama"] = function()
-							return require("codecompanion.adapters").extend("ollama", {
-								name = "codellama",
-								schema = {
-									model = {
-										default = "codellama:latest",
-									},
-								},
-							})
-						end,
+						-- ["qwen3-coder"] = function()
+						-- 	return require("codecompanion.adapters").extend("ollama", {
+						-- 		name = "qwen3-coder",
+						-- 		schema = {
+						-- 			model = {
+						-- 				default = "qwen3-coder:latest",
+						-- 			},
+						-- 		},
+						-- 	})
+						-- end,
+						-- ["codellama"] = function()
+						-- 	return require("codecompanion.adapters").extend("ollama", {
+						-- 		name = "codellama",
+						-- 		schema = {
+						-- 			model = {
+						-- 				default = "codellama:latest",
+						-- 			},
+						-- 		},
+						-- 	})
+						-- end,
 					},
 				},
 				extensions = {
