@@ -8,7 +8,7 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = true, italic = false },
+					keywords = { bold = true },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -33,9 +33,10 @@ return {
 		priority = 1000,
 		config = function()
 			require("onedark").setup({
+				style = "darker",
 				-- transparent = true,
 				lualine = {
-					transparent = true,
+					transparent = false,
 				},
 				code_style = {
 					keywords = "bold",
@@ -49,21 +50,21 @@ return {
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
-				flavour = "macchiato",
+				background = {
+					dark = "macchiato",
+				},
+				no_italic = true,
 				-- transparent_background = true,
 				styles = {
 					keywords = { "bold" },
 					conditionals = { "bold" },
 				},
-				integrations = {
-					native_lsp = {
-						enabled = true,
-						underlines = {
-							errors = { "undercurl" },
-							hints = { "undercurl" },
-							warnings = { "undercurl" },
-							information = { "undercurl" },
-						},
+				lsp_styles = {
+					underlines = {
+						errors = { "undercurl" },
+						hints = { "undercurl" },
+						warnings = { "undercurl" },
+						information = { "undercurl" },
 					},
 				},
 				custom_highlights = function(colors)
@@ -79,5 +80,18 @@ return {
 				end,
 			})
 		end,
+	},
+	{
+		"f-person/auto-dark-mode.nvim",
+		enabled = true,
+		opts = {
+			update_interval = 3000,
+			set_dark_mode = function()
+				vim.api.nvim_set_option_value("background", "dark", {})
+			end,
+			set_light_mode = function()
+				vim.api.nvim_set_option_value("background", "light", {})
+			end,
+		},
 	},
 }

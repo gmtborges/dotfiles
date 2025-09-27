@@ -4,19 +4,6 @@
       "args": ["-y", "@upstash/context7-mcp"],
       "command": "npx",
       "disabled": false
-    },
-    "playwright": {
-      "args": ["@playwright/mcp@latest"],
-      "command": "npx"
-    },
-    "terraform": {
-      "args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
-      "command": "docker",
-      "disabled": true
-    },
-    "kubernetes": {
-      "command": "npx",
-      "args": ["-y", "kubernetes-mcp-server@latest"]
     }
   }
 }

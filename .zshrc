@@ -97,6 +97,7 @@ plugins=(
 	zsh-autosuggestions 
 	zsh-syntax-highlighting 
   aws
+  gcloud
   asdf
   terraform
   docker
@@ -137,8 +138,8 @@ eval "$(fzf --zsh)"
 alias vim=nvim
 alias v=nvim
 
-function branchdel () {
- git branch --merged origin/main --quiet | grep -v "main" || true | xargs git branch -d
+function delete-branch () {
+ git branch | grep -vE "main|master" || true | xargs git branch -D
 }
 
 function save-notes () {
@@ -161,3 +162,9 @@ function save-dotfiles () {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/gustavo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gustavo/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/gustavo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gustavo/google-cloud-sdk/completion.zsh.inc'; fi

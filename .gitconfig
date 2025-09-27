@@ -15,6 +15,7 @@
   pl = pull
   ps = push
   br = branch
+  sh = stash
   dd = diff
   dw = diff --word-diff
   ds = diff --staged

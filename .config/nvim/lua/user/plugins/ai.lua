@@ -9,34 +9,34 @@ return {
 			require("codecompanion").setup({
 				strategies = {
 					chat = {
-						adapter = "anthropic",
+						adapter = "glm-4.6",
 					},
 					inline = {
-						adapter = "anthropic",
+						adapter = "glm-4.6",
 					},
 				},
 				adapters = {
 					http = {
-						-- ["qwen3-coder"] = function()
-						-- 	return require("codecompanion.adapters").extend("ollama", {
-						-- 		name = "qwen3-coder",
-						-- 		schema = {
-						-- 			model = {
-						-- 				default = "qwen3-coder:latest",
-						-- 			},
-						-- 		},
-						-- 	})
-						-- end,
-						-- ["codellama"] = function()
-						-- 	return require("codecompanion.adapters").extend("ollama", {
-						-- 		name = "codellama",
-						-- 		schema = {
-						-- 			model = {
-						-- 				default = "codellama:latest",
-						-- 			},
-						-- 		},
-						-- 	})
-						-- end,
+						["deepseek-r1"] = function()
+							return require("codecompanion.adapters").extend("ollama", {
+								name = "deepseek-r1",
+								schema = {
+									model = {
+										default = "deepseek-r1:latest",
+									},
+								},
+							})
+						end,
+						["glm-4.6"] = function()
+							return require("codecompanion.adapters").extend("ollama", {
+								name = "glm-4.6",
+								schema = {
+									model = {
+										default = "glm-4.6:cloud",
+									},
+								},
+							})
+						end,
 					},
 				},
 				extensions = {
@@ -142,7 +142,7 @@ return {
 					},
 				},
 				filetypes = {
-					markdown = false,
+					markdown = true,
 					yaml = true,
 				},
 			})

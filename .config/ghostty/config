@@ -1,8 +1,11 @@
 # vim:ft=config
-font-family = JetBrains Mono NL
-font-size = 14.0
-adjust-cell-height = 7
-adjust-cursor-height = 7
+font-family = Source Code Pro
+font-size = 15.4
+adjust-cell-height = 8
+adjust-cursor-height = 8
+
+font-thicken = true
+font-thicken-strength = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -13,26 +16,18 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Tokyonight Storm
-# Dark themes
-palette = 8=#677289
-
-# Light themes
-# palette = 8=#99a1b2
-
-# For Catppuccin
-cursor-color = #c0caf5
-cursor-text = #1d202f
+theme = light:catppuccin-latte.conf,dark:catppuccin-macchiato.conf
 
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 155
+window-width = 150
 window-height = 60
 
 cursor-style = block
 shell-integration-features = no-cursor
 
 macos-option-as-alt = left
+
 keybind = alt+left=unbind
 keybind = alt+right=unbind

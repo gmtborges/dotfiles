@@ -1,0 +1,84 @@
+[buildPlans.IosevkaCustom]
+family = "Iosevka Custom"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = true
+exportGlyphNames = false
+
+[buildPlans.IosevkaCustom.variants]
+  inherits = "ss12"
+
+    [buildPlans.IosevkaCustom.variants.design]
+	four = "semi-open-serifless"
+	eight = "two-circles"
+	capital-g = "toothless-corner-serifless-hooked"
+	capital-k = "curly-serifless"
+	i = "serifed"
+    k = "curly-serifless"
+	f = "flat-hook-serifless"
+	m = "earless-corner-double-arch-serifless"
+    t = "flat-hook-short-neck"
+	w = "straight-flat-top-serifless"
+	at = "compact"
+    asterisk = "penta-low"
+    paren = "large-contour"
+    brace = "curly"
+	percent = "rings-segmented-slash"
+
+	[buildPlans.IosevkaCustom.variants.italic]
+    f = "serifless"
+	i = "tailed-serifed"
+    t = "bent-hook-short-neck"
+
+[buildPlans.IosevkaCustom.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.IosevkaCustom.weights.Retina]
+shape = 450
+menu = 450
+css = 450
+
+[buildPlans.IosevkaCustom.weights.Medium]
+shape = 500
+menu = 500
+css = 500
+
+[buildPlans.IosevkaCustom.weights.Bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.IosevkaCustom.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
+
+[buildPlans.IosevkaCustom.weights.Heavy]
+shape = 900
+menu = 900
+css = 900
+
+[buildPlans.IosevkaCustom.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IosevkaCustom.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.IosevkaCustom.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.IosevkaCustom.metricOverride]
+cap = 665
+ascender = 715
+xHeight = 500
+parenSize = 946
