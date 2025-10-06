@@ -23,7 +23,7 @@ return {
 		"A7Lavinraj/fyler.nvim",
 		enabled = true,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		commit = "028830a",
+		-- commit = "028830a",
 		opts = {},
 		config = function()
 			require("fyler").setup({
