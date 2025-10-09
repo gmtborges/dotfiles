@@ -16,6 +16,7 @@ return {
 				},
 			},
 			formatters_by_ft = {
+				lua = { "stylua" },
 				go = { "goimports-reviser", "gofumpt", stop_after_first = false },
 				templ = { "templ" },
 				sql = { "sql_formatter" },

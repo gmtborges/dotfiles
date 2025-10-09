@@ -23,16 +23,18 @@ return {
 		"A7Lavinraj/fyler.nvim",
 		enabled = true,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		-- commit = "028830a",
 		opts = {},
 		config = function()
-			require("fyler").setup({
+			local fyler = require("fyler")
+			fyler.setup({
 				icon_provider = "nvim_web_devicons",
 				win = {
 					kind = "split_right_most",
 				},
 			})
-			vim.keymap.set("n", "<leader>e", ":Fyler kind=split_right_most<CR>")
+			vim.keymap.set("n", "<leader>e", function()
+				fyler.toggle({ kind = "split_right_most" })
+			end)
 		end,
 	},
 }
