@@ -78,7 +78,7 @@ return {
 			require("chatgpt").setup({
 				api_key_cmd = "gpg --decrypt " .. home .. "/openai-api-key.txt.gpg",
 				openai_params = {
-					model = "gpt-5",
+					model = "gpt-4o",
 				},
 			})
 			vim.keymap.set({ "n", "v" }, "<leader>ate", "<cmd>ChatGPTRun translate<CR>")
