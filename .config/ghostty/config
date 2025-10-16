@@ -1,6 +1,6 @@
 # vim:ft=config
 font-family = Source Code Pro
-font-size = 15.0
+font-size = 13.0
 font-thicken = true
 font-thicken-strength = 0
 adjust-cell-height = 8
@@ -29,7 +29,7 @@ cursor-text = #1d202f
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 155
+window-width = 175
 window-height = 60
 
 cursor-style = block
@@ -38,4 +38,4 @@ shell-integration-features = no-cursor
 macos-option-as-alt = left
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-keybind = super+d=set_font_size:13
+keybind = super+d=set_font_size:14
