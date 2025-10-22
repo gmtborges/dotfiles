@@ -137,12 +137,12 @@ eval "$(fzf --zsh)"
 alias vim=nvim
 alias v=nvim
 
-function font-desk() {
+function font-mac() {
   ghostty --control-socket /tmp/ghostty.sock action set_font_size:14
 }
 
-function branch-del () {
- git branch --merged origin/main --quiet | grep -v "main" | xargs git branch -d
+function delete-branch () {
+ git branch | grep -vE "main|master" || true | xargs git branch -D
 }
 
 function save-notes () {
