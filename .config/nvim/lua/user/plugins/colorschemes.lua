@@ -8,7 +8,7 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = true, italic = false },
+					keywords = { bold = false, italic = false },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "bold",
+					keywords = "none",
 				},
 			})
 		end,
@@ -53,8 +53,8 @@ return {
 				flavour = "macchiato",
 				-- transparent_background = true,
 				styles = {
-					keywords = { "bold" },
-					conditionals = { "bold" },
+					keywords = {},
+					conditionals = {},
 				},
 				integrations = {
 					native_lsp = {
