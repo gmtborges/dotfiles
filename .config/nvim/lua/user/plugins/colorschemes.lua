@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "none",
+					keywords = "bold",
 				},
 			})
 		end,
@@ -53,8 +53,8 @@ return {
 				flavour = "macchiato",
 				-- transparent_background = true,
 				styles = {
-					keywords = {},
-					conditionals = {},
+					keywords = { "bold" },
+					conditionals = { "bold " },
 				},
 				integrations = {
 					native_lsp = {
@@ -75,10 +75,11 @@ return {
 						["@markup.heading.4.markdown"] = { fg = colors.green, style = { "bold" } },
 						["@markup.heading.5.markdown"] = { fg = colors.sapphire, style = { "bold" } },
 						["@markup.heading.6.markdown"] = { fg = colors.lavander, style = { "bold" } },
-						-- ["@tag.attribute"] = { style = {} },
+						["@tag.attribute"] = { style = {} },
 					}
 				end,
 			})
 		end,
 	},
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { italic = { strings = false } } },
 }

@@ -219,6 +219,7 @@ return {
 					"tflint",
 					"debugpy",
 					"ruff",
+					"ansible-lint",
 				},
 				automatic_installation = true,
 			})

@@ -15,16 +15,16 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Atom One Dark
+theme = Catppuccin Macchiato
 # Dark themes
-palette = 8=#677289
+# palette = 8=#677289
 
 # Light themes
 # palette = 8=#99a1b2
 
 # For Catppuccin
-cursor-color = #c0caf5
-cursor-text = #1d202f
+# cursor-color = #c0caf5
+# cursor-text = #1d202f
 
 # background-opacity = 0.88
 # background-blur-radius = 32
