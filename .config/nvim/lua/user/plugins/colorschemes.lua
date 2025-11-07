@@ -50,7 +50,6 @@ return {
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
-				flavour = "macchiato",
 				-- transparent_background = true,
 				styles = {
 					keywords = { "bold" },
@@ -82,4 +81,18 @@ return {
 		end,
 	},
 	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { italic = { strings = false } } },
+	{
+		"f-person/auto-dark-mode.nvim",
+		opts = {
+			update_interval = 1000,
+			set_dark_mode = function()
+				vim.opt.background = "dark"
+				vim.cmd("colorscheme catppuccin-macchiato")
+			end,
+			set_light_mode = function()
+				vim.opt.background = "light"
+				vim.cmd("colorscheme catppuccin-latte")
+			end,
+		},
+	},
 }
