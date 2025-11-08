@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "bold",
+					keywords = "none",
 				},
 			})
 		end,
@@ -55,17 +55,14 @@ return {
 				},
 				-- transparent_background = true,
 				styles = {
-					keywords = { "bold" },
+					keywords = {},
 				},
-				integrations = {
-					native_lsp = {
-						enabled = true,
-						underlines = {
-							errors = { "undercurl" },
-							hints = { "undercurl" },
-							warnings = { "undercurl" },
-							information = { "undercurl" },
-						},
+				lsp_styles = {
+					underlines = {
+						errors = { "undercurl" },
+						hints = { "undercurl" },
+						warnings = { "undercurl" },
+						information = { "undercurl" },
 					},
 				},
 				custom_highlights = function(colors)
@@ -82,7 +79,6 @@ return {
 			})
 		end,
 	},
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true, opts = { italic = { strings = false } } },
 	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {

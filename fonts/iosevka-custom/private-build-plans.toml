@@ -11,11 +11,11 @@ exportGlyphNames = false
     [buildPlans.IosevkaCustom.variants.design]
 	capital-g = "toothless-corner-serifless-hooked"
 	i = "serifed"
-	f = "flat-hook-serifless"
-	l = "serifed"
+	# f = "flat-hook-serifless"
+	l = "tailed-serifed"
 	m = "earless-corner-double-arch-serifless"
 	r = "serifless"
-    t = "flat-hook-short-neck"
+    t = "bent-hook-short-neck"
 	w = "rounded-vertical-sides-serifless"
 	at = "compact"
     asterisk = "penta-low"
@@ -23,10 +23,10 @@ exportGlyphNames = false
     brace = "curly"
 
 	[buildPlans.IosevkaCustom.variants.italic]
-    f = "serifless"
+    # f = "flat-hook-tailed"
 	i = "tailed-serifed"
-	l = "tailed-serifed"
-    t = "bent-hook-short-neck"
+	# l = "tailed-serifed"
+    # t = "bent-hook-short-neck"
 
 [buildPlans.IosevkaCustom.weights.Regular]
 shape = 400
@@ -44,7 +44,7 @@ menu = 700
 css = 700
 
 [buildPlans.IosevkaCustom.widths.Normal]
-shape = 580
+shape = 600
 menu = 5
 css = "normal"
 
@@ -61,7 +61,5 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.IosevkaCustom.metricOverride]
-cap = 675
-# ascender = 705
-archDepth = 235
-smallArchDepth = 240
+cap = 665
+ascender = 705

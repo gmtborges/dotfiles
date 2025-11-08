@@ -1,8 +1,6 @@
 # vim:ft=config
 font-family = Iosevka Custom
-font-style = Medium
-font-style-italic = Medium Italic
-font-size = 14.0
+font-size = 15.0
 adjust-cell-height = 7
 adjust-cursor-height = 7
 
