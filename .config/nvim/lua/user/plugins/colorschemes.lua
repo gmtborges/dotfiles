@@ -50,10 +50,12 @@ return {
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
+				background = {
+					dark = "macchiato",
+				},
 				-- transparent_background = true,
 				styles = {
 					keywords = { "bold" },
-					conditionals = { "bold " },
 				},
 				integrations = {
 					native_lsp = {
