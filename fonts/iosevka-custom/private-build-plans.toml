@@ -9,14 +9,18 @@ exportGlyphNames = false
   inherits = "ss12"
 
     [buildPlans.IosevkaCustom.variants.design]
+	eight = "two-circles"
 	capital-g = "toothless-corner-serifless-hooked"
+	capital-k = "curly-serifless"
 	i = "serifed"
+    k = "curly-serifless"
 	# f = "flat-hook-serifless"
 	l = "tailed-serifed"
 	m = "earless-corner-double-arch-serifless"
 	r = "serifless"
-    t = "bent-hook-short-neck"
-	w = "rounded-vertical-sides-serifless"
+    # t = "bent-hook-short-neck"
+	# w = "rounded-vertical-sides-serifless"
+	w = "straight-flat-top-serifless"
 	at = "compact"
     asterisk = "penta-low"
     paren = "large-contour"
@@ -33,6 +37,11 @@ shape = 400
 menu = 400
 css = 400
 
+[buildPlans.IosevkaCustom.weights.Retina]
+shape = 450
+menu = 450
+css = 450
+
 [buildPlans.IosevkaCustom.weights.Medium]
 shape = 500
 menu = 500
@@ -42,6 +51,11 @@ css = 500
 shape = 700
 menu = 700
 css = 700
+
+[buildPlans.IosevkaCustom.weights.Heavy]
+shape = 900
+menu = 900
+css = 900
 
 [buildPlans.IosevkaCustom.widths.Normal]
 shape = 600

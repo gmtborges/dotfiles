@@ -8,7 +8,7 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = false, italic = false },
+					keywords = { bold = true },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "none",
+					keywords = "bold",
 				},
 			})
 		end,
@@ -55,7 +55,7 @@ return {
 				},
 				-- transparent_background = true,
 				styles = {
-					keywords = {},
+					keywords = { "bold", "italic" },
 				},
 				lsp_styles = {
 					underlines = {
