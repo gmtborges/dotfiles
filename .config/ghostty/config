@@ -18,15 +18,12 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 adjust-underline-position = 3
 
 theme = light:Catppuccin Latte,dark:Catppuccin Macchiato
-# Dark themes
+
+# Dark themes auto-suggestions
 # palette = 8=#677289
 
-# Light themes
-# palette = 8=#99a1b2
-
-# For Catppuccin
-# cursor-color = #c0caf5
-# cursor-text = #1d202f
+# Light themes auto-suggestions
+palette = 8=#99a1b2
 
 # background-opacity = 0.88
 # background-blur-radius = 32
