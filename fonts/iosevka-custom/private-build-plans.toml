@@ -14,7 +14,7 @@ exportGlyphNames = false
 	capital-k = "curly-serifless"
 	i = "serifed"
     k = "curly-serifless"
-	# f = "flat-hook-serifless"
+	f = "serifless"
 	l = "tailed-serifed"
 	m = "earless-corner-double-arch-serifless"
 	r = "serifless"
@@ -25,6 +25,7 @@ exportGlyphNames = false
     asterisk = "penta-low"
     paren = "large-contour"
     brace = "curly"
+	percent = "rings-segmented-slash"
 
 	[buildPlans.IosevkaCustom.variants.italic]
     # f = "flat-hook-tailed"
