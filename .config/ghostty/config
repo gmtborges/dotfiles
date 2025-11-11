@@ -35,6 +35,6 @@ cursor-style = block
 shell-integration-features = no-cursor
 
 macos-option-as-alt = left
+
 keybind = alt+left=unbind
 keybind = alt+right=unbind
-keybind = super+f=set_font_size:14
