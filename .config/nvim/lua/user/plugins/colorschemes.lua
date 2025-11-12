@@ -55,8 +55,8 @@ return {
 				},
 				-- transparent_background = true,
 				styles = {
-					keywords = { "bold", "italic" },
-					conditionals = { "bold", "italic" },
+					keywords = { "bold" },
+					conditionals = { "bold" },
 				},
 				lsp_styles = {
 					underlines = {
@@ -82,6 +82,7 @@ return {
 	},
 	{
 		"f-person/auto-dark-mode.nvim",
+		enabled = false,
 		opts = {
 			update_interval = 3000,
 			set_dark_mode = function()

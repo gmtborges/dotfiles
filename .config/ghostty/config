@@ -2,9 +2,9 @@
 font-family = Iosevka Custom
 font-style = Medium
 font-style-italic = Medium Italic
-font-style-bold = Heavy
-font-style-bold-italic = Heavy Italic
-font-size = 14.0
+font-style-bold = ExtraBold
+font-style-bold-italic = ExtraBold Italic
+font-size = 16.0
 adjust-cell-height = 7
 adjust-cursor-height = 7
 
@@ -17,18 +17,12 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = light:Catppuccin Latte,dark:Catppuccin Macchiato
-
-# Dark themes auto-suggestions
-# palette = 8=#677289
-
-# Light themes auto-suggestions
-palette = 8=#99a1b2
+theme = light:catppuccin-latte.conf,dark:catppuccin-macchiato.conf
 
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 175
+window-width = 150
 window-height = 60
 
 cursor-style = block

@@ -9,16 +9,17 @@ exportGlyphNames = false
   inherits = "ss12"
 
     [buildPlans.IosevkaCustom.variants.design]
+	four = "semi-open-serifless"
 	eight = "two-circles"
 	capital-g = "toothless-corner-serifless-hooked"
 	capital-k = "curly-serifless"
 	i = "serifed"
     k = "curly-serifless"
 	f = "flat-hook-serifless"
-	l = "tailed-serifed"
+	# l = "tailed-serifed"
 	m = "earless-corner-double-arch-serifless"
-	r = "serifless"
-    # t = "bent-hook-short-neck"
+	# r = "serifless"
+    t = "flat-hook-short-neck"
 	# w = "rounded-vertical-sides-serifless"
 	w = "straight-flat-top-serifless"
 	at = "compact"
@@ -31,7 +32,7 @@ exportGlyphNames = false
     f = "serifless"
 	i = "tailed-serifed"
 	# l = "tailed-serifed"
-    # t = "bent-hook-short-neck"
+    t = "bent-hook-short-neck"
 
 [buildPlans.IosevkaCustom.weights.Regular]
 shape = 400
@@ -52,6 +53,11 @@ css = 500
 shape = 700
 menu = 700
 css = 700
+
+[buildPlans.IosevkaCustom.weights.ExtraBold]
+shape = 800
+menu = 800
+css = 800
 
 [buildPlans.IosevkaCustom.weights.Heavy]
 shape = 900
@@ -77,4 +83,4 @@ css = "italic"
 
 [buildPlans.IosevkaCustom.metricOverride]
 cap = 665
-ascender = 705
+# ascender = 715
