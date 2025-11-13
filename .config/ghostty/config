@@ -4,7 +4,7 @@ font-style = Medium
 font-style-italic = Medium Italic
 font-style-bold = ExtraBold
 font-style-bold-italic = ExtraBold Italic
-font-size = 16.0
+font-size = 15.0
 adjust-cell-height = 7
 adjust-cursor-height = 7
 
@@ -22,7 +22,7 @@ theme = light:catppuccin-latte.conf,dark:catppuccin-macchiato.conf
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 150
+window-width = 165
 window-height = 60
 
 cursor-style = block

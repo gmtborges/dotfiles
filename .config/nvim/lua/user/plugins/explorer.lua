@@ -27,9 +27,15 @@ return {
 		config = function()
 			local fyler = require("fyler")
 			fyler.setup({
-				icon_provider = "nvim_web_devicons",
-				win = {
-					kind = "split_right_most",
+				integrations = {
+					icon = "nvim_web_devicons",
+				},
+				views = {
+					finder = {
+						win = {
+							kind = "split_right_most",
+						},
+					},
 				},
 			})
 			vim.keymap.set("n", "<leader>e", function()
