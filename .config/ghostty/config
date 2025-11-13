@@ -22,7 +22,7 @@ theme = light:catppuccin-latte.conf,dark:catppuccin-macchiato.conf
 # background-opacity = 0.88
 # background-blur-radius = 32
 
-window-width = 165
+window-width = 160
 window-height = 60
 
 cursor-style = block
