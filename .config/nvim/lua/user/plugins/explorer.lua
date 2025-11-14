@@ -39,7 +39,7 @@ return {
 				},
 			})
 			vim.keymap.set("n", "<leader>e", function()
-				fyler.toggle({ kind = "split_right_most" })
+				fyler.toggle()
 			end)
 		end,
 	},

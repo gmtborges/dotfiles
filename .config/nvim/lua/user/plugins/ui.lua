@@ -84,38 +84,13 @@ return {
 		enabled = true,
 		main = "ibl",
 		config = function()
-			-- local github_dark_dimmed = {
-			-- 	"github_dark_dimmed",
-			-- }
-			local solarized_dark = {
-				"solarized_dark",
-			}
-			-- local tokyonight_day = {
-			-- 	"tokyonight_day",
-			-- }
-			local solarized_light = {
-				"solarized_light",
-			}
-			-- local github_light = {
-			-- 	"github_light",
-			-- }
-			local hooks = require("ibl.hooks")
-			-- create the highlight groups in the highlight setup hook, so they are reset
-			-- every time the colorscheme changes
-			hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-				vim.api.nvim_set_hl(0, "github_dark_dimmed", { fg = "#31363B" })
-				vim.api.nvim_set_hl(0, "github_light", { fg = "#E1E2E4" })
-				vim.api.nvim_set_hl(0, "tokyonight_day", { fg = "#D1D3E6" })
-				vim.api.nvim_set_hl(0, "solarized_light", { fg = "#EEE8D5" })
-				vim.api.nvim_set_hl(0, "solarized_dark", { fg = "#073642" })
-			end)
 			require("ibl").setup({
+				indent = {
+					char = "▏",
+				},
 				scope = {
 					enabled = false,
 				},
-				-- indent = {
-				--   highlight = solarized_light,
-				-- },
 				exclude = {
 					filetypes = { "dashboard", "sql", "dbout" },
 				},
@@ -138,8 +113,8 @@ return {
 		end,
 	},
 	{
-		"glepnir/dashboard-nvim",
-		enabled = false,
+		"nvimdev/dashboard-nvim",
+		enabled = true,
 		config = function()
 			local custom_header = {
 				[[                                                                       ]],
@@ -159,27 +134,31 @@ return {
 				[[                                                                       ]],
 				[[                                                                       ]],
 			}
+			local telescope_builtin = require("telescope.builtin")
+			local fyler = require("fyler")
 			local custom_center = {
 				{
 					icon = "  ",
 					desc = "Find files                     ",
 					key = "SPC p",
 					action = function()
-						require("telescope.builtin").find_files({ previewer = false })
+						telescope_builtin.find_files({ previewer = false })
 					end,
 				},
 				{
 					icon = "  ",
 					desc = "Open explorer                  ",
 					key = "SPC e",
-					action = ":NvimTreeToggle<CR>",
+					action = function()
+						fyler.toggle()
+					end,
 				},
 				{
 					icon = "  ",
 					desc = "Find word                     ",
 					key = "SPC f w",
 					action = function()
-						require("telescope.builtin").live_grep()
+						telescope_builtin.live_grep()
 					end,
 				},
 				{
@@ -187,7 +166,7 @@ return {
 					desc = "Find recent files             ",
 					key = "SPC f r",
 					action = function()
-						require("telescope.builtin").oldfiles()
+						telescope_builtin.oldfiles()
 					end,
 				},
 			}
@@ -198,6 +177,9 @@ return {
 			}
 			require("dashboard").setup({
 				theme = "doom",
+				hide = {
+					tabline = false,
+				},
 				config = {
 					header = custom_header,
 					center = custom_center,
