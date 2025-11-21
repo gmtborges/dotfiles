@@ -8,7 +8,7 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = true },
+					keywords = { bold = true, italic = false },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
