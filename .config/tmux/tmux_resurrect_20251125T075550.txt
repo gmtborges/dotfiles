@@ -3,8 +3,8 @@ pane	adv	2	0	:	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/work/advolve	1	zs
 pane	adv	3	0	:-	1	@trino-coordinator-59ffcbf9c5-gzx5b:/etc/trino	:/Users/gustavo/repos/work/advolve	1	zsh	:
 pane	notes	1	1	:*	1	:/Users/gustavo/repos/notes	:/Users/gustavo/repos/notes	1	zsh	:
 pane	notes	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/Documents	1	zsh	:
-pane	projects	1	0	:-	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
-pane	projects	2	1	:*	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	1	1	:*	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	2	0	:-	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
 pane	saas	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	1	zsh	:
 pane	saas	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/saas	1	zsh	:
 pane	sou	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro	1	zsh	:
@@ -14,22 +14,22 @@ pane	study	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
 pane	study	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
 pane	tmp	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles/.config	1	zsh	:
 pane	tmp	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo	1	zsh	:
-pane	tmp	3	0	:	1	Gustavos-MacBook-Pro.local	:	1	sudo	:sudo kanata --cfg .config/kanata/akko.kbd
-window	adv	1	:zsh	1	:*	b7be,150x43,0,0,1	:
-window	adv	2	:zsh	0	:	b7bf,150x43,0,0,2	:
-window	adv	3	:zsh	0	:-	b7c0,150x43,0,0,3	:
-window	notes	1	:zsh	1	:*	c801,168x46,0,0,4	:
-window	notes	2	:zsh	0	:-	c802,168x46,0,0,5	:
-window	projects	1	:zsh	0	:-	c803,168x46,0,0,6	:
-window	projects	2	:zsh	1	:*	c804,168x46,0,0,7	:
-window	saas	1	:zsh	1	:*	c805,168x46,0,0,8	:
-window	saas	2	:zsh	0	:-	c806,168x46,0,0,9	:
-window	sou	1	:zsh	1	:*	6430,168x46,0,0,11	:
-window	sou	2	:zsh	0	:-	6431,168x46,0,0,12	:
-window	sou	3	:zsh	0	:	5c12,150x43,0,0,13	:
-window	study	1	:zsh	1	:*	5c13,150x43,0,0,14	:
-window	study	2	:zsh	0	:-	5c14,150x43,0,0,15	:
-window	tmp	1	:zsh	1	:*	6435,168x46,0,0,16	:
-window	tmp	2	:zsh	0	:-	6436,168x46,0,0,17	:
-window	tmp	3	:sudo	0	:	5c17,150x43,0,0,18	:
-state	notes	tmp
+pane	tmp	3	0	:	1	Gustavos-MacBook-Pro.local	:/Users/gustavo	1	zsh	:
+window	adv	1	:zsh	1	:*	c43e,170x46,0,0,1	:
+window	adv	2	:zsh	0	:	c43f,170x46,0,0,2	:
+window	adv	3	:zsh	0	:-	c440,170x46,0,0,3	:
+window	notes	1	:zsh	1	:*	c441,170x46,0,0,4	:
+window	notes	2	:zsh	0	:-	c442,170x46,0,0,5	:
+window	projects	1	:zsh	1	:*	c443,170x46,0,0,6	:
+window	projects	2	:zsh	0	:-	c444,170x46,0,0,7	:
+window	saas	1	:zsh	1	:*	c445,170x46,0,0,8	:
+window	saas	2	:zsh	0	:-	c446,170x46,0,0,9	:
+window	sou	1	:zsh	1	:*	624f,170x46,0,0,10	:
+window	sou	2	:zsh	0	:-	6250,170x46,0,0,11	:
+window	sou	3	:zsh	0	:	6251,170x46,0,0,12	:
+window	study	1	:zsh	1	:*	6252,170x46,0,0,13	:
+window	study	2	:zsh	0	:-	6253,170x46,0,0,14	:
+window	tmp	1	:zsh	1	:*	6254,170x46,0,0,15	:
+window	tmp	2	:zsh	0	:-	6255,170x46,0,0,16	:
+window	tmp	3	:zsh	0	:	6256,170x46,0,0,17	:
+state	notes	projects

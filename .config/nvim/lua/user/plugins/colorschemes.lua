@@ -8,7 +8,7 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = true, italic = false },
+					keywords = { bold = false, italic = false },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "bold",
+					keywords = "none",
 				},
 			})
 		end,
@@ -56,8 +56,8 @@ return {
 				no_italic = true,
 				-- transparent_background = true,
 				styles = {
-					keywords = { "bold" },
-					conditionals = { "bold" },
+					keywords = {},
+					conditionals = {},
 				},
 				lsp_styles = {
 					underlines = {
@@ -83,7 +83,7 @@ return {
 	},
 	{
 		"f-person/auto-dark-mode.nvim",
-		enabled = true,
+		enabled = false,
 		opts = {
 			update_interval = 3000,
 			set_dark_mode = function()
