@@ -23,6 +23,7 @@ return {
 		"A7Lavinraj/fyler.nvim",
 		enabled = true,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
+		branch = "stable",
 		opts = {},
 		config = function()
 			local fyler = require("fyler")
