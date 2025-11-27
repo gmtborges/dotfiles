@@ -1,6 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	tag = "0.1.8",
+	tag = "v0.1.9",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -92,7 +92,7 @@ return {
 		vim.keymap.set("n", "<leader>fd", function()
 			builtin.lsp_definitions()
 		end)
-		vim.keymap.set("n", "<leader>fm", function()
+		vim.keymap.set("n", "<leader>fu", function()
 			builtin.lsp_references()
 		end)
 
