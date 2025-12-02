@@ -83,7 +83,6 @@ return {
 		vim.keymap.set("n", "<leader>fw", function()
 			builtin.live_grep({ layout_strategy = "vertical" })
 		end)
-		vim.keymap.set("n", "<leader>ft", ":Telescope workspaces<CR>")
 
 		-- LSP
 		vim.keymap.set("n", "<leader>j", function()

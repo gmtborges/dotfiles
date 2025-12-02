@@ -134,7 +134,7 @@ return {
 		config = function()
 			require("copilot").setup({
 				suggestion = {
-					auto_trigger = true,
+					auto_trigger = false,
 					keymap = {
 						accept = "<M-TAB>",
 						next = "<M-]>",
@@ -146,19 +146,6 @@ return {
 					yaml = true,
 				},
 			})
-			local copilot_enabled = false
-			vim.api.nvim_create_user_command("ToggleCopilot", function()
-				if copilot_enabled then
-					vim.cmd("Copilot disable")
-					copilot_enabled = false
-					print("GitHub Copilot disabled")
-				else
-					vim.cmd("Copilot enable")
-					copilot_enabled = true
-					print("GitHub Copilot enabled")
-				end
-			end, {})
-			vim.keymap.set("n", "<leader>ac", "<cmd>ToggleCopilot<CR>", { noremap = true, silent = true })
 		end,
 	},
 	{
