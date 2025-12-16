@@ -8,8 +8,8 @@ return {
 				-- transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = false, italic = false },
-					comments = { italic = false },
+					keywords = { bold = true, italic = false },
+					-- comments = { italic = false },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -40,7 +40,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "none",
+					keywords = "bold",
 				},
 			})
 		end,
@@ -54,11 +54,11 @@ return {
 				background = {
 					dark = "macchiato",
 				},
-				no_italic = true,
+				-- no_italic = true,
 				-- transparent_background = true,
 				styles = {
-					keywords = {},
-					conditionals = {},
+					keywords = { "bold" },
+					conditionals = { "bold" },
 				},
 				lsp_styles = {
 					underlines = {

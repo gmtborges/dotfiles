@@ -91,7 +91,7 @@
       "hotkey._execute_browser_action": "",
       "hotkey.openManage": "",
       "hotkey.styleDisableAll": "",
-      "sync.enabled": "google",
+      "sync.enabled": "none",
       "iconset": -1,
       "badgeDisabled": "#8B0000",
       "badgeNormal": "#006666",
@@ -102,9 +102,7 @@
       "popupWidth": 246,
       "popupWidthMax": 280,
       "updateInterval": 24,
-      "updateOnlyEnabled": false,
-      "popup.breadcrumbs": null,
-      "popup.breadcrumbs.usePath": null
+      "updateOnlyEnabled": false
     },
     "order": {
       "main": [],
@@ -117,34 +115,15 @@
     "name": "set-font-mono",
     "sections": [
       {
-        "code": "pre,\ncode {\n    font-family: monospace !important;\n}\npre {\n    line-height: 1.5em !important;\n}",
-        "domains": [
-          "claude.ai",
-          "chatgpt.com"
-        ]
-      },
-      {
-        "code": "pre,\ncode {\n    font-family: monospace !important;\n}\npre {\n    font-size: 1.1em !important;\n    line-height: 1.5em !important;\n}",
-        "domains": [
-          "deepseek.com"
-        ]
-      },
-      {
-        "code": "pre,\ncode {\n    font-family: monospace !important;\n}\npre {\n    font-size: .9em !important;\n    line-height: 1.8 !important;\n}",
+        "code": "pre,\ncode, .blob-code, .blob-code-content, .blob-code-marker,#read-only-cursor-text-area, .react-code-file-contents > div > div {\n    font-family: monospace !important;\n    font-size: 1em;\n    font-weight: 500;\n}",
         "domains": [
           "github.com"
         ]
-      },
-      {
-        "code": "pre,\ncode {\n    font-family: monospace !important;\n}\ncode {\n    font-size: 1.1em !important;\n    line-height: 1.5em !important;\n}",
-        "domains": [
-          "stackoverflow.com"
-        ]
       }
     ],
-    "updateDate": 1739909114879,
+    "updateDate": 1765318512032,
     "_id": "1257bee0-1261-480a-896e-382d7f08089e",
-    "_rev": 1739909114879,
-    "id": 3
+    "_rev": 1765318512033,
+    "id": 1
   }
 ]

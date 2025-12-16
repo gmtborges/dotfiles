@@ -39,7 +39,7 @@ return {
 				},
 				sections = {
 					lualine_a = {
-						{ "mode", separator = { left = "" }, right_padding = 2 },
+						{ "mode", separator = { left = "" }, right_padding = 2, color = { gui = "bold" } },
 					},
 					lualine_b = { "branch", "diff", "diagnostics" },
 					lualine_c = {
