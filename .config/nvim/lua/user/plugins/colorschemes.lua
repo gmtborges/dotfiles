@@ -57,8 +57,8 @@ return {
 				no_italic = true,
 				transparent_background = true,
 				styles = {
-					-- keywords = { "bold" },
-					-- conditionals = { "bold" },
+					keywords = {},
+					conditionals = {},
 				},
 				lsp_styles = {
 					underlines = {
