@@ -5,13 +5,13 @@ return {
 		priority = 1000,
 		config = function()
 			require("tokyonight").setup({
-				-- transparent = true,
+				transparent = true,
 				style = "storm",
 				styles = {
-					keywords = { bold = true, italic = false },
-					-- comments = { italic = false },
-					-- sidebars = "transparent",
-					-- floats = "transparent",
+					keywords = { bold = false, italic = false },
+					comments = { italic = false },
+					sidebars = "transparent",
+					floats = "transparent",
 				},
 				on_colors = function(c)
 					c.comment = "#7f87af"
@@ -54,11 +54,11 @@ return {
 				background = {
 					dark = "macchiato",
 				},
-				-- no_italic = true,
-				-- transparent_background = true,
+				no_italic = true,
+				transparent_background = true,
 				styles = {
-					keywords = { "bold" },
-					conditionals = { "bold" },
+					-- keywords = { "bold" },
+					-- conditionals = { "bold" },
 				},
 				lsp_styles = {
 					underlines = {

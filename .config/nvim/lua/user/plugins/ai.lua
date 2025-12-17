@@ -1,44 +1,45 @@
 return {
 	{
 		"olimorris/codecompanion.nvim",
-		version = "v17.33.0",
+		version = "^18.0.0",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"nvim-treesitter/nvim-treesitter",
+			"ravitemer/mcphub.nvim",
 		},
 		config = function()
 			require("codecompanion").setup({
 				strategies = {
 					chat = {
-						adapter = "glm-4.6",
+						adapter = "ollama",
 					},
 					inline = {
-						adapter = "glm-4.6",
+						adapter = "ollama",
 					},
 				},
 				adapters = {
-					http = {
-						["deepseek-r1"] = function()
-							return require("codecompanion.adapters").extend("ollama", {
-								name = "deepseek-r1",
-								schema = {
-									model = {
-										default = "deepseek-r1:latest",
-									},
-								},
-							})
-						end,
-						["glm-4.6"] = function()
-							return require("codecompanion.adapters").extend("ollama", {
-								name = "glm-4.6",
-								schema = {
-									model = {
-										default = "glm-4.6:cloud",
-									},
-								},
-							})
-						end,
-					},
+					-- http = {
+					-- 	["deepseek-r1"] = function()
+					-- 		return require("codecompanion.adapters").extend("ollama", {
+					-- 			name = "deepseek-r1",
+					-- 			schema = {
+					-- 				model = {
+					-- 					default = "deepseek-r1:latest",
+					-- 				},
+					-- 			},
+					-- 		})
+					-- 	end,
+					-- 	["glm-4.6"] = function()
+					-- 		return require("codecompanion.adapters").extend("ollama", {
+					-- 			name = "glm-4.6",
+					-- 			schema = {
+					-- 				model = {
+					-- 					default = "glm-4.6:cloud",
+					-- 				},
+					-- 			},
+					-- 		})
+					-- 	end,
+					-- },
 				},
 				extensions = {
 					mcphub = {
@@ -89,45 +90,6 @@ return {
 		end,
 	},
 	{
-		"yetone/avante.nvim",
-		enabled = false,
-		event = "VeryLazy",
-		lazy = true,
-		version = "*",
-		opts = {
-			provider = "claude",
-			providers = {
-				claude = {
-					model = "claude-4-sonnet-20250514",
-					disable_tools = true,
-				},
-			},
-			hints = {
-				enabled = false,
-			},
-			windows = {
-				width = 38,
-			},
-		},
-		-- if you want to download pre-built binary, then pass source=false. Make sure to follow instruction above.
-		-- Also note that downloading prebuilt binary is a lot faster comparing to compiling from source.
-		build = "make",
-		dependencies = {
-			{
-				"stevearc/dressing.nvim",
-				opts = {
-					input = {
-						enabled = true,
-					},
-				},
-			},
-			"nvim-lua/plenary.nvim",
-			"MunifTanjim/nui.nvim",
-			--- The below dependencies are optional,
-			"nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-		},
-	},
-	{
 		"zbirenbaum/copilot.lua",
 		enabled = true,
 		cmd = "Copilot",
@@ -161,18 +123,8 @@ return {
 		build = "bundled_build.lua", -- Use this and set use_bundled_binary = true in opts  (see Advanced configuration)
 		config = function()
 			require("mcphub").setup({
-				auto_aprove = true,
+				auto_approve = true,
 				use_bundled_binary = true,
-				extensions = {
-					mcphub = {
-						callback = "mcphub.extensions.codecompanion",
-						opts = {
-							make_vars = true,
-							make_slash_commands = true,
-							show_result_in_chat = true,
-						},
-					},
-				},
 			})
 		end,
 	},
