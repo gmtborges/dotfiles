@@ -8,9 +8,9 @@ return {
 		config = function()
 			vim.g.matchup_matchparen_enabled = 0
 
-			local treesitter = require("nvim-treesitter.configs")
+			local treesitter = require("nvim-treesitter")
 
-			treesitter.setup({
+			treesitter.install({
 				-- A list of parser names, or "all" (the five listed parsers should always be installed)
 				ensure_installed = {
 					"c",
