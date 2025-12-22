@@ -1,11 +1,11 @@
 # vim:ft=config
 font-family = Source Code Pro
-font-size = 14.0
-adjust-cell-height = 2
-adjust-cursor-height = 2
+font-size = 13.4
+adjust-cell-height = 4
+adjust-cursor-height = 4
 
 font-thicken = true
-font-thicken-strength = 0
+font-thicken-strength = 150
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
