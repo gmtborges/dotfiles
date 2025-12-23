@@ -10,36 +10,28 @@ return {
 			vim.g.matchup_matchparen_enabled = 0
 			local treesitter = require("nvim-treesitter")
 			treesitter.install({
-				-- A list of parser names, or "all" (the five listed parsers should always be installed)
-				ensure_installed = {
-					"c",
-					"lua",
-					"vim",
-					"astro",
-					"vimdoc",
-					"query",
-					"javascript",
-					"typescript",
-					"html",
-					"css",
-					"json",
-					"markdown",
-					"svelte",
-					"templ",
-					"go",
-					"gotmpl",
-					"helm",
-					"dockerfile",
-					"swift",
-					"terraform",
-				},
-				matchup = { enable = true, disable = {} },
-			})
-			vim.api.nvim_create_autocmd("FileType", {
-				pattern = { "<filetype>" },
-				callback = function()
-					vim.treesitter.start()
-				end,
+				"c",
+				"lua",
+				"vim",
+				"astro",
+				"vimdoc",
+				"query",
+				"javascript",
+				"typescript",
+				"jsx",
+				"tsx",
+				"html",
+				"css",
+				"json",
+				"markdown",
+				"svelte",
+				"templ",
+				"go",
+				"gotmpl",
+				"helm",
+				"dockerfile",
+				"swift",
+				"terraform",
 			})
 		end,
 	},

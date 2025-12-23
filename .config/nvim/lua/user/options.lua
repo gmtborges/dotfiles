@@ -33,16 +33,9 @@ vim.opt.cursorline = false -- Highlight the current line
 vim.opt.colorcolumn = "" -- Show column ruler
 vim.opt.wrap = false -- Don't wrap lines
 
-vim.opt.foldlevel = 5
+vim.opt.foldlevel = 3
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
 vim.opt.spelllang = { "pt_br", "en_us" }
 vim.opt.spell = false
-
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = { "markdown", "text" },
---   callback = function()
---     vim.opt_local.spell = true
---   end,
--- })
