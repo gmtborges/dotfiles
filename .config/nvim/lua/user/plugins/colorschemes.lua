@@ -83,6 +83,19 @@ return {
 		end,
 	},
 	{
+		"projekt0n/github-nvim-theme",
+		name = "github-theme",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("github-theme").setup({
+				options = {
+					transparent = true,
+				},
+			})
+		end,
+	},
+	{
 		"f-person/auto-dark-mode.nvim",
 		enabled = false,
 		opts = {
