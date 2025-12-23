@@ -64,8 +64,8 @@ return {
 		config = function()
 			require("treesitter-context").setup({
 				enable = true,
-				max_lines = 3,
-				zindex = 1,
+				-- max_lines = 3,
+				-- zindex = 1,
 			})
 		end,
 	},
