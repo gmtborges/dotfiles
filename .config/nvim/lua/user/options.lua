@@ -29,24 +29,13 @@ vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
 
 -- vim.opt.clipboard = "unnamedplus" -- Copy and paste with OS clipboard
-vim.opt.cursorline = true -- Highlight the current line
+vim.opt.cursorline = false -- Highlight the current line
 vim.opt.colorcolumn = "" -- Show column ruler
 vim.opt.wrap = false -- Don't wrap lines
 
--- Custom fold text function to show the first line
-local function custom_fold_text()
-	local first_line = vim.fn.getline(vim.v.foldstart)
-	local line_count = vim.v.foldend - vim.v.foldstart + 1
-	return first_line .. " ... [" .. line_count .. " lines]"
-end
-
--- Make the function available in the Lua namespace
-_G.custom_fold_text = custom_fold_text
-
-vim.opt.foldlevel = 20
+vim.opt.foldlevel = 5
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldtext = "v:lua.custom_fold_text()"
 
 vim.opt.spelllang = { "pt_br", "en_us" }
 vim.opt.spell = false

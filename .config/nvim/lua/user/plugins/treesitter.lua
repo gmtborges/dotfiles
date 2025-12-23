@@ -33,10 +33,7 @@ return {
 					"swift",
 					"terraform",
 				},
-				matchup = {
-					enable = true, -- mandatory, false will disable the whole extension
-					disable = {}, -- optional, list of language that will be disabled
-				},
+				matchup = { enable = true, disable = {} },
 			})
 			vim.api.nvim_create_autocmd("FileType", {
 				pattern = { "<filetype>" },
