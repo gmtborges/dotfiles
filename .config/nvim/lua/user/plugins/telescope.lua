@@ -12,7 +12,8 @@ return {
 
 		telescope.setup({
 			defaults = {
-				file_ignore_patterns = { ".git/", "node_modules" },
+				-- file_ignore_patterns = { ".git/", "node_modules" },
+				path_display = { "smart" },
 				-- layout_config = {
 				--   horizontal = {
 				--     width = { padding = 0 }
@@ -27,10 +28,10 @@ return {
 			},
 			pickers = {
 				-- find_files = {
-				--   theme = "dropdown",
+				-- 	theme = "dropdown",
 				-- },
 				-- buffers = {
-				--   theme = "dropdown",
+				-- 	theme = "dropdown",
 				-- },
 				oldfiles = {
 					cwd_only = true,
