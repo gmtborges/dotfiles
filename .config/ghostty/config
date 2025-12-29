@@ -23,7 +23,7 @@ palette=8=#677289
 background-opacity = 0.82
 background-blur-radius = 48
 
-window-width = 170
+window-width = 162
 window-height = 60
 
 cursor-style = block
