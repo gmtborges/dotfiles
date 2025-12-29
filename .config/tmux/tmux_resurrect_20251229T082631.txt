@@ -1,0 +1,23 @@
+pane	docs	2	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/Documents	1	zsh	:
+pane	projects	1	1	:*	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	2	0	:-	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
+pane	sou	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro	1	zsh	:
+pane	sou	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro	1	zsh	:
+pane	sou	3	0	:	1	@trino-coordinator-59ffcbf9c5-gzx5b:/etc/trino	:/Users/gustavo/repos/work/souagro	1	zsh	:
+pane	study	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	study	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	tmp	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles/.config	1	zsh	:
+pane	tmp	2	0	:	1	Gustavos-MacBook-Pro.local	:/Users/gustavo	1	zsh	:
+pane	tmp	3	0	:-	1	Gustavos-MacBook-Pro.local	:	1	sudo	:sudo kanata --cfg /Users/gustavo/.config/kanata/akko.kbd
+window	docs	2	:zsh	1	:*	b242,170x51,0,0,5	:
+window	projects	1	:zsh	1	:*	b243,170x51,0,0,6	:
+window	projects	2	:zsh	0	:-	b244,170x51,0,0,7	:
+window	sou	1	:zsh	1	:*	594f,170x51,0,0,10	:
+window	sou	2	:zsh	0	:-	5950,170x51,0,0,11	:
+window	sou	3	:zsh	0	:	5951,170x51,0,0,12	:
+window	study	1	:zsh	1	:*	5952,170x51,0,0,13	:
+window	study	2	:zsh	0	:-	5953,170x51,0,0,14	:
+window	tmp	1	:zsh	1	:*	5954,170x51,0,0,15	:
+window	tmp	2	:zsh	0	:	5955,170x51,0,0,16	:
+window	tmp	3	:sudo	0	:-	5956,170x51,0,0,17	:
+state	tmp	docs
