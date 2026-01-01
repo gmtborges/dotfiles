@@ -1,8 +1,8 @@
 # vim:ft=config
-font-family = Source Code Pro
-font-size = 13.0
-adjust-cell-height = 6
-adjust-cursor-height = 6
+font-family = Myna
+font-size = 17.0
+adjust-cell-height = 4
+adjust-cursor-height = 4
 
 font-thicken = true
 font-thicken-strength = 150
