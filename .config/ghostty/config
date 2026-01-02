@@ -1,8 +1,8 @@
 # vim:ft=config
 font-family = Myna
-font-size = 17.0
-adjust-cell-height = 4
-adjust-cursor-height = 4
+font-size = 16.0
+adjust-cell-height = 3
+adjust-cursor-height = 3
 
 font-thicken = true
 font-thicken-strength = 150
@@ -23,7 +23,7 @@ palette=8=#677289
 background-opacity = 0.82
 background-blur-radius = 48
 
-window-width = 162
+window-width = 165
 window-height = 60
 
 cursor-style = block
