@@ -13,7 +13,7 @@ return {
 		telescope.setup({
 			defaults = {
 				-- file_ignore_patterns = { ".git/", "node_modules" },
-				path_display = { "smart" },
+				path_display = { "truncate" },
 				-- layout_config = {
 				--   horizontal = {
 				--     width = { padding = 0 }
