@@ -1,5 +1,8 @@
 # vim:ft=config
 font-family = Myna
+font-family-bold = Myna Bold
+font-family-italic = Myna Italic
+font-family-bold-italic = Myna Bold Italic
 font-size = 16.0
 adjust-cell-height = 3
 adjust-cursor-height = 3
