@@ -1,9 +1,6 @@
 # vim:ft=config
-font-family = Myna
-font-family-bold = Myna Bold
-font-family-italic = Myna Italic
-font-family-bold-italic = Myna Bold Italic
-font-size = 17.0
+font-family = Source Code Pro
+font-size = 16.0
 adjust-cell-height = 3
 adjust-cursor-height = 3
 
@@ -26,7 +23,7 @@ palette=8=#677289
 background-opacity = 0.82
 background-blur-radius = 48
 
-window-width = 165
+window-width = 200
 window-height = 60
 
 cursor-style = block
