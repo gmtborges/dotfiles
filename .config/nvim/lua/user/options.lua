@@ -29,7 +29,7 @@ vim.opt.laststatus = 3
 vim.opt.splitkeep = "screen"
 
 -- vim.opt.clipboard = "unnamedplus" -- Copy and paste with OS clipboard
-vim.opt.cursorline = false -- Highlight the current line
+vim.opt.cursorline = true -- Highlight the current line
 vim.opt.colorcolumn = "" -- Show column ruler
 vim.opt.wrap = false -- Don't wrap lines
 

@@ -5,13 +5,13 @@ return {
 		priority = 1000,
 		config = function()
 			require("tokyonight").setup({
-				transparent = true,
+				transparent = false,
 				style = "storm",
 				styles = {
-					keywords = { bold = false, italic = false },
+					keywords = { bold = true, italic = false },
 					comments = { italic = false },
-					sidebars = "transparent",
-					floats = "transparent",
+					-- sidebars = "transparent",
+					-- floats = "transparent",
 				},
 				on_colors = function(c)
 					c.comment = "#7f87af"
@@ -34,8 +34,7 @@ return {
 		priority = 1000,
 		config = function()
 			require("onedark").setup({
-				style = "darker",
-				-- transparent = true,
+				transparent = false,
 				lualine = {
 					transparent = false,
 				},
@@ -55,10 +54,10 @@ return {
 					dark = "macchiato",
 				},
 				no_italic = true,
-				transparent_background = true,
+				transparent_background = false,
 				styles = {
-					keywords = {},
-					conditionals = {},
+					keywords = { "bold" },
+					conditionals = { "bold" },
 				},
 				lsp_styles = {
 					underlines = {
@@ -90,7 +89,7 @@ return {
 		config = function()
 			require("github-theme").setup({
 				options = {
-					transparent = true,
+					transparent = false,
 				},
 			})
 		end,

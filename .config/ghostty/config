@@ -16,12 +16,12 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Tokyonight Storm
+theme = Atom One Dark 
 # theme = light:catppuccin-macchiato.conf,dark:catppuccin-macchiato.conf
 palette=8=#677289
 
-background-opacity = 0.82
-background-blur-radius = 48
+# background-opacity = 0.82
+# background-blur-radius = 48
 
 window-width = 200
 window-height = 60
