@@ -40,6 +40,7 @@ return {
 				},
 				code_style = {
 					keywords = "bold",
+					comments = "none",
 				},
 			})
 		end,
