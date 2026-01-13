@@ -1,6 +1,6 @@
 # vim:ft=config
 font-family = psudoFont Liga Mono
-font-size = 15.0
+font-size = 14.0
 adjust-cell-height = 8
 adjust-cursor-height = 8
 
