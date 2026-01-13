@@ -8,7 +8,7 @@ return {
 				transparent = false,
 				style = "storm",
 				styles = {
-					keywords = { bold = true, italic = false },
+					keywords = { bold = true },
 					-- sidebars = "transparent",
 					-- floats = "transparent",
 				},
@@ -39,6 +39,12 @@ return {
 				},
 				code_style = {
 					keywords = "bold",
+				},
+				highlights = {
+					["@boolean"] = { fmt = "bold" },
+					["@keyword.function"] = { fmt = "bold" },
+					Statement = { fmt = "bold" },
+					Boolean = { fmt = "bold" },
 				},
 			})
 		end,
