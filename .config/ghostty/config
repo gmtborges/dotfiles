@@ -5,7 +5,7 @@ adjust-cell-height = 8
 adjust-cursor-height = 8
 
 font-thicken = true
-# font-thicken-strength = 150
+font-thicken-strength = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
