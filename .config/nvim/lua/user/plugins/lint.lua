@@ -16,17 +16,11 @@ return {
 			vim.keymap.set("n", "<leader>cl", function()
 				lint.try_lint()
 			end)
-			local eslint = lint.linters.eslint
-			eslint.args = {
-				"--no-warn-ignored", -- <-- this is the key argument
-				"--format",
-				"json",
-				"--stdin",
-				"--stdin-filename",
-				function()
-					return vim.api.nvim_buf_get_name(0)
+			vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+				callback = function()
+					require("lint").try_lint()
 				end,
-			}
+			})
 		end,
 	},
 }
