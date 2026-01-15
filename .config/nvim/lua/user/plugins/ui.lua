@@ -134,7 +134,7 @@ return {
 				[[                                                                       ]],
 				[[                                                                       ]],
 			}
-			local telescope_builtin = require("telescope.builtin")
+			local fzf = require("fzf-lua")
 			local fyler = require("fyler")
 			local custom_center = {
 				{
@@ -142,7 +142,7 @@ return {
 					desc = "Find files                     ",
 					key = "SPC p",
 					action = function()
-						telescope_builtin.find_files({ previewer = false })
+						fzf.files()
 					end,
 				},
 				{
@@ -158,7 +158,7 @@ return {
 					desc = "Find word                     ",
 					key = "SPC f w",
 					action = function()
-						telescope_builtin.live_grep()
+						fzf.live_grep()
 					end,
 				},
 				{
@@ -166,7 +166,7 @@ return {
 					desc = "Find recent files             ",
 					key = "SPC f r",
 					action = function()
-						telescope_builtin.oldfiles()
+						fzf.oldfiles()
 					end,
 				},
 			}
