@@ -18,12 +18,9 @@
 
 ### Quality Gates
 
-- No file > 300 lines
 - All tests must pass
 - No linter warnings
-- CI/CD workflow required
 
 ## Required MCP Servers
 
 - context7 (live documentation)
-- playwright (browser testing)
