@@ -1,5 +1,21 @@
 return {
 	{
+		"hedyhli/outline.nvim",
+		lazy = true,
+		cmd = { "Outline", "OutlineOpen" },
+		keys = {
+			{ "<leader>so", "<cmd>Outline<CR>", desc = "Toggle outline" },
+		},
+		opts = {
+			symbols = {
+				filter = { "String", "Variable", "Constant", exclude = true },
+			},
+			outline_window = {
+				position = "left",
+			},
+		},
+	},
+	{
 		"nvim-lualine/lualine.nvim",
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = { "nvim-tree/nvim-web-devicons" },

@@ -1,7 +1,7 @@
 return {
 	{
 		"echasnovski/mini.nvim",
-		enabled = true,
+		enabled = false,
 		version = "*",
 		config = function()
 			local files = require("mini.files")

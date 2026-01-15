@@ -53,9 +53,9 @@ return {
 				fzf.lsp_references()
 			end)
 
-			-- Global picker
+			-- Builtin picker
 			vim.keymap.set("n", "<leader>fz", function()
-				fzf.global()
+				fzf.builtin()
 			end)
 
 			-- GIT
