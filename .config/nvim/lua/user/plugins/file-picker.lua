@@ -131,59 +131,59 @@ return {
 					-- }
 				},
 			})
-			vim.keymap.set("n", "<C-p>", function()
-				builtin.find_files({ previewer = false, hidden = true })
-			end)
-			vim.keymap.set("n", "<leader>p", function()
-				builtin.find_files({ previewer = false, hidden = true })
-			end)
-
-			vim.keymap.set("n", "<leader>o", function()
-				builtin.buffers({
-					sort_mru = true,
-					ignore_current_buffer = true,
-					previewer = false,
-				})
-			end)
-			vim.keymap.set("n", "<leader>fr", function()
-				builtin.oldfiles({ previewer = false })
-			end)
-			vim.keymap.set("n", "<leader>ff", function()
-				builtin.find_files({ previewer = false, hidden = true, no_ignore = true })
-			end)
-			vim.keymap.set("n", "<leader>fg", function()
-				builtin.live_grep({ layout_strategy = "vertical" })
-			end)
-			vim.keymap.set("n", "<leader>fw", function()
-				builtin.live_grep({ layout_strategy = "vertical" })
-			end)
-
-			-- LSP
-			vim.keymap.set("n", "<leader>j", function()
-				builtin.lsp_document_symbols()
-			end)
-			vim.keymap.set("n", "<leader>fd", function()
-				builtin.lsp_definitions()
-			end)
-			vim.keymap.set("n", "<leader>fu", function()
-				builtin.lsp_references()
-			end)
-
-			-- Builtin picker
-			vim.keymap.set("n", "<leader>fz", function()
-				builtin.builtin()
-			end)
-
-			-- GIT
-			vim.keymap.set("n", "<leader>gs", function()
-				require("telescope.builtin").git_status()
-			end)
-			vim.keymap.set("n", "<leader>gc", function()
-				require("telescope.builtin").git_commits()
-			end)
-			vim.keymap.set("n", "<leader>gh", function()
-				require("telescope.builtin").git_bcommits()
-			end)
+			-- vim.keymap.set("n", "<C-p>", function()
+			-- 	builtin.find_files({ previewer = false, hidden = true })
+			-- end)
+			-- vim.keymap.set("n", "<leader>p", function()
+			-- 	builtin.find_files({ previewer = false, hidden = true })
+			-- end)
+			--
+			-- vim.keymap.set("n", "<leader>o", function()
+			-- 	builtin.buffers({
+			-- 		sort_mru = true,
+			-- 		ignore_current_buffer = true,
+			-- 		previewer = false,
+			-- 	})
+			-- end)
+			-- vim.keymap.set("n", "<leader>fr", function()
+			-- 	builtin.oldfiles({ previewer = false })
+			-- end)
+			-- vim.keymap.set("n", "<leader>ff", function()
+			-- 	builtin.find_files({ previewer = false, hidden = true, no_ignore = true })
+			-- end)
+			-- vim.keymap.set("n", "<leader>fg", function()
+			-- 	builtin.live_grep({ layout_strategy = "vertical" })
+			-- end)
+			-- vim.keymap.set("n", "<leader>fw", function()
+			-- 	builtin.live_grep({ layout_strategy = "vertical" })
+			-- end)
+			--
+			-- -- LSP
+			-- vim.keymap.set("n", "<leader>j", function()
+			-- 	builtin.lsp_document_symbols()
+			-- end)
+			-- vim.keymap.set("n", "<leader>fd", function()
+			-- 	builtin.lsp_definitions()
+			-- end)
+			-- vim.keymap.set("n", "<leader>fu", function()
+			-- 	builtin.lsp_references()
+			-- end)
+			--
+			-- -- Builtin picker
+			-- vim.keymap.set("n", "<leader>fz", function()
+			-- 	builtin.builtin()
+			-- end)
+			--
+			-- -- GIT
+			-- vim.keymap.set("n", "<leader>gs", function()
+			-- 	require("telescope.builtin").git_status()
+			-- end)
+			-- vim.keymap.set("n", "<leader>gc", function()
+			-- 	require("telescope.builtin").git_commits()
+			-- end)
+			-- vim.keymap.set("n", "<leader>gh", function()
+			-- 	require("telescope.builtin").git_bcommits()
+			-- end)
 		end,
 	},
 }
