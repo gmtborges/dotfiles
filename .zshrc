@@ -168,3 +168,6 @@ if [ -f '/Users/gustavo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gustavo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/gustavo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gustavo/google-cloud-sdk/completion.zsh.inc'; fi
+
+# opencode
+export PATH=/Users/gustavo/.opencode/bin:$PATH

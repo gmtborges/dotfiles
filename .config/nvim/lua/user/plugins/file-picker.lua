@@ -36,10 +36,10 @@ return {
 				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true, no_ignore = true }))
 			end)
 			vim.keymap.set("n", "<leader>fg", function()
-				fzf.live_grep({ winopts = { preview = { layout = "vertical" } } })
+				fzf.live_grep()
 			end)
 			vim.keymap.set("n", "<leader>fw", function()
-				fzf.live_grep({ winopts = { preview = { layout = "vertical" } } })
+				fzf.live_grep()
 			end)
 
 			-- LSP
