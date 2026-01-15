@@ -1,17 +1,29 @@
-## NEVER EVER DO
+## NEVER EVER DO (Security Gatekeeper)
 
-These rules are ABSOLUTE:
+- NEVER commit .env files
+- NEVER hardcode credentials
+- NEVER publish secrets to git/npm/docker
+- NEVER skip .gitignore verification
 
-### NEVER Publish Sensitive Data
+## New Project Setup (Scaffolding Rules)
 
-- NEVER publish passwords, API keys, tokens to git/npm/docker
-- Before ANY commit: verify no secrets included
+### Required Files
 
-### NEVER Commit .env Files
+- .env (NEVER commit)
+- .env.example (with placeholders)
+- .gitignore (with all required entries)
+- .dockerignore
+- README.md
+- CLAUDE.md
 
-- NEVER commit `.env` to git
-- ALWAYS verify `.env` is in `.gitignore`
+### Quality Gates
 
-### NEVER Hardcode Credentials
+- No file > 300 lines
+- All tests must pass
+- No linter warnings
+- CI/CD workflow required
 
-- ALWAYS use environment variables
+## Required MCP Servers
+
+- context7 (live documentation)
+- playwright (browser testing)
