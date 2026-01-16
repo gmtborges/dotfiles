@@ -30,7 +30,7 @@ return {
 				}))
 			end)
 			vim.keymap.set("n", "<leader>fr", function()
-				fzf.oldfiles({ winopts = { preview = { hidden = true } } })
+				fzf.oldfiles({ file_ignore_patterns = { ".git/*" }, winopts = { preview = { hidden = true } } })
 			end)
 			vim.keymap.set("n", "<leader>ff", function()
 				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true, no_ignore = true }))
