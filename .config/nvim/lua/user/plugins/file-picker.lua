@@ -6,6 +6,11 @@ return {
 			local fzf = require("fzf-lua")
 
 			fzf.setup({
+				winopts = {
+					preview = {
+						layout = "vertical",
+					},
+				},
 				buffers = {
 					cwd_only = true,
 				},
@@ -34,9 +39,6 @@ return {
 			end)
 			vim.keymap.set("n", "<leader>ff", function()
 				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true, no_ignore = true }))
-			end)
-			vim.keymap.set("n", "<leader>fg", function()
-				fzf.live_grep()
 			end)
 			vim.keymap.set("n", "<leader>fw", function()
 				fzf.live_grep()
