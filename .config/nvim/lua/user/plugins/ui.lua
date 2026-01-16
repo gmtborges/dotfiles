@@ -8,7 +8,7 @@ return {
 		},
 		opts = {
 			symbols = {
-				filter = { "String", "Variable", "Constant", exclude = true },
+				filter = { "String", "Variable", exclude = true },
 			},
 			outline_window = {
 				position = "left",
