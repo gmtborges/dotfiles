@@ -4,6 +4,9 @@ return {
 	},
 	{
 		"tpope/vim-fugitive",
+		config = function()
+			vim.keymap.set("n", "<leader>sg", ":G ")
+		end,
 	},
 	{
 		"akinsho/git-conflict.nvim",
