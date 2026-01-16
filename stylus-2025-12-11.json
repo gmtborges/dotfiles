@@ -115,10 +115,8 @@
     "name": "set-font-mono",
     "sections": [
       {
-        "code": "pre,\ncode, .blob-code, .blob-code-content, .blob-code-marker,#read-only-cursor-text-area, .react-code-file-contents > div > div {\n    font-family: monospace !important;\n    font-size: 1em;\n    font-weight: 500;\n}",
-        "domains": [
-          "github.com"
-        ]
+        "code": "pre,\ncode, .blob-code, .blob-code-content, .blob-code-marker,#read-only-cursor-text-area, .react-code-file-contents > div > div {\n    font-family: monospace !important;\n    font-size: 1em;\n}",
+        "domains": ["github.com"]
       }
     ],
     "updateDate": 1765318512032,
@@ -127,3 +125,4 @@
     "id": 1
   }
 ]
+
