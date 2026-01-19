@@ -26,7 +26,6 @@ return {
 					"marksman",
 					"helm_ls",
 					"pyright",
-					"harper-ls",
 				},
 			})
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
