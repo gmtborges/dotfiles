@@ -130,7 +130,7 @@ return {
 	},
 	{
 		"nvimdev/dashboard-nvim",
-		enabled = true,
+		enabled = false,
 		config = function()
 			local custom_header = {
 				[[                                                                       ]],
