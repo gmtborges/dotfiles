@@ -32,17 +32,18 @@ return {
 			-- See the full "keymap" documentation for information on defining your own keymap.
 			keymap = {
 				preset = "default",
-				["<Tab>"] = {
-					"select_next",
-					"snippet_forward",
-					"fallback",
-				},
-				["<S-Tab>"] = { "select_prev", "fallback" },
+				["<CR>"] = { "select_and_accept" },
+				-- ["<Tab>"] = {
+				-- 	"select_next",
+				-- 	"snippet_forward",
+				-- 	"fallback",
+				-- },
+				-- ["<S-Tab>"] = { "select_prev", "fallback" },
 			},
 			completion = {
 				list = {
 					selection = {
-						preselect = false,
+						preselect = true,
 					},
 				},
 				documentation = {

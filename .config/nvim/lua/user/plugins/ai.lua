@@ -1,19 +1,14 @@
 return {
 	{
 		"supermaven-inc/supermaven-nvim",
+		enabled = false,
 		config = function()
-			require("supermaven-nvim").setup({
-				keymaps = {
-					accept_suggestion = "<M-Tab>",
-					clear_suggestion = "<C-]>",
-					accept_word = "<C-j>",
-				},
-			})
+			require("supermaven-nvim").setup({})
 		end,
 	},
 	{
 		"Exafunction/windsurf.nvim",
-		enabled = false,
+		enabled = true,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"saghen/blink.cmp",
