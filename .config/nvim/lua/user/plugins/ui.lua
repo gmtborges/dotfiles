@@ -11,7 +11,7 @@ return {
 				filter = { "String", "Variable", exclude = true },
 			},
 			outline_window = {
-				position = "left",
+				position = "right",
 			},
 		},
 	},

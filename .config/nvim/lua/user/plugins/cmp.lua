@@ -2,7 +2,6 @@ return {
 	{
 		"saghen/blink.cmp",
 		enabled = true,
-		-- optional: provides snippets for the snippet source
 		dependencies = {
 			"Exafunction/codeium.nvim",
 
@@ -32,13 +31,13 @@ return {
 			-- 'enter' for mappings similar to 'super-tab' but with 'enter' to accept
 			-- See the full "keymap" documentation for information on defining your own keymap.
 			keymap = {
-				preset = "enter",
-				["<Tab>"] = {
-					"select_next",
-					"snippet_forward",
-					"fallback",
-				},
-				["<S-Tab>"] = { "select_prev", "fallback" },
+				preset = "default",
+				-- ["<Tab>"] = {
+				-- 	"select_next",
+				-- 	"snippet_forward",
+				-- 	"fallback",
+				-- },
+				-- ["<S-Tab>"] = { "select_prev", "fallback" },
 			},
 			completion = {
 				list = {
@@ -48,7 +47,6 @@ return {
 				},
 				documentation = {
 					auto_show = true,
-					auto_show_delay_ms = 500,
 				},
 				menu = {
 					draw = {

@@ -22,7 +22,9 @@ return {
 	{
 		"A7Lavinraj/fyler.nvim",
 		enabled = true,
+		event = "VeryLazy",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
+		branch = "stable",
 		config = function()
 			local fyler = require("fyler")
 			fyler.setup({
@@ -31,8 +33,11 @@ return {
 				},
 				views = {
 					finder = {
+						files = {
+							enabled = false,
+						},
 						win = {
-							kind = "split_right_most",
+							kind = "split_left_most",
 						},
 					},
 				},
