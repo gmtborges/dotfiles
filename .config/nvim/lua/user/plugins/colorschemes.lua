@@ -38,13 +38,13 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					keywords = "bold",
+					-- keywords = "bold",
 				},
 				highlights = {
-					["@boolean"] = { fmt = "bold" },
-					["@keyword.function"] = { fmt = "bold" },
-					Statement = { fmt = "bold" },
-					Boolean = { fmt = "bold" },
+					-- ["@boolean"] = { fmt = "bold" },
+					-- ["@keyword.function"] = { fmt = "bold" },
+					-- Statement = { fmt = "bold" },
+					-- Boolean = { fmt = "bold" },
 				},
 			})
 		end,

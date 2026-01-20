@@ -1,5 +1,30 @@
 return {
 	{
+		"supermaven-inc/supermaven-nvim",
+		config = function()
+			require("supermaven-nvim").setup({})
+		end,
+	},
+	{
+		"Exafunction/windsurf.nvim",
+		enabled = false,
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"saghen/blink.cmp",
+		},
+		config = function()
+			require("codeium").setup({
+				enable_cmp_source = false,
+				virtual_text = {
+					enabled = true,
+				},
+				workspace_root = {
+					use_lsp = true,
+				},
+			})
+		end,
+	},
+	{
 		"olimorris/codecompanion.nvim",
 		version = "^18.0.0",
 		dependencies = {
@@ -88,28 +113,6 @@ return {
 			vim.keymap.set({ "n", "v" }, "<leader>atp", "<cmd>ChatGPTRun translate Brazilian Portuguese<CR>")
 			vim.keymap.set({ "n", "v" }, "<leader>age", "<cmd>ChatGPTRun grammar_correction<CR>")
 			vim.keymap.set({ "n", "v" }, "<leader>agp", "<cmd>ChatGPTRun grammar_correction Brazilian Portuguese<CR>")
-		end,
-	},
-	{
-		"zbirenbaum/copilot.lua",
-		enabled = false,
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup({
-				suggestion = {
-					auto_trigger = false,
-					keymap = {
-						accept = "<M-TAB>",
-						next = "<M-]>",
-						prev = "<M-[>",
-					},
-				},
-				filetypes = {
-					markdown = true,
-					yaml = true,
-				},
-			})
 		end,
 	},
 	{
