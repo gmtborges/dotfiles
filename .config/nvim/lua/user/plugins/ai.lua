@@ -1,14 +1,14 @@
 return {
 	{
 		"supermaven-inc/supermaven-nvim",
-		enabled = false,
+		enabled = true,
 		config = function()
 			require("supermaven-nvim").setup({})
 		end,
 	},
 	{
 		"Exafunction/windsurf.nvim",
-		enabled = true,
+		enabled = false,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"saghen/blink.cmp",
