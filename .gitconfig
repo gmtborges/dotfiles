@@ -1,6 +1,6 @@
 [user]
-	name = Gustavo Borges
-	email = gustavo@gbsoft.net
+	name = Gustavo Martins T Borges
+	email = gustavo.mtborges@gmail.com
 [alias]
   st = status
   lg = log  --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %C(green)(%cr) %C(blue)<%an>' --abbrev-commit --date=relative
