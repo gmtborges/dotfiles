@@ -1,16 +1,27 @@
 #!/bin/bash
 
-# Read JSON input from stdin
 input=$(cat)
 
-# Parse session tokens from JSON
-session_tokens=$(echo "$input" | jq -r '(.context_window.total_input_tokens // 0) + (.context_window.total_output_tokens // 0)')
-session_size=$(echo "$input" | jq -r '.context_window.context_window_size // 200000')
+# Extract values using jq
+MODEL_DISPLAY=$(echo "$input" | jq -r '.model.display_name')
+CURRENT_DIR=$(echo "$input" | jq -r '.workspace.current_dir')
 
-# Calculate session percentage and format as K
-session_pct=$(echo "scale=1; ($session_tokens / $session_size) * 100" | bc 2>/dev/null || echo "0")
-session_k=$(echo "scale=0; $session_tokens / 1000" | bc 2>/dev/null || echo "0")
-size_k=$(echo "scale=0; $session_size / 1000" | bc 2>/dev/null || echo "0")
+# Show git branch if in a git repo
+GIT_BRANCH=""
+if git rev-parse --git-dir > /dev/null 2>&1; then
+    BRANCH=$(git branch --show-current 2>/dev/null)
+    if [ -n "$BRANCH" ]; then
+        GIT_BRANCH=" | $BRANCH"
+    fi
+fi
 
-# Output the status line
-printf "Context: %s%% (%sK/%sK)" "$session_pct" "$session_k" "$size_k"
+PERCENT_USED=$(echo "$input" | jq -r '.context_window.used_percentage // 0')
+USAGE=$(echo "$input" | jq '.context_window.current_usage')
+CONTEXT_SIZE=$(echo "$input" | jq -r '.context_window.context_window_size')
+CURRENT_TOKENS=$(echo "$USAGE" | jq '.input_tokens + .cache_creation_input_tokens + .cache_read_input_tokens')
+
+# Round to K for readability
+TOKENS_K=$(( (CURRENT_TOKENS + 500) / 1000 ))k
+CONTEXT_K=$(( CONTEXT_SIZE / 1000 ))k
+
+echo "[$MODEL_DISPLAY] | ${CURRENT_DIR##*/}$GIT_BRANCH | ${PERCENT_USED}% (${TOKENS_K}/${CONTEXT_K})"
