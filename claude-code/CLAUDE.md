@@ -14,21 +14,21 @@
 - .gitignore (with all required entries)
 - .dockerignore
 - README.md
-- CLAUDE.md
 
 # Code Style
 
 ## NEVER EVER DO
 
-- NEVER create documentation unless explicitly requested
-- NEVER add comments to code unless explicitly requested
-- NEVER create abstractions over code readability unless explicitly requested
+- NEVER create documentation, markdown files, unless explicity requested
+- NEVER add comment to code, unless explicity requested
+- NEVER create abstractions over code readability, unless explicitly requested
 
 ## ALWAYS DO
 
 - ALWAYS use KISS (Keep It Simple, Stupid) when writing code
 - ALWAYS keep functions small and focused
 - ALWAYS keep functions pure and testable
+- ALWAYS consult current documentation with context7 when using external libraries
 
 ## Quality Gates
 
