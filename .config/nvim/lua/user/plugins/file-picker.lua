@@ -6,11 +6,11 @@ return {
 			local fzf = require("fzf-lua")
 
 			fzf.setup({
-				winopts = {
-					preview = {
-						layout = "vertical",
-					},
-				},
+				-- winopts = {
+				-- 	preview = {
+				-- 		layout = "horizontal",
+				-- 	},
+				-- },
 				buffers = {
 					cwd_only = true,
 				},
