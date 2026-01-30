@@ -1,11 +1,11 @@
 # vim:ft=config
 font-family = Liga Mono Fixed
 font-size = 16.0
-adjust-cell-height = 8
-adjust-cursor-height = 8
+adjust-cell-height = 6
+adjust-cursor-height = 6
 
 font-thicken = true
-font-thicken-strength = 0
+font-thicken-strength = 100
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
