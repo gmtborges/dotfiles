@@ -4,8 +4,8 @@ import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-X_SCALE = 1.05      # 5% wider
-Y_SCALE = 1.1       # 10% taller
+X_SCALE = 1.00      # 5% wider
+Y_SCALE = 1.05       # 10% taller
 
 font_files = [f for f in glob.glob(os.path.join(script_dir, "*.otf"))
               if "_Tall" not in f]
@@ -31,22 +31,8 @@ for font_path in font_files:
             glyph.transform((X_SCALE, 0, 0, Y_SCALE, 0, 0))
             glyph.width = int(glyph.width * X_SCALE)
 
-    new_ascent = int(original_ascent * Y_SCALE)
-    new_descent = int(original_descent * Y_SCALE)
-
-    font.ascent = new_ascent
-    font.descent = new_descent
-
-    font.os2_typoascent = new_ascent
-    font.os2_typodescent = -new_descent
-    font.os2_winascent = new_ascent
-    font.os2_windescent = new_descent
-    font.hhea_ascent = new_ascent
-    font.hhea_descent = -new_descent
-
     print(f"  Scaled glyphs: {X_SCALE}x width, {Y_SCALE}x height")
-    print(f"  Ascent: {original_ascent} -> {new_ascent}")
-    print(f"  Descent: {original_descent} -> {new_descent}")
+    print(f"  Metrics preserved: ascent={original_ascent}, descent={original_descent}")
 
     base, ext = os.path.splitext(os.path.basename(font_path))
     output_path = os.path.join(script_dir, f"{base}_Tall.otf")
