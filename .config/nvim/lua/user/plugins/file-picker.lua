@@ -19,26 +19,21 @@ return {
 				},
 			})
 
-			local no_preview = { winopts = { preview = { hidden = "hidden" } } }
-
 			vim.keymap.set("n", "<C-p>", function()
-				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true }))
+				fzf.files({ winopts = { preview = { hidden = true } } })
 			end)
 			vim.keymap.set("n", "<leader>p", function()
-				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true }))
+				fzf.files({ winopts = { preview = { hidden = true } } })
 			end)
 
 			vim.keymap.set("n", "<leader>o", function()
-				fzf.buffers(vim.tbl_extend("force", no_preview, {
-					sort_mru = true,
-					ignore_current_buffer = true,
-				}))
+				fzf.buffers({ winopts = { preview = { hidden = true } }, sort_mru = true, ignore_current_buffer = true })
 			end)
 			vim.keymap.set("n", "<leader>fr", function()
-				fzf.oldfiles({ file_ignore_patterns = { ".git/*" }, winopts = { preview = { hidden = true } } })
+				fzf.oldfiles({ winopts = { preview = { hidden = true } } })
 			end)
 			vim.keymap.set("n", "<leader>ff", function()
-				fzf.files(vim.tbl_extend("force", no_preview, { hidden = true, no_ignore = true }))
+				fzf.files({ winopts = { preview = { hidden = true } }, no_ignore = true })
 			end)
 			vim.keymap.set("n", "<leader>fw", function()
 				fzf.live_grep()
