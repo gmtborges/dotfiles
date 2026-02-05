@@ -25,6 +25,7 @@
   mr = merge
   mrc = merge --continue
   mra = merge --abort
+  wt = worktree
 [push]
   default = simple
 [color]
