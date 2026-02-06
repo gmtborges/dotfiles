@@ -1,5 +1,7 @@
 # vim:ft=config
 font-family = Source Code Pro Custom
+font-style-bold = Medium
+font-style-bold-italic = Medium Italic
 font-size = 17
 adjust-cell-height = 10
 adjust-cursor-height = 10
