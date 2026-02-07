@@ -121,23 +121,49 @@ def rename_font(font, new_family):
     original_family = font.familyname
     original_fullname = font.fullname
 
-    weight = original_fullname.replace(original_family, "").strip()
+    style = original_fullname.replace(original_family, "").strip()
+    if not style:
+        style = "Regular"
+
+    is_italic = "Italic" in style or font.italicangle != 0
+    weight = style.replace("Italic", "").strip()
     if not weight:
         weight = "Regular"
 
+    is_bold = weight == "Bold"
+    is_ribbi = weight in ("Regular", "Bold")
+
+    if is_italic and weight == "Regular":
+        ribbi_subfamily = "Italic"
+    elif is_italic and is_bold:
+        ribbi_subfamily = "Bold Italic"
+    elif is_bold:
+        ribbi_subfamily = "Bold"
+    else:
+        ribbi_subfamily = "Regular" if not is_italic else "Italic"
+
+    if is_ribbi:
+        ribbi_family = new_family
+    else:
+        ribbi_family = f"{new_family} {weight}"
+
     font.familyname = new_family
-    font.fullname = f"{new_family} {weight}"
-    font.fontname = f"{new_family.replace(' ', '')}-{weight.replace(' ', '')}"
+    font.fullname = f"{new_family} {style}"
+    font.fontname = f"{new_family.replace(' ', '')}-{style.replace(' ', '')}"
 
     font.sfnt_names = ()
     font.appendSFNTName("English (US)", "Copyright", "")
-    font.appendSFNTName("English (US)", "Family", new_family)
-    font.appendSFNTName("English (US)", "SubFamily", weight)
-    font.appendSFNTName("English (US)", "UniqueID", f"{new_family} {weight}")
-    font.appendSFNTName("English (US)", "Fullname", f"{new_family} {weight}")
-    font.appendSFNTName("English (US)", "PostScriptName", f"{new_family.replace(' ', '')}-{weight.replace(' ', '')}")
+    font.appendSFNTName("English (US)", "Family", ribbi_family)
+    font.appendSFNTName("English (US)", "SubFamily", ribbi_subfamily)
+    font.appendSFNTName("English (US)", "UniqueID", f"{new_family} {style}")
+    font.appendSFNTName("English (US)", "Fullname", f"{new_family} {style}")
+    font.appendSFNTName("English (US)", "PostScriptName", f"{new_family.replace(' ', '')}-{style.replace(' ', '')}")
 
-    return weight
+    if not is_ribbi:
+        font.appendSFNTName("English (US)", "Preferred Family", new_family)
+        font.appendSFNTName("English (US)", "Preferred Styles", style)
+
+    return style
 
 
 font_files = [f for f in glob.glob(os.path.join(script_dir, "*.otf"))
@@ -184,8 +210,8 @@ for font_path in font_files:
     else:
         print(f"  No character variants found for: {', '.join(CV_FEATURES)}")
 
-    weight = rename_font(font, FONT_FAMILY)
-    print(f"  Renamed to: {FONT_FAMILY} {weight}")
+    style = rename_font(font, FONT_FAMILY)
+    print(f"  Renamed to: {FONT_FAMILY} {style}")
 
     base, ext = os.path.splitext(os.path.basename(font_path))
     output_path = os.path.join(script_dir, f"{base}{FONT_SUFFIX}.otf")
