@@ -1,0 +1,31 @@
+pane	docs	2	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/Documents	1	zsh	:
+pane	projects	1	1	:*	1	gustavo@debian:~/repos/projects/selenium	:/Users/gustavo/repos/projects	1	zsh	:
+pane	projects	2	0	:-	1	gustavo@debian:~/repos/projects	:/Users/gustavo/repos/projects	1	zsh	:
+pane	sou-api	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/safracontrol-api	1	zsh	:
+pane	sou-api	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/safracontrol-api	1	zsh	:
+pane	sou-front	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/safracontrol	1	zsh	:
+pane	sou-front	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/safracontrol	1	zsh	:
+pane	sou-iac	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	sou-iac	2	0	:	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	sou-iac	3	0	:-	1	@trino-coordinator-59ffcbf9c5-gzx5b:/etc/trino	:/Users/gustavo/repos/work/souagro/iac	1	zsh	:
+pane	study	1	1	:*	1	Gustavos-iMac-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	study	2	0	:-	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/study	1	zsh	:
+pane	tmp	1	1	:*	1	Gustavos-MacBook-Pro.local	:/Users/gustavo/repos/config/dotfiles	1	zsh	:
+pane	tmp	2	0	:-	1	✳ Build Nano Failure	:/Users/gustavo	1	zsh	:
+pane	tmp	3	0	:	1	Gustavos-MacBook-Pro.local	:/Users/gustavo	1	zsh	:
+window	docs	2	:zsh	1	:*	b05e,255x50,0,0,1	:
+window	projects	1	:zsh	1	:*	b05f,255x50,0,0,2	:
+window	projects	2	:zsh	0	:-	b060,255x50,0,0,3	:
+window	sou-api	1	:zsh	1	:*	e6bf,243x48,0,0,20	:
+window	sou-api	2	:zsh	0	:-	e6c0,243x48,0,0,21	:
+window	sou-front	1	:zsh	1	:*	66c7,243x48,0,0,18	:
+window	sou-front	2	:zsh	0	:-	66c8,243x48,0,0,19	:
+window	sou-iac	1	:zsh	1	:*	cd21,243x48,0,0,4	:
+window	sou-iac	2	:zsh	0	:	cd22,243x48,0,0,5	:
+window	sou-iac	3	:zsh	0	:-	cd23,243x48,0,0,6	:
+window	study	1	:zsh	1	:*	b064,255x50,0,0,7	:
+window	study	2	:zsh	0	:-	b065,255x50,0,0,8	:
+window	tmp	1	:zsh	1	:*	cd26,243x48,0,0,9	:
+window	tmp	2	:zsh	0	:-	66bf,243x48,0,0,10	:
+window	tmp	3	:zsh	0	:	66c0,243x48,0,0,11	:
+state	tmp	sou-iac
