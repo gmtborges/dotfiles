@@ -2,7 +2,7 @@
 font-family = Source Code Pro Custom
 font-style-bold = SemiBold
 font-style-bold-italic = SemiBold Italic
-font-size = 16.7
+font-size = 16.0
 adjust-cell-height = 10
 adjust-cursor-height = 10
 
@@ -22,8 +22,8 @@ theme = Tokyonight Storm
 # theme = light:catppuccin-macchiato.conf,dark:catppuccin-macchiato.conf
 palette=8=#677289
 
-# background-opacity = 0.82
-# background-blur-radius = 48
+background-opacity = 0.92
+background-blur-radius = 64
 
 window-width = 200
 window-height = 60
