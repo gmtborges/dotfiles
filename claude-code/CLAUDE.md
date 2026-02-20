@@ -19,14 +19,14 @@
 
 ## NEVER EVER DO
 
-- NEVER create documentation, markdown files, unless explicity requested
-- NEVER add comment to code, unless explicity requested
-- NEVER create abstractions over code readability, unless explicitly requested
+- NEVER create documentation, markdown files
+- NEVER add comment to code
+- NEVER create abstractions over code readability
 
 ## ALWAYS DO
 
 - ALWAYS use KISS (Keep It Simple, Stupid) when writing code
-- ALWAYS keep functions small and focused
+- ALWAYS keep functions small
 - ALWAYS keep functions pure and testable
 - ALWAYS consult current documentation with context7 when using external libraries
 
