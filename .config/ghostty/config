@@ -21,7 +21,7 @@ adjust-underline-position = 3
 theme = Catppuccin Macchiato
 palette=8=#677289
 
-background-opacity = 0.92
+background-opacity = 0.90
 background-blur-radius = 64
 
 window-width = 200

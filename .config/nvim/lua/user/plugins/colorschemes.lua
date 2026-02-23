@@ -59,7 +59,7 @@ return {
 					dark = "macchiato",
 				},
 				no_italic = false,
-				transparent_background = false,
+				transparent_background = true,
 				styles = {
 					keywords = { "bold" },
 					conditionals = { "bold" },
