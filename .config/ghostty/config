@@ -18,8 +18,7 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Tokyonight Storm
-# theme = light:catppuccin-macchiato.conf,dark:catppuccin-macchiato.conf
+theme = Catppuccin Macchiato
 palette=8=#677289
 
 background-opacity = 0.92
