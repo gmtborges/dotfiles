@@ -26,6 +26,9 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Configs
+export EDITOR=nvim
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -101,6 +104,7 @@ plugins=(
   asdf
   terraform
   docker
+  podman
   kubectl
   helm
 )
@@ -137,6 +141,7 @@ eval "$(fzf --zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
+alias docker=podman
 
 function delete-branch () {
  git branch | grep -vE "main|master" || true | xargs git branch -D
