@@ -1,7 +1,7 @@
 # vim:ft=config
-font-family = Liga Mono Fixed
-# font-style-bold = SemiBold
-# font-style-bold-italic = SemiBold Italic
+font-family = Source Code Pro Custom
+font-style-bold = SemiBold
+font-style-bold-italic = SemiBold Italic
 font-size = 17.0
 adjust-cell-height = 12
 adjust-cursor-height = 12

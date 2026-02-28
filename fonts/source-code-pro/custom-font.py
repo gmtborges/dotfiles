@@ -11,7 +11,9 @@ Y_SCALE = 1.05
 FONT_FAMILY = "Source Code Pro Custom"
 FONT_SUFFIX = "_Custom"
 
-CV_FEATURES = ['cv01', 'cv02']
+# cv01 letter a
+# cv02 letter g
+CV_FEATURES = ['cv02']
 
 
 def count_glyph_points(font, glyph_name):
