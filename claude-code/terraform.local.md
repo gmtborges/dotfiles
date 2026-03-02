@@ -21,5 +21,5 @@ Also add tag Name.
 
 - Apply to every new resource and module (e.g. gha for GitHub Actions, -pol for policies, -role for IAM roles,
   -svc for ECS Services).”
-- One example: Role: {prefix}-{env}-gha-role; policy: {prefix}-{env}-gha-ecs-deploy-pol; service:
-  {prefix}-{env}-hello-world-svc
+- Examples: Role: {prefix}-{env}-gha-role; policy: {prefix}-{env}-gha-ecs-deploy-pol; service:
+  {prefix}-{env}-hello-world-svc; subnet: {prefix}-{env}-snet-prv-{zone}; vpc: {prefix}-{env}-vpc
