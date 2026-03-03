@@ -2,12 +2,12 @@
 font-family = Source Code Pro Custom
 font-style-bold = SemiBold
 font-style-bold-italic = SemiBold Italic
-font-size = 17.0
+font-size = 16.0
 adjust-cell-height = 12
 adjust-cursor-height = 12
 
-font-thicken = true
-font-thicken-strength = 0
+# font-thicken = true
+# font-thicken-strength = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ k v w x
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
@@ -18,7 +18,7 @@ font-codepoint-map = U+E0A0,U+21E1,U+21E2,U+21E3 = MesloLGL Nerd Font
 
 adjust-underline-position = 3
 
-theme = Catppuccin Macchiato
+theme = Tokyonight Storm
 palette=8=#677289
 
 background-opacity = 0.90

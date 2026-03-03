@@ -13,7 +13,7 @@ FONT_SUFFIX = "_Custom"
 
 # cv01 letter a
 # cv02 letter g
-CV_FEATURES = ['cv02']
+CV_FEATURES = ['cv01', 'cv02']
 
 
 def count_glyph_points(font, glyph_name):
