@@ -29,7 +29,7 @@
 - ALWAYS keep functions small.
 - ALWAYS keep functions pure and testable.
 - ALWAYS consult current documentation with context7 when using external libraries.
-- ALWAYS put new code in the final of the file.
+- ALWAYS put new code in the end of the file.
 
 ## Quality Gates
 
