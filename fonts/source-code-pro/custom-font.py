@@ -6,14 +6,14 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 X_SCALE = 1.00
-Y_SCALE = 1.05
+Y_SCALE = 1.08
 
 FONT_FAMILY = "Source Code Pro Custom"
 FONT_SUFFIX = "_Custom"
 
 # cv01 letter a
 # cv02 letter g
-CV_FEATURES = ['cv01', 'cv02']
+CV_FEATURES = ['cv02']
 
 
 def count_glyph_points(font, glyph_name):
