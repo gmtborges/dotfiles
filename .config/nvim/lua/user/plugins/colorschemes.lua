@@ -9,8 +9,8 @@ return {
 				style = "storm",
 				styles = {
 					keywords = { bold = true, italic = false },
-					-- sidebars = "transparent",
-					-- floats = "transparent",
+					sidebars = "transparent",
+					floats = "transparent",
 				},
 				on_colors = function(c)
 					c.comment = "#7f87af"
@@ -23,6 +23,7 @@ return {
 					hl.LineNr = { fg = "#565d82" }
 					hl.LineNrAbove = { fg = "#565d82" }
 					hl.LineNrBelow = { fg = "#565d82" }
+					hl.Visual = { bg = c.bg } -- Transparent mode
 				end,
 			})
 		end,
