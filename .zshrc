@@ -176,3 +176,6 @@ if [ -f '/Users/gustavo/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gustavo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/gustavo/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gustavo/google-cloud-sdk/completion.zsh.inc'; fi
+
+# claude-profile: manage Claude Code configuration profiles
+. "${XDG_DATA_HOME:-$HOME/.local/share}/claude-profile/claude-profile.sh"
