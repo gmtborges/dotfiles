@@ -5,12 +5,12 @@ return {
 		priority = 1000,
 		config = function()
 			require("tokyonight").setup({
-				transparent = true,
+				transparent = false,
 				style = "storm",
 				styles = {
 					keywords = { bold = true, italic = false },
-					sidebars = "transparent",
-					floats = "transparent",
+					-- sidebars = "transparent",
+					-- floats = "transparent",
 				},
 				on_colors = function(c)
 					c.comment = "#7f87af"
@@ -23,7 +23,7 @@ return {
 					hl.LineNr = { fg = "#565d82" }
 					hl.LineNrAbove = { fg = "#565d82" }
 					hl.LineNrBelow = { fg = "#565d82" }
-					hl.Visual = { bg = c.bg } -- Transparent mode
+					-- hl.Visual = { bg = c.bg } -- Transparent mode
 				end,
 			})
 		end,
@@ -60,7 +60,7 @@ return {
 					dark = "macchiato",
 				},
 				no_italic = false,
-				transparent_background = true,
+				transparent_background = false,
 				styles = {
 					keywords = { "bold" },
 					conditionals = { "bold" },
