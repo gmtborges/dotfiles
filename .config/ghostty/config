@@ -2,12 +2,12 @@
 font-family = Source Code Pro Custom
 # font-style-bold = SemiBold
 # font-style-bold-italic = SemiBold Italic
-font-size = 15.5
+font-size = 15.0
 adjust-cell-height = 10
 adjust-cursor-height = 10
 
-# font-thicken = true
-# font-thicken-strength = 0
+font-thicken = true
+font-thicken-strength = 0
 
 # Ligatures test M ç á ã â ä à å æ ç é è ê ë í ì î ï ñ ó ò ô ö ø ú ù û ü ý ÿ k v w x
 # filter |> === := != => -> >= <= /\ </> /\ | #{} #() #[] $ 0 - -- --- -h --h ---h
