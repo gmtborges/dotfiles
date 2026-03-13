@@ -1,6 +1,6 @@
 # Commands
 
-Always set the AWS_PROFILE={org}-{env} before run terraform or cdk commands.
+Always set the AWS_PROFILE={org}-{env} before run terraform, terragrunt or cdk commands.
 
 On CDK projects use package managers to run cdk commands. For example:
 
