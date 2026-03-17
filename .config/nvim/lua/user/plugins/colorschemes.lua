@@ -39,7 +39,7 @@ return {
 					transparent = false,
 				},
 				code_style = {
-					-- keywords = "bold",
+					keywords = "bold",
 				},
 				highlights = {
 					-- ["@boolean"] = { fmt = "bold" },
