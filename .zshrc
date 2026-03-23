@@ -105,7 +105,6 @@ plugins=(
   asdf
   terraform
   docker
-  podman
   kubectl
   helm
 )
@@ -142,7 +141,6 @@ eval "$(fzf --zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias v=nvim
-alias docker=podman
 
 function delete-branch () {
  git branch | grep -vE "main|master" || true | xargs git branch -D
