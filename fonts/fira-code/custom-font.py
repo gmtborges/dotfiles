@@ -6,6 +6,8 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 
 FONT_FAMILY = "Fira Code Fixed"
 FONT_SUFFIX = "_Fixed"
+X_SCALE = 1.00
+Y_SCALE = 0.95
 # zero = 0, ss04 = $, cv01 = a, cv02 = g
 CV_FEATURES = ['zero', 'ss04']
 LIGATURE_FEATURES = {'calt'}
@@ -105,13 +107,15 @@ def apply_character_variants(font, features, ref_directions=None, fallback_mappi
     return list(set(applied))
 
 
-def rename_font(font, new_family):
-    original_family = font.familyname
-    original_fullname = font.fullname
-
-    style = original_fullname.replace(original_family, "").strip()
-    if not style:
-        style = "Regular"
+def rename_font(font, new_family, style_override=None):
+    if style_override:
+        style = style_override
+    else:
+        original_family = font.familyname
+        original_fullname = font.fullname
+        style = original_fullname.replace(original_family, "").strip()
+        if not style:
+            style = "Regular"
 
     is_italic = "Italic" in style or font.italicangle != 0
     weight = style.replace("Italic", "").strip()
@@ -178,6 +182,13 @@ for ttf_path in ttf_files:
     print(f"Processing: {os.path.basename(ttf_path)}")
     font = fontforge.open(ttf_path)
 
+    if X_SCALE != 1.0 or Y_SCALE != 1.0:
+        for glyph in font.glyphs():
+            if glyph.isWorthOutputting():
+                glyph.transform((X_SCALE, 0, 0, Y_SCALE, 0, 0))
+                glyph.width = int(glyph.width * X_SCALE)
+        print(f"  Scaled glyphs: {X_SCALE}x width, {Y_SCALE}x height")
+
     lookups_to_remove = set()
     for lookup in font.gsub_lookups:
         lookup_info = font.getLookupInfo(lookup)
@@ -202,7 +213,8 @@ for ttf_path in ttf_files:
         else:
             print(f"  No character variants found for: {', '.join(CV_FEATURES)}")
 
-    style = rename_font(font, FONT_FAMILY)
+    file_style = os.path.basename(ttf_path).rsplit('-', 1)[-1].replace('.ttf', '')
+    style = rename_font(font, FONT_FAMILY, file_style)
     print(f"  Renamed to: {FONT_FAMILY} {style}")
 
     base, ext = os.path.splitext(os.path.basename(ttf_path))
