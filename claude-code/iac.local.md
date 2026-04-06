@@ -12,11 +12,13 @@ poetry run cdk ...
 
 # Naming conventions
 
-Every resource name should be
-${prefix}-${environment}-${resource-abbreviation}. In case of workloads add
-${app-name} after the environment.
-Ignore resource-abbreviation for s3 buckets. Environment should be abbreviated: production = prd, staging =
-stg, development = dev.
+- Every resource name should be
+  ${prefix}-${environment}-${resource-abbreviation}. In case of workloads add
+${app-name} after the
+  environment.
+- Ignore resource-abbreviation for s3 buckets.
+- Environment should be abbreviated: production = prd, pro; staging = stg; development = dev, homologation =
+  hom.
 
 Also add tag Name.
 
