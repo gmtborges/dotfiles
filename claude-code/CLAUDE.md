@@ -19,7 +19,6 @@
 
 ## NEVER EVER DO
 
-- NEVER create documentation, markdown files.
 - NEVER add comment to code.
 - NEVER create abstractions over code readability.
 
