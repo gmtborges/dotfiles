@@ -12,9 +12,11 @@ poetry run cdk ...
 
 # Naming conventions
 
-Every resource name should be ${prefix}-${environment}-${resource-abbreviation}. In case of workloads add
-${app-name} after the environment. Ignore resource-abbreviation for s3 buckets. Environment should be
-abbreviated: production = prd, staging = stg, development = dev.
+Every resource name should be
+${prefix}-${environment}-${resource-abbreviation}. In case of workloads add
+${app-name} after the environment.
+Ignore resource-abbreviation for s3 buckets. Environment should be abbreviated: production = prd, staging =
+stg, development = dev.
 
 Also add tag Name.
 
@@ -22,4 +24,5 @@ Also add tag Name.
   -svc for ECS Services).”
 - Examples: Role: {prefix}-{env}-gha-role; policy: {prefix}-{env}-gha-ecs-deploy-pol; service:
   {prefix}-{env}-hello-world-svc; subnet: {prefix}-{env}-snet-prv-{zone}; vpc: {prefix}-{env}-vpc; service
-  discovery: {prefix}-{env}-hello-world-sd; secret: {prefix}-{env}-hello-world-secret;
+  discovery: {prefix}-{env}-hello-world-sd; secret: {prefix}-{env}-hello-world-secret; CloudFormation stack:
+  {prefix}-{env}-hello-world-stack; ECS cluster: {prefix}-{env}-ecs-cluster;
