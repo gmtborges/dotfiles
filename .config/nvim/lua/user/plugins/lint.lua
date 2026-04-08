@@ -12,6 +12,7 @@ return {
 				typescriptreact = { "eslint" },
 				astro = { "eslint" },
 				terraform = { "tflint" },
+				python = { "ruff" },
 			}
 			vim.keymap.set("n", "<leader>cl", function()
 				lint.try_lint()
