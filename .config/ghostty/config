@@ -1,6 +1,6 @@
 # vim:ft=config
-font-family = Source Code Pro Custom
-font-size = 16.0
+font-family = Comic Code
+font-size = 15.0
 adjust-cell-height = 12
 adjust-cursor-height = 12
 
@@ -23,8 +23,8 @@ adjust-underline-position = 3
 theme = Tokyonight Storm
 # palette=8=#677289
 
-# background-opacity = 0.80
-# background-blur-radius = 64
+background-opacity = 0.80
+background-blur-radius = 64
 
 window-width = 200
 window-height = 60

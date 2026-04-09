@@ -59,9 +59,9 @@ vim.keymap.set("n", "<M-S-k>", "<C-w>+")
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 
 -- Toggles
-vim.keymap.set("n", "<leader>ss", ":set spell!<CR>")
-vim.keymap.set("n", "<leader>sw", ":set wrap!<CR>")
-vim.keymap.set("n", "<leader>sh", ":set hlsearch!<CR>")
+vim.keymap.set("n", "<leader>ts", ":set spell!<CR>")
+vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>")
+vim.keymap.set("n", "<leader>th", ":set hlsearch!<CR>")
 
 -- Jumplist
 -- vim.keymap.set(

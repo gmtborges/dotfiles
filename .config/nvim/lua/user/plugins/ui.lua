@@ -4,7 +4,7 @@ return {
 		lazy = true,
 		cmd = { "Outline", "OutlineOpen" },
 		keys = {
-			{ "<leader>so", "<cmd>Outline<CR>", desc = "Toggle outline" },
+			{ "<leader>to", "<cmd>Outline<CR>", desc = "Toggle outline" },
 		},
 		opts = {
 			symbols = {
@@ -112,7 +112,7 @@ return {
 				},
 			})
 		end,
-		vim.keymap.set("n", "<leader>si", ":IBLToggle<CR>", { noremap = true, silent = true }),
+		vim.keymap.set("n", "<leader>ti", ":IBLToggle<CR>", { noremap = true, silent = true }),
 	},
 	{
 		"brenoprata10/nvim-highlight-colors",
