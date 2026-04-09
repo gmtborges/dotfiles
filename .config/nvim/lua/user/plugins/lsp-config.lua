@@ -25,7 +25,7 @@ return {
 					"ansiblels",
 					"marksman",
 					"helm_ls",
-					"pyright",
+					"ruff",
 				},
 			})
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
@@ -54,7 +54,7 @@ return {
 				},
 			})
 
-			vim.lsp.config("pyright", {
+			vim.lsp.config("ruff", {
 				capabilities = capabilities,
 			})
 
@@ -222,7 +222,6 @@ return {
 					"sql_formatter",
 					"tflint",
 					"debugpy",
-					"ruff",
 					"ansible-lint",
 				},
 				automatic_installation = true,
